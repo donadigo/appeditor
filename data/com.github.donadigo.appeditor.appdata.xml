@@ -25,6 +25,11 @@
   <url type="bugtracker">https://github.com/donadigo/appeditor</url>
   <url type="help">https://github.com/donadigo/appeditor</url>
   <update_contact>donadigos159@gmail.com</update_contact>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/donadigo/appeditor/master/Screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <custom>
     <value key="x-appcenter-color-primary">#32e3ca</value>
     <value key="x-appcenter-color-primary-text">#0A332D</value>

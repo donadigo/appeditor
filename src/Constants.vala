@@ -19,7 +19,7 @@
 
 namespace AppEditor.Constants {
     public const string APP_NAME = _("AppEditor");
-    public const string VERSION = "0.9.1";
+    public const string VERSION = "0.9.2";
     public const string EXEC_NAME = "com.github.donadigo.appeditor";
     public const string DESKTOP_NAME = "com.github.donadigo.appeditor.desktop";
 }

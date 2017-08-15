@@ -30,6 +30,13 @@
       <image>https://raw.githubusercontent.com/donadigo/appeditor/master/Screenshot.png</image>
     </screenshot>
   </screenshots>
+  <releases>
+    <release version="0.9.0" date="2017-08-15">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
   <custom>
     <value key="x-appcenter-color-primary">#32e3ca</value>
     <value key="x-appcenter-color-primary-text">#0A332D</value>

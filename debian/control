@@ -1,0 +1,17 @@
+Source: com.github.donadigo.appeditor
+Section: utils
+Priority: optional
+Maintainer: Adam Bieńkowski <donadigos159@gmail.com>
+Build-Depends: cmake (>= 2.8),
+               debhelper (>= 9),
+               libgranite-dev,
+               libgtk-3-dev,
+               valac (>= 0.26)
+
+Standards-Version: 3.9.6
+Package: com.github.donadigo.appeditor
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
+Description: AppEditor
+ Edit application menu

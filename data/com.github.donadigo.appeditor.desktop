@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=AppEditor
+GenericName=Application Entry Editor
+Comment=Edit application entries
+Icon=com.github.donadigo.appeditor
+Exec=com.github.donadigo.appeditor
+Terminal=false
+Categories=System;GTK;
+X-GNOME-Gettext-Domain=com.github.donadigo.appeditor
+Keywords=application;edit;entry;

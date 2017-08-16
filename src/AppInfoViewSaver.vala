@@ -58,8 +58,11 @@ public class AppEditor.AppInfoViewSaver : Object {
 
         string lang = Intl.get_language_names ()[0];
 
+        string name = target.save_display_name;
+
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
-        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, target.save_display_name);
+        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, name);
+        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_FULLNAME, lang, name);
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, lang, target.save_description);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, target.save_icon);
         key.set_boolean (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NO_DISPLAY, !target.save_display);

@@ -55,11 +55,12 @@ public class AppEditor.DesktopApp : Object {
     }
 
     public bool get_only_local () {
-        if (get_name_only_local (get_basename ())) {
+        string basename = get_basename ();
+        if (get_name_only_local (basename)) {
             return true;
         }
 
-        return AppDirectoryScanner.get_desktop_id_count (get_basename ()) <= 1;
+        return AppDirectoryScanner.get_desktop_id_count (basename) <= 1;
     }
 
     public bool compare (DesktopApp other) {

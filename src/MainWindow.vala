@@ -27,11 +27,17 @@ public class AppEditor.MainWindow : Gtk.Dialog {
     private const string LOADING_GRID_ID = "loading-grid";
     private const string NO_APPS_GRID_ID = "no-apps-grid";
 
+    private static Settings settings;
+
     private Gtk.Stack stack;
     private Gtk.Revealer search_revealer;
     private Gtk.SearchEntry search_entry;
     private Sidebar sidebar;
     private AppInfoViewStack app_info_view_stack;
+
+    static construct {
+        settings = new Settings (Constants.SETTINGS_SCHEMA);
+    }
 
     construct {
         sidebar = new Sidebar ();
@@ -95,6 +101,13 @@ public class AppEditor.MainWindow : Gtk.Dialog {
         header_bar.pack_start (new_button);
         header_bar.pack_start (search_revealer);
 
+        int x = settings.get_int ("window-x");
+        int y = settings.get_int ("window-y");
+
+        if (x != -1 && y != -1) {
+            move (x, y);
+        }
+
         monitor_manager_state ();
     }
 
@@ -110,6 +123,23 @@ public class AppEditor.MainWindow : Gtk.Dialog {
     public override void show_all () {
         base.show_all ();
         search_entry.grab_focus ();
+    }
+
+    public override bool delete_event (Gdk.EventAny event) {
+        int x, y;
+        get_position (out x, out y);
+
+        settings.set_int ("window-x", x);
+        settings.set_int ("window-y", y);
+
+        string? selected_desktop_id = app_info_view_stack.get_selected_desktop_id ();
+        if (selected_desktop_id == null) {
+            selected_desktop_id = "";
+        }
+
+        settings.set_string ("selected-desktop-id", selected_desktop_id);
+
+        return false;
     }
 
     private void monitor_manager_state () {
@@ -136,6 +166,11 @@ public class AppEditor.MainWindow : Gtk.Dialog {
                 search_revealer.reveal_child = true;
 
                 refill_sidebar ();
+
+                string selected_desktop_id = settings.get_string ("selected-desktop-id");
+                if (selected_desktop_id != "") {
+                    sidebar.select_desktop_id (selected_desktop_id);
+                }
             } else {
                 stack.visible_child_name = NO_APPS_GRID_ID;
                 search_revealer.reveal_child = false;

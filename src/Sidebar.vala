@@ -73,6 +73,15 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
         }
     }
 
+    public void select_desktop_id (string desktop_id) {
+        foreach (var app_item in app_items) {
+            if (app_item.desktop_app.get_basename () == desktop_id) {
+                selected = app_item;
+                break;
+            }
+        }
+    }
+
     public void set_current_search_query (string query) {
         current_search_query = query;
         refilter ();

@@ -32,6 +32,14 @@ public class AppEditor.AppInfoViewStack : Gtk.Stack {
         view_removed.connect (on_view_removed);
     }
 
+    public string? get_selected_desktop_id () {
+        if (visible_child is AppInfoView) {
+            return ((AppInfoView)visible_child).desktop_app.get_basename ();
+        }
+
+        return null;
+    }
+
     public void show_app_info (DesktopApp desktop_app) {
         AppInfoView? widget = null;
 

@@ -184,15 +184,19 @@ public class AppEditor.AppInfoView : Gtk.Box {
         save_button.sensitive = false;
         save_button.clicked.connect (on_save_button_clicked);
 
+        var open_source_button = new Gtk.Button.with_label (_("Open in Text Editor"));
+        open_source_button.clicked.connect (on_open_source_button_clicked);
+
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         size_group.add_widget (save_button);
         size_group.add_widget (restore_defaults_button);
+        size_group.add_widget (open_source_button);
 
         var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        button_box.halign = Gtk.Align.END;
         button_box.margin = 6;
-        button_box.add (restore_defaults_button);
-        button_box.add (save_button);
+        button_box.pack_start (open_source_button, false, false);
+        button_box.pack_end (save_button, false, false);
+        button_box.pack_end (restore_defaults_button, false, false);
 
         var bottom_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         bottom_box.hexpand = true;
@@ -361,6 +365,18 @@ public class AppEditor.AppInfoView : Gtk.Box {
         }
 
         dialog.destroy ();
+    }
+
+    private void on_open_source_button_clicked () {
+        try {
+            desktop_app.open_default_handler (get_screen ());
+        } catch (Error e) {
+            var dialog = new MessageDialog (_("Could Not Open This Entry"), e.message, "dialog-error");
+            dialog.add_button (_("Close"), Gtk.ResponseType.OK);
+            dialog.show_all ();
+            dialog.run ();
+            dialog.destroy ();
+        }
     }
 
     private void update_page () {

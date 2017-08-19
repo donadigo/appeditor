@@ -54,6 +54,15 @@ public class AppEditor.DesktopApp : Object {
         Object (info: info);
     }
 
+    public void open_default_handler (Gdk.Screen? screen) throws Error {
+        var file = File.new_for_path (info.get_filename ());
+        try {
+            Gtk.show_uri (screen, file.get_uri (), Gtk.get_current_event_time ());
+        } catch (Error e) {
+            throw e;
+        }
+    }
+
     public bool get_only_local () {
         string basename = get_basename ();
         if (get_name_only_local (basename)) {

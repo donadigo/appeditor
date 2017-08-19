@@ -17,19 +17,42 @@
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
  */
 
-public class AppEditor.Sidebar : Granite.Widgets.SourceList {
+public class AppEditor.AppSourceList : Granite.Widgets.SourceList {
     public signal void app_selected (AppItem item);
+    
+    private string _search_query = "";
+    public string search_query {
+        get {
+            return _search_query;
+        }
+
+        set {
+            _search_query = value;
+            refilter ();
+            root.expand_all ();
+        }
+    }
+
+    private bool _show_hidden_entries = false;
+    public bool show_hidden_entries {
+        get {
+            return _show_hidden_entries;
+        }
+
+        set {
+            _show_hidden_entries = value;
+            refilter ();
+        }
+    }
 
     private Gee.ArrayList<AppItem> app_items;
-    private string current_search_query = "";
     private CategoryItem? default_category_item;
-    private bool show_hidden_entries = false;
 
     construct {
         app_items = new Gee.ArrayList<AppItem> ();
     }
 
-    public Sidebar () {
+    public AppSourceList () {
         vexpand = true;
         ellipsize_mode = Pango.EllipsizeMode.MIDDLE;
 
@@ -83,17 +106,6 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
         }
     }
 
-    public void set_current_search_query (string query) {
-        current_search_query = query;
-        refilter ();
-        root.expand_all ();
-    }
-
-    public void set_show_hidden_entries (bool show) {
-        show_hidden_entries = show;
-        refilter ();
-    }
-
     private CategoryItem get_category_for_app_info (DesktopApp desktop_app) {
         CategoryItem category_item = default_category_item;
 
@@ -122,8 +134,6 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
             // Unfortunately, this has to be done, since after refilter ()
             // Granite still shows all categories even without any items
             var cat_item = (CategoryItem)item;
-            bool has_search = current_search_query.length > 0;
-
             var collection = (Gee.AbstractCollection<Granite.Widgets.SourceList.Item>)cat_item.children;
             foreach (var subitem in collection) {
                 if (subitem is AppItem) {
@@ -141,7 +151,7 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
 
     private bool get_app_item_should_show (AppItem app_item) {
         bool should_show = show_hidden_entries || app_item.desktop_app.get_display ();
-        return app_item.name.down ().contains (current_search_query.down ()) && should_show;
+        return app_item.name.down ().contains (search_query.down ()) && should_show;
     }
 
     private void on_item_selected (Granite.Widgets.SourceList.Item? item)  {

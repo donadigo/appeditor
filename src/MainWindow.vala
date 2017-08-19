@@ -33,7 +33,7 @@ public class AppEditor.MainWindow : Gtk.Window {
     private Gtk.Revealer search_revealer;
     private Gtk.SearchEntry search_entry;
     private Gtk.Switch show_hidden_switch;
-    private Sidebar sidebar;
+    private AppSourceList app_source_list;
     private AppInfoViewStack app_info_view_stack;
 
     static construct {
@@ -41,8 +41,8 @@ public class AppEditor.MainWindow : Gtk.Window {
     }
 
     construct {
-        sidebar = new Sidebar ();
-        sidebar.app_selected.connect (on_app_selected);
+        app_source_list = new AppSourceList ();
+        app_source_list.app_selected.connect (on_app_selected);
 
         app_info_view_stack = new AppInfoViewStack ();
         app_info_view_stack.view_removed.connect (on_view_removed);
@@ -65,15 +65,15 @@ public class AppEditor.MainWindow : Gtk.Window {
         action_bar.pack_start (show_hidden_label);
         action_bar.pack_end (show_hidden_switch);
 
-        var sidegrid = new Gtk.Grid ();
-        sidegrid.attach (sidebar, 0, 0, 1, 1);
-        sidegrid.attach (action_bar, 0, 1, 1, 1);
+        var sidebar = new Gtk.Grid ();
+        sidebar.attach (app_source_list, 0, 0, 1, 1);
+        sidebar.attach (action_bar, 0, 1, 1, 1);
 
         var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
         paned.width_request = 250;
         paned.position = 240;
         paned.hexpand = true;
-        paned.pack1 (sidegrid, false, false);
+        paned.pack1 (sidebar, false, false);
         paned.pack2 (app_info_view_stack, true, false);
 
         var main_grid = new Gtk.Grid ();
@@ -109,7 +109,7 @@ public class AppEditor.MainWindow : Gtk.Window {
 
         search_entry = new Gtk.SearchEntry ();
         search_entry.placeholder_text = _("Find…");
-        search_entry.changed.connect (() => sidebar.set_current_search_query (search_entry.text));
+        search_entry.changed.connect (() => app_source_list.search_query = search_entry.text);
 
         search_revealer = new Gtk.Revealer ();
         search_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
@@ -196,7 +196,7 @@ public class AppEditor.MainWindow : Gtk.Window {
 
                 string selected_desktop_id = settings.get_string ("selected-desktop-id");
                 if (selected_desktop_id != "") {
-                    sidebar.select_desktop_id (selected_desktop_id);
+                    app_source_list.select_desktop_id (selected_desktop_id);
                 }
             } else {
                 stack.visible_child_name = NO_APPS_GRID_ID;
@@ -211,7 +211,7 @@ public class AppEditor.MainWindow : Gtk.Window {
     private void refill_sidebar () {
         var manager = DesktopAppManager.get_default ();
         foreach (var desktop_app in manager.get_app_list ()) {
-            sidebar.add_app (desktop_app);
+            app_source_list.add_app (desktop_app);
         }
     }
 
@@ -220,15 +220,15 @@ public class AppEditor.MainWindow : Gtk.Window {
     }
 
     private void on_view_removed (AppInfoView view) {
-        sidebar.remove_app (view.desktop_app);
+        app_source_list.remove_app (view.desktop_app);
     }
 
     private void on_new_button_clicked () {
         var new_app = AppInfoViewSaver.create_new_local_app ();
-        sidebar.add_app (new_app, true);
+        app_source_list.add_app (new_app, true);
     }
 
     private void on_show_hidden_switch_active_changed () {
-        sidebar.set_show_hidden_entries (show_hidden_switch.active);
+        app_source_list.show_hidden_entries = show_hidden_switch.active;
     }
 }

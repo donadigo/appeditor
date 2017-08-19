@@ -32,7 +32,6 @@ public class AppEditor.IconButton : Gtk.MenuButton {
     }
 
     private Gtk.Image icon_image;
-    private Gtk.Popover popover;
     private Gtk.Entry entry;
 
     private Gtk.Menu method_menu;

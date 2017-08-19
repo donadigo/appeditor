@@ -372,7 +372,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
             desktop_app.open_default_handler (get_screen ());
         } catch (Error e) {
             var dialog = new MessageDialog (_("Could Not Open This Entry"), e.message, "dialog-error");
-            dialog.add_button (_("Close"), Gtk.ResponseType.OK);
+            dialog.add_button (_("Close"), Gtk.ResponseType.CLOSE);
             dialog.show_all ();
             dialog.run ();
             dialog.destroy ();

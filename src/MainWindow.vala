@@ -22,7 +22,7 @@ public static void set_widget_visible (Gtk.Widget widget, bool visible) {
     widget.visible = visible;
 }
 
-public class AppEditor.MainWindow : Gtk.Dialog {
+public class AppEditor.MainWindow : Gtk.Window {
     private const string MAIN_GRID_ID = "main-grid";
     private const string LOADING_GRID_ID = "loading-grid";
     private const string NO_APPS_GRID_ID = "no-apps-grid";
@@ -32,6 +32,7 @@ public class AppEditor.MainWindow : Gtk.Dialog {
     private Gtk.Stack stack;
     private Gtk.Revealer search_revealer;
     private Gtk.SearchEntry search_entry;
+    private Gtk.Switch show_hidden_switch;
     private Sidebar sidebar;
     private AppInfoViewStack app_info_view_stack;
 
@@ -46,11 +47,33 @@ public class AppEditor.MainWindow : Gtk.Dialog {
         app_info_view_stack = new AppInfoViewStack ();
         app_info_view_stack.view_removed.connect (on_view_removed);
 
+        var show_hidden_label = new Gtk.Label (_("Show hidden entries"));
+        show_hidden_label.get_style_context ().add_class ("h4");
+        show_hidden_label.margin_start = 6;
+
+        show_hidden_switch = new Gtk.Switch ();
+        show_hidden_switch.margin_top = 12;
+        show_hidden_switch.margin_bottom = 12;
+        show_hidden_switch.margin_start = 12;
+        show_hidden_switch.margin_end = 6;
+        show_hidden_switch.notify["active"].connect (on_show_hidden_switch_active_changed);
+
+        settings.bind ("show-hidden-entries", show_hidden_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var action_bar = new Gtk.ActionBar ();
+        action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        action_bar.pack_start (show_hidden_label);
+        action_bar.pack_end (show_hidden_switch);
+
+        var sidegrid = new Gtk.Grid ();
+        sidegrid.attach (sidebar, 0, 0, 1, 1);
+        sidegrid.attach (action_bar, 0, 1, 1, 1);
+
         var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
         paned.width_request = 250;
         paned.position = 240;
         paned.hexpand = true;
-        paned.pack1 (sidebar, false, false);
+        paned.pack1 (sidegrid, false, false);
         paned.pack2 (app_info_view_stack, true, false);
 
         var main_grid = new Gtk.Grid ();
@@ -82,8 +105,7 @@ public class AppEditor.MainWindow : Gtk.Dialog {
         stack.add_named (no_apps_grid, NO_APPS_GRID_ID);
         stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
 
-        unowned Gtk.Box content_area = get_content_area ();
-        content_area.add (stack);
+        add (stack);
 
         search_entry = new Gtk.SearchEntry ();
         search_entry.placeholder_text = _("Find…");
@@ -97,9 +119,15 @@ public class AppEditor.MainWindow : Gtk.Dialog {
         new_button.tooltip_text = _("New entry");
         new_button.clicked.connect (on_new_button_clicked);
 
-        var header_bar = (Gtk.HeaderBar)get_header_bar ();
+        var header_bar = new Gtk.HeaderBar ();
+        header_bar.show_close_button = true;
         header_bar.pack_start (new_button);
         header_bar.pack_start (search_revealer);
+        set_titlebar (header_bar);
+
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("com/github/donadigo/appeditor/application.css");
+        Gtk.StyleContext.add_provider_for_screen (get_screen (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         int x = settings.get_int ("window-x");
         int y = settings.get_int ("window-y");
@@ -115,8 +143,7 @@ public class AppEditor.MainWindow : Gtk.Dialog {
         Object (
             title: Constants.APP_NAME,
             width_request: 1000,
-            height_request: 700,
-            use_header_bar: (int)true
+            height_request: 700
         );
     }
 
@@ -199,5 +226,9 @@ public class AppEditor.MainWindow : Gtk.Dialog {
     private void on_new_button_clicked () {
         var new_app = AppInfoViewSaver.create_new_local_app ();
         sidebar.add_app (new_app, true);
+    }
+
+    private void on_show_hidden_switch_active_changed () {
+        sidebar.set_show_hidden_entries (show_hidden_switch.active);
     }
 }

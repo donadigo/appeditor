@@ -23,6 +23,7 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
     private Gee.ArrayList<AppItem> app_items;
     private string current_search_query = "";
     private CategoryItem? default_category_item;
+    private bool show_hidden_entries = false;
 
     construct {
         app_items = new Gee.ArrayList<AppItem> ();
@@ -88,6 +89,11 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
         root.expand_all ();
     }
 
+    public void set_show_hidden_entries (bool show) {
+        show_hidden_entries = show;
+        refilter ();
+    }
+
     private CategoryItem get_category_for_app_info (DesktopApp desktop_app) {
         CategoryItem category_item = default_category_item;
 
@@ -107,29 +113,35 @@ public class AppEditor.Sidebar : Granite.Widgets.SourceList {
     }
 
     private bool visible_func (Granite.Widgets.SourceList.Item item) {
-        bool visible;
-        if (current_search_query.length > 0) {
-            visible = false;
+        bool visible = false;
 
-            if (item is AppItem) {
-                visible = item.name.down ().contains (current_search_query.down ());
-            } else if (item is CategoryItem) {
-                // Unfortunately, this has to be done, since after refilter ()
-                // Granite still shows all categories even without any items
-                var cat_item = (CategoryItem)item;
-                var collection = (Gee.AbstractCollection<Granite.Widgets.SourceList.Item>)cat_item.children;
-                foreach (var subitem in collection) {
-                    if (subitem.name.down ().contains (current_search_query.down ())) {
+        if (item is AppItem) {
+            var app_item = (AppItem)item;
+            visible = get_app_item_should_show (app_item);
+        } else if (item is CategoryItem) {
+            // Unfortunately, this has to be done, since after refilter ()
+            // Granite still shows all categories even without any items
+            var cat_item = (CategoryItem)item;
+            bool has_search = current_search_query.length > 0;
+
+            var collection = (Gee.AbstractCollection<Granite.Widgets.SourceList.Item>)cat_item.children;
+            foreach (var subitem in collection) {
+                if (subitem is AppItem) {
+                    var app_item = (AppItem)subitem;
+                    if (get_app_item_should_show (app_item)) {
                         visible = true;
                         break;
                     }
                 }
             }
-        } else {
-            visible = true;
         }
 
         return visible;
+    }
+
+    private bool get_app_item_should_show (AppItem app_item) {
+        bool should_show = show_hidden_entries || app_item.desktop_app.get_display ();
+        return app_item.name.down ().contains (current_search_query.down ()) && should_show;
     }
 
     private void on_item_selected (Granite.Widgets.SourceList.Item? item)  {

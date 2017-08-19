@@ -56,7 +56,7 @@ public class AppEditor.DesktopAppManager : Object {
         categories.add ({ "AudioVideo", _("Sound & Video"), "applications-multimedia" });
         categories.add ({ "Audio", _("Sound"), "applications-audio-symbolic" });
         categories.add ({ "Video", _("Video"), "applications-video-symbolic" });
-        categories.add ({ "Developement", _("Programming"), "applications-development" });
+        categories.add ({ "Development", _("Programming"), "applications-development" });
         categories.add ({ "Education", _("Education"), "applications-education" });
         categories.add ({ "Game", _("Games"), "applications-games" });
         categories.add ({ "Graphics", _("Graphics"), "applications-graphics" });

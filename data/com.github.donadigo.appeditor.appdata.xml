@@ -31,6 +31,20 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.9.3" date="2017-08-20">
+      <description>
+        <p>New features:</p>
+          <ul>
+            <li>Added a button to open the entry in a text editor</li>
+            <li>Added a switch to show hidden entries (disabled by default)</li>
+          </ul>
+        <p>Miscellaneous:</p>
+          <ul>
+            <li>Fixed some applications like Inkscape not saving their name properly</li>
+            <li>The main window can be now maximized</li>
+          </ul>
+      </description>
+    </release>
     <release version="0.9.2" date="2017-08-15">
       <description>
         <p>Add meson dependency to debian packaging</p>

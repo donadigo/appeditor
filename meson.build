@@ -30,7 +30,7 @@ executable(
     meson.project_name(),
     'src/Application.vala',
     'src/MainWindow.vala',
-    'src/Sidebar.vala',
+    'src/AppSourceList.vala',
     'src/AppItem.vala',
     'src/CategoryItem.vala',
     'src/IconButton.vala',

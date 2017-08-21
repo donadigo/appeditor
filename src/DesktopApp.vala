@@ -23,7 +23,6 @@ public class AppEditor.DesktopApp : Object {
     public const string LOCAL_APP_NAME_SUFFIX = ".desktop";
 
     private const string DEFAULT_ICON_NAME = "application-x-executable";
-    private const string CURRENT_DESKTOP = "XDG_CURRENT_DESKTOP";
 
     public signal void changed ();
 

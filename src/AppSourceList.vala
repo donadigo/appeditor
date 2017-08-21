@@ -150,7 +150,7 @@ public class AppEditor.AppSourceList : Granite.Widgets.SourceList {
     }
 
     private bool get_app_item_should_show (AppItem app_item) {
-        bool should_show = show_hidden_entries || app_item.desktop_app.get_display ();
+        bool should_show = show_hidden_entries || app_item.desktop_app.get_should_show ();
         return app_item.name.down ().contains (search_query.down ()) && should_show;
     }
 

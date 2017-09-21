@@ -10,7 +10,7 @@ AppEditor allows you to edit application entries in the application menu. Some o
 * Change application's display name, icon and more
 
 ## Installation
-Soon published in AppCenter.
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.donadigo.appeditor)
 
 ### Dependencies
 These dependencies must be present before building

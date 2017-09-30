@@ -137,6 +137,8 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         monitor_manager_state ();
+        Unix.signal_add (Posix.SIGINT, signal_source_func, Priority.HIGH);
+        Unix.signal_add (Posix.SIGTERM, signal_source_func, Priority.HIGH);
     }
 
     public MainWindow () {
@@ -174,6 +176,11 @@ public class AppEditor.MainWindow : Gtk.Window {
         hide ();
         save_all ();
         return false;
+    }
+
+    private bool signal_source_func () {
+        close ();
+        return true;
     }
 
     private void monitor_manager_state () {

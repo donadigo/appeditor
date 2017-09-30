@@ -200,20 +200,22 @@ public class AppEditor.MainWindow : Gtk.Window {
 
     private void save_all () {
         var unsaved_views = app_info_view_stack.get_unsaved_views ();
-        var loop = new MainLoop ();
+        if (unsaved_views.size > 0) {
+            var loop = new MainLoop ();
 
-        int i = 0;
-        foreach (var view in unsaved_views) {
-            view.save.begin (true, () => {
-                if (i == unsaved_views.size) {
-                    loop.quit ();
-                }
-            });
+            int i = 0;
+            foreach (var view in unsaved_views) {
+                view.save.begin (true, () => {
+                    if (i == unsaved_views.size) {
+                        loop.quit ();
+                    }
+                });
 
-            i++;
+                i++;
+            }
+            
+            loop.run ();
         }
-        
-        loop.run ();
     }
 
     private void set_loaded (bool loaded) {

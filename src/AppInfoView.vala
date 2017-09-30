@@ -182,7 +182,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         save_button = new Gtk.Button.with_label (_("Save"));
         save_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         save_button.sensitive = false;
-        save_button.clicked.connect (on_save_button_clicked);
+        save_button.clicked.connect (() => save.begin ());
 
         var open_source_button = new Gtk.Button.with_label (_("Open in Text Editor"));
         open_source_button.clicked.connect (on_open_source_button_clicked);
@@ -247,7 +247,23 @@ public class AppEditor.AppInfoView : Gtk.Box {
         );
     }
 
-    private bool get_changed () {
+    public async void save (bool silent = false) {
+        saver.target = this;
+        try {
+            yield saver.save ();
+
+            toast.title = _("Changes successfully saved");
+            toast.send_notification ();
+        } catch (Error e) {
+            set_widget_visible (error_info_bar, true);
+            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
+        }
+
+        validate_cmdline_entry ();
+        update_restore_button ();
+    }
+
+    public bool get_changed () {
         return (
             icon_button.icon.to_string () != desktop_app.get_icon ().to_string () ||
             name_entry.text != desktop_app.get_display_name () ||
@@ -302,22 +318,6 @@ public class AppEditor.AppInfoView : Gtk.Box {
     private void on_info_changed () {
         save_button.sensitive = get_changed ();
         restore_defaults_button.sensitive = local_file.query_exists ();
-    }
-
-    private void on_save_button_clicked () {
-        saver.target = this;
-        try {
-            saver.save ();
-
-            toast.title = _("Changes successfully saved");
-            toast.send_notification ();
-        } catch (Error e) {
-            set_widget_visible (error_info_bar, true);
-            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
-        }
-
-        validate_cmdline_entry ();
-        update_restore_button ();
     }
 
     private void on_restore_defaults_button_clicked () {

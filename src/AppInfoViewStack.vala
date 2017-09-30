@@ -32,12 +32,24 @@ public class AppEditor.AppInfoViewStack : Gtk.Stack {
         view_removed.connect (on_view_removed);
     }
 
-    public string? get_selected_desktop_id () {
-        if (visible_child is AppInfoView) {
-            return ((AppInfoView)visible_child).desktop_app.get_basename ();
-        }
+    public AppInfoView? get_current_view () {
+        return visible_child as AppInfoView;
+    }
 
-        return null;
+    public Gee.ArrayList<AppInfoView> get_unsaved_views () {
+        var unsaved = new Gee.ArrayList<AppInfoView> ();
+
+        List<unowned Gtk.Widget> children = get_children ();
+        children.@foreach ((child) => {
+            if (child is AppInfoView) {
+                var app_info_view = (AppInfoView)child;
+                if (app_info_view.get_changed ()) {
+                    unsaved.add (app_info_view);
+                }
+            }
+        });
+
+        return unsaved;
     }
 
     public void show_app_info (DesktopApp desktop_app) {

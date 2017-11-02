@@ -18,16 +18,16 @@ These dependencies must be present before building
  - `gtk+-3.0`
  - `granite`
  - `meson`
- 
+
  **You can install these on a Ubuntu-based system by executing this command:**
- 
+
  `sudo apt install valac libgranite-dev meson`
- 
+
  ### Building
 ```
 meson build
 cd build
-mesonconf -Dprefix=/usr
+meson configure -Dprefix=/usr
 ninja
 ```
 

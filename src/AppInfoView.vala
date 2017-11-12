@@ -125,7 +125,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         category_combo_box.set_current_desktop_app (desktop_app);
         category_combo_box.changed.connect (on_info_changed);
 
-        var display_box = new SettingBox (_("Show in launcher"), display_switch, false);
+        var display_box = new SettingBox (_("Show in Launcher"), display_switch, false);
         var category_box = new SettingBox (_("Category"), category_combo_box, true);
 
         var visibility_settings_grid = new SettingsGrid (_("Visibility"));
@@ -147,14 +147,27 @@ public class AppEditor.AppInfoView : Gtk.Box {
         terminal_switch = new Gtk.Switch ();
         terminal_switch.notify["active"].connect (on_info_changed);
 
-        var executable_box = new SettingBox (_("Command line"), cmdline_entry, false);
-        var path_box = new SettingBox (_("Working directory"), path_entry, true);
-        var terminal_box = new SettingBox (_("Launch in terminal"), terminal_switch, true);
+        var executable_box = new SettingBox (_("Command Line"), cmdline_entry, false);
+        var path_box = new SettingBox (_("Working Directory"), path_entry, true);
+        var terminal_box = new SettingBox (_("Launch in Terminal"), terminal_switch, true);
 
         var launch_settings_grid = new SettingsGrid (_("Launching"));
         launch_settings_grid.add_widget (executable_box);
         launch_settings_grid.add_widget (path_box);
         launch_settings_grid.add_widget (terminal_box);
+
+        var notifications_switch = new Gtk.Switch ();
+
+        var notifications_box = new SettingBox (_("Uses Notifications"), notifications_switch, false);
+
+        var advanced_grid = new SettingsGrid (null);
+        advanced_grid.add (notifications_box);
+
+        var advanced_container = new Gtk.Grid ();
+        advanced_container.add (advanced_grid);
+
+        var advanced_expander = new Gtk.Expander (_("Advanced"));
+        advanced_expander.add (advanced_container);
 
         var header_grid = new Gtk.Grid ();
         header_grid.column_spacing = 12;
@@ -171,6 +184,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         settings_grid.margin_end = 24;
         settings_grid.attach (visibility_settings_grid, 0, 0, 1, 1);
         settings_grid.attach (launch_settings_grid, 0, 1, 1, 1);
+        settings_grid.attach (advanced_expander, 0, 2, 1, 1);
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
@@ -394,9 +408,9 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
     private void update_restore_button () {
         if (desktop_app.get_only_local ()) {
-            restore_defaults_button.label = _("Delete entry");
+            restore_defaults_button.label = _("Delete entry…");
         } else {
-            restore_defaults_button.label = _("Restore defaults");
+            restore_defaults_button.label = _("Restore defaults…");
         }
     }
 }

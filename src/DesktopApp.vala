@@ -167,12 +167,18 @@ public class AppEditor.DesktopApp : Object {
     public AppCategory get_main_category () {
         if (main_category == null) {
             var menu_categories = DesktopAppManager.get_menu_cateogries ();
+            bool found = false;
             foreach (string category in get_categories ()) {
                 foreach (var menu_category in menu_categories) {
                     if (category == menu_category.id) {
                         main_category = menu_category;
+                        found = true;
                         break;
                     }
+                }
+
+                if (found) {
+                    break;
                 }
             }
 

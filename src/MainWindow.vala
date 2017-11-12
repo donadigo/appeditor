@@ -35,7 +35,7 @@ public class AppEditor.MainWindow : Gtk.Window {
     private Gtk.Switch show_hidden_switch;
     private AppSourceList app_source_list;
     private AppInfoViewStack app_info_view_stack;
-
+    
     static construct {
         settings = new Settings (Constants.SETTINGS_SCHEMA);
     }
@@ -137,6 +137,8 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         monitor_manager_state ();
+        Unix.signal_add (Posix.SIGINT, signal_source_func, Priority.HIGH);
+        Unix.signal_add (Posix.SIGTERM, signal_source_func, Priority.HIGH);
     }
 
     public MainWindow () {
@@ -159,14 +161,26 @@ public class AppEditor.MainWindow : Gtk.Window {
         settings.set_int ("window-x", x);
         settings.set_int ("window-y", y);
 
-        string? selected_desktop_id = app_info_view_stack.get_selected_desktop_id ();
-        if (selected_desktop_id == null) {
+        
+        var current_view = app_info_view_stack.get_current_view ();
+
+        string selected_desktop_id;
+        if (current_view != null) {
+            selected_desktop_id = current_view.desktop_app.get_basename ();
+        } else {
             selected_desktop_id = "";
         }
 
         settings.set_string ("selected-desktop-id", selected_desktop_id);
 
+        hide ();
+        save_all ();
         return false;
+    }
+
+    private bool signal_source_func () {
+        close ();
+        return true;
     }
 
     private void monitor_manager_state () {
@@ -184,6 +198,26 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
     }
 
+    private void save_all () {
+        var unsaved_views = app_info_view_stack.get_unsaved_views ();
+        if (unsaved_views.size > 0) {
+            var loop = new MainLoop ();
+
+            int i = 0;
+            foreach (var view in unsaved_views) {
+                view.save.begin (true, () => {
+                    if (i == unsaved_views.size) {
+                        loop.quit ();
+                    }
+                });
+
+                i++;
+            }
+            
+            loop.run ();
+        }
+    }
+
     private void set_loaded (bool loaded) {
         if (loaded) {
             var manager = DesktopAppManager.get_default ();
@@ -191,7 +225,7 @@ public class AppEditor.MainWindow : Gtk.Window {
             if (app_list.size > 0) {
                 stack.visible_child_name = MAIN_GRID_ID;
                 search_revealer.reveal_child = true;
-
+ 
                 refill_sidebar ();
 
                 string selected_desktop_id = settings.get_string ("selected-desktop-id");

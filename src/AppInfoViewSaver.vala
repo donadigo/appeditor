@@ -26,7 +26,7 @@ public class AppEditor.AppInfoViewSaver : Object {
         var key = new KeyFile ();
         key.set_list_separator (DesktopApp.DEFAULT_LIST_SEPARATOR);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
-        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, _("New application"));
+        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, _("New Application"));
 
         string path = AppDirectoryScanner.get_config_path ();
 
@@ -43,7 +43,7 @@ public class AppEditor.AppInfoViewSaver : Object {
         }
     }
 
-    public void save () throws Error {
+    public async void save () throws Error {
         var desktop_app = target.desktop_app;
 
         var key = new KeyFile ();
@@ -53,7 +53,9 @@ public class AppEditor.AppInfoViewSaver : Object {
         try {
             key.load_from_file (filename, KeyFileFlags.NONE);
         } catch (Error e) {
-            throw e;
+            // We do not want to throw an error here
+            // since reading existing data is not something fatal
+            warning (e.message);
         }
 
         string lang = Intl.get_language_names ()[0];
@@ -91,7 +93,18 @@ public class AppEditor.AppInfoViewSaver : Object {
 
         string new_filename = Path.build_filename (path, basename);
         try {
-            key.save_to_file (new_filename);
+            string contents = key.to_data ();
+            
+            var file = File.new_for_path (new_filename);
+
+            if (file.query_exists ()) {
+                yield file.replace_contents_async (contents.data, null, false, FileCreateFlags.NONE, null, null);
+            } else {
+                var stream = yield file.create_async (FileCreateFlags.NONE);
+                yield stream.write_all_async (contents.data, Priority.DEFAULT, null, null);
+                yield stream.close_async ();
+            }
+
             target.desktop_app.info = new DesktopAppInfo.from_filename (new_filename);
         } catch (Error e) {
             throw e;

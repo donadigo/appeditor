@@ -125,7 +125,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         category_combo_box.set_current_desktop_app (desktop_app);
         category_combo_box.changed.connect (on_info_changed);
 
-        var display_box = new SettingBox (_("Show in launcher"), display_switch, false);
+        var display_box = new SettingBox (_("Show in Launcher"), display_switch, false);
         var category_box = new SettingBox (_("Category"), category_combo_box, true);
 
         var visibility_settings_grid = new SettingsGrid (_("Visibility"));
@@ -147,14 +147,27 @@ public class AppEditor.AppInfoView : Gtk.Box {
         terminal_switch = new Gtk.Switch ();
         terminal_switch.notify["active"].connect (on_info_changed);
 
-        var executable_box = new SettingBox (_("Command line"), cmdline_entry, false);
-        var path_box = new SettingBox (_("Working directory"), path_entry, true);
-        var terminal_box = new SettingBox (_("Launch in terminal"), terminal_switch, true);
+        var executable_box = new SettingBox (_("Command Line"), cmdline_entry, false);
+        var path_box = new SettingBox (_("Working Directory"), path_entry, true);
+        var terminal_box = new SettingBox (_("Launch in Terminal"), terminal_switch, true);
 
         var launch_settings_grid = new SettingsGrid (_("Launching"));
         launch_settings_grid.add_widget (executable_box);
         launch_settings_grid.add_widget (path_box);
         launch_settings_grid.add_widget (terminal_box);
+
+        var notifications_switch = new Gtk.Switch ();
+
+        var notifications_box = new SettingBox (_("Uses Notifications"), notifications_switch, false);
+
+        var advanced_grid = new SettingsGrid (null);
+        advanced_grid.add (notifications_box);
+
+        var advanced_container = new Gtk.Grid ();
+        advanced_container.add (advanced_grid);
+
+        var advanced_expander = new Gtk.Expander (_("Advanced"));
+        advanced_expander.add (advanced_container);
 
         var header_grid = new Gtk.Grid ();
         header_grid.column_spacing = 12;
@@ -171,6 +184,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         settings_grid.margin_end = 24;
         settings_grid.attach (visibility_settings_grid, 0, 0, 1, 1);
         settings_grid.attach (launch_settings_grid, 0, 1, 1, 1);
+        settings_grid.attach (advanced_expander, 0, 2, 1, 1);
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
@@ -182,7 +196,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         save_button = new Gtk.Button.with_label (_("Save"));
         save_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         save_button.sensitive = false;
-        save_button.clicked.connect (on_save_button_clicked);
+        save_button.clicked.connect (() => save.begin ());
 
         var open_source_button = new Gtk.Button.with_label (_("Open in Text Editor"));
         open_source_button.clicked.connect (on_open_source_button_clicked);
@@ -247,7 +261,23 @@ public class AppEditor.AppInfoView : Gtk.Box {
         );
     }
 
-    private bool get_changed () {
+    public async void save (bool silent = false) {
+        saver.target = this;
+        try {
+            yield saver.save ();
+
+            toast.title = _("Changes successfully saved");
+            toast.send_notification ();
+        } catch (Error e) {
+            set_widget_visible (error_info_bar, true);
+            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
+        }
+
+        validate_cmdline_entry ();
+        update_restore_button ();
+    }
+
+    public bool get_changed () {
         return (
             icon_button.icon.to_string () != desktop_app.get_icon ().to_string () ||
             name_entry.text != desktop_app.get_display_name () ||
@@ -302,22 +332,6 @@ public class AppEditor.AppInfoView : Gtk.Box {
     private void on_info_changed () {
         save_button.sensitive = get_changed ();
         restore_defaults_button.sensitive = local_file.query_exists ();
-    }
-
-    private void on_save_button_clicked () {
-        saver.target = this;
-        try {
-            saver.save ();
-
-            toast.title = _("Changes successfully saved");
-            toast.send_notification ();
-        } catch (Error e) {
-            set_widget_visible (error_info_bar, true);
-            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
-        }
-
-        validate_cmdline_entry ();
-        update_restore_button ();
     }
 
     private void on_restore_defaults_button_clicked () {
@@ -394,9 +408,9 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
     private void update_restore_button () {
         if (desktop_app.get_only_local ()) {
-            restore_defaults_button.label = _("Delete entry");
+            restore_defaults_button.label = _("Delete entry…");
         } else {
-            restore_defaults_button.label = _("Restore defaults");
+            restore_defaults_button.label = _("Restore defaults…");
         }
     }
 }

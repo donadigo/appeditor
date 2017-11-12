@@ -16,7 +16,8 @@ c_args = [
 deps = [
   dependency('granite'),
   dependency('gtk+-3.0'),
-  dependency('gee-0.8')
+  dependency('gee-0.8'),
+  meson.get_compiler('vala').find_library('posix')
 ]
 
 

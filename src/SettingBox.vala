@@ -17,12 +17,6 @@
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
  */
 
-public class AppEditor.SettingSwitch : Gtk.Switch {
-    construct {
-        halign = Gtk.Align.START;
-    }
-}
-
 public class AppEditor.SettingBox : Gtk.ListBoxRow {
     public Gtk.Widget widget { get; construct; }
     public string title { get; construct; }
@@ -83,8 +77,12 @@ public class AppEditor.SettingsGrid : Gtk.Grid {
         attach (frame, 0, 1, 1, 1);
     }
 
-    public SettingsGrid (string title) {
-        title_label.label = title;
+    public SettingsGrid (string? title) {
+        if (title != null) {
+            title_label.label = title;
+        } else {
+            set_widget_visible (title_label, false);
+        }
     }
 
     public void add_widget (Gtk.Widget widget) {

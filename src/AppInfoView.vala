@@ -69,6 +69,12 @@ public class AppEditor.AppInfoView : Gtk.Box {
         }
     }
 
+    public bool uses_notifications {
+        get {
+            return notifications_switch.active;
+        }
+    }
+
     private static AppInfoViewSaver saver;
 
     private IconButton icon_button;
@@ -79,6 +85,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
     private Gtk.Entry cmdline_entry;
     private Gtk.Entry path_entry;
     private Gtk.Switch terminal_switch;
+    private Gtk.Switch notifications_switch;
 
     private Gtk.Button save_button;
     private Gtk.Button restore_defaults_button;
@@ -156,12 +163,14 @@ public class AppEditor.AppInfoView : Gtk.Box {
         launch_settings_grid.add_widget (path_box);
         launch_settings_grid.add_widget (terminal_box);
 
-        var notifications_switch = new Gtk.Switch ();
+        notifications_switch = new Gtk.Switch ();
+        notifications_switch.notify["active"].connect (on_info_changed);
 
         var notifications_box = new SettingBox (_("Uses Notifications"), notifications_switch, false);
 
         var advanced_grid = new SettingsGrid (null);
-        advanced_grid.add (notifications_box);
+        advanced_grid.margin_top = 6;
+        advanced_grid.add_widget (notifications_box);
 
         var advanced_container = new Gtk.Grid ();
         advanced_container.add (advanced_grid);
@@ -286,7 +295,8 @@ public class AppEditor.AppInfoView : Gtk.Box {
             category_combo_box.get_selected_category_id () != desktop_app.get_main_category ().id ||
             cmdline_entry.text != desktop_app.get_commandline () ||
             path_entry.text != desktop_app.get_path () ||
-            terminal_switch.active != desktop_app.get_terminal ()
+            terminal_switch.active != desktop_app.get_terminal () ||
+            notifications_switch.active != desktop_app.info.get_boolean (DesktopApp.USES_NOTIFICATIONS_KEY)
         );
     }
 
@@ -402,6 +412,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         cmdline_entry.text = desktop_app.get_commandline ();
         path_entry.text = desktop_app.get_path ();
         terminal_switch.active = desktop_app.get_terminal ();
+        notifications_switch.active = desktop_app.info.get_boolean (DesktopApp.USES_NOTIFICATIONS_KEY);
         
         update_restore_button ();
     }

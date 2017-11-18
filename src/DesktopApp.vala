@@ -21,6 +21,7 @@ public class AppEditor.DesktopApp : Object {
     public const char DEFAULT_LIST_SEPARATOR = ';';
     public const string LOCAL_APP_NAME_PREFIX = "appeditor-local-application-";
     public const string LOCAL_APP_NAME_SUFFIX = ".desktop";
+    public const string USES_NOTIFICATIONS_KEY = "X-GNOME-UsesNotifications";
 
     private const string DEFAULT_ICON_NAME = "application-x-executable";
 

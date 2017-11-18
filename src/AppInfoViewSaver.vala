@@ -71,6 +71,7 @@ public class AppEditor.AppInfoViewSaver : Object {
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, target.save_commandline);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_PATH, target.save_working_path);
         key.set_boolean (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TERMINAL, target.save_terminal);
+        key.set_boolean (KeyFileDesktop.GROUP, DesktopApp.USES_NOTIFICATIONS_KEY, target.uses_notifications);
 
         string[] save_categories = {};
         foreach (string category in desktop_app.get_categories ()) {

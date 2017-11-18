@@ -23,7 +23,9 @@ public class AppEditor.IconButton : Gtk.MenuButton {
     public Icon icon {
         set {
             icon_image.gicon = value;
+            ignore_entry_changed = true;
             entry.text = icon.to_string ();
+            ignore_entry_changed = false;
         }
 
         owned get {
@@ -37,6 +39,8 @@ public class AppEditor.IconButton : Gtk.MenuButton {
     private Gtk.Menu method_menu;
     private Gtk.MenuItem file_menu_item;
     private Gtk.MenuItem name_menu_item;
+
+    private bool ignore_entry_changed = false;
 
     private static Icon default_icon;
 
@@ -126,6 +130,10 @@ public class AppEditor.IconButton : Gtk.MenuButton {
     }
 
     private void on_entry_changed () {
+        if (ignore_entry_changed) {
+            return;
+        }
+
         string text = entry.text;
         if (text.has_prefix (Path.DIR_SEPARATOR_S)) {
             var file = File.new_for_path (text);

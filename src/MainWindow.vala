@@ -18,8 +18,13 @@
  */
 
 public static void set_widget_visible (Gtk.Widget widget, bool visible) {
-    widget.no_show_all = !visible;
-    widget.visible = visible;
+    if (visible) {
+        widget.no_show_all = false;
+        widget.show_all ();
+    } else {
+        widget.no_show_all = true;
+        widget.hide ();
+    }
 }
 
 public class AppEditor.MainWindow : Gtk.Window {
@@ -258,6 +263,8 @@ public class AppEditor.MainWindow : Gtk.Window {
     }
 
     private void on_new_button_clicked () {
+        search_entry.text = "";
+
         var new_app = AppInfoViewSaver.create_new_local_app ();
         app_source_list.add_app (new_app, true);
     }

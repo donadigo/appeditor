@@ -95,6 +95,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
     private Gtk.Label error_label;
 
     private File local_file;
+    private bool cmdline_valid = false;
 
     static construct {
         saver = new AppInfoViewSaver ();
@@ -333,14 +334,34 @@ public class AppEditor.AppInfoView : Gtk.Box {
         if (cmdline_entry.text == "") {
             cmdline_entry.secondary_icon_name = "dialog-warning-symbolic";
             cmdline_entry.secondary_icon_tooltip_text = _("No program will be launched");
+            cmdline_valid = true;
+        } else if (cmdline_entry.text.contains ("=")) {
+            cmdline_entry.secondary_icon_name = "dialog-error-symbolic";
+            cmdline_entry.secondary_icon_tooltip_text = _("The command line cannot contain the equal sign");
+            cmdline_valid = false;
         } else {
-            cmdline_entry.secondary_icon_name = "";
-            cmdline_entry.secondary_icon_tooltip_text = "";
+            if (cmdline_entry.text.has_prefix (Path.DIR_SEPARATOR_S) &&
+                !FileUtils.test (cmdline_entry.text, FileTest.EXISTS)) {
+                cmdline_entry.secondary_icon_name = "dialog-error-symbolic";
+                cmdline_entry.secondary_icon_tooltip_text = _("Entered file does not exist");
+                cmdline_valid = false;
+            } else {
+                string[] args = cmdline_entry.text.split (" ");
+                if (Environment.find_program_in_path (args[0]) == null) {
+                    cmdline_entry.secondary_icon_name = "dialog-error-symbolic";
+                    cmdline_entry.secondary_icon_tooltip_text = _("Entered program was not found");
+                    cmdline_valid = false;
+                } else {
+                    cmdline_entry.secondary_icon_name = "";
+                    cmdline_entry.secondary_icon_tooltip_text = "";
+                    cmdline_valid = true;
+                }
+            }
         }
     }
 
     private void on_info_changed () {
-        save_button.sensitive = get_changed ();
+        save_button.sensitive = get_changed () && cmdline_valid;
         restore_defaults_button.sensitive = local_file.query_exists ();
     }
 

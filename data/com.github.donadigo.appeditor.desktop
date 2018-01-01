@@ -4,6 +4,7 @@ Name=AppEditor
 GenericName=Application Entry Editor
 Comment=Edit application entries
 Comment[fr]=Modifier les entrées du menu des applications
+Comment[de]=Anwendungsmenü Einträge bearbeiten
 Icon=com.github.donadigo.appeditor
 Exec=com.github.donadigo.appeditor
 Terminal=false

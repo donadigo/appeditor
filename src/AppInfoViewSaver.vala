@@ -20,13 +20,17 @@
 public class AppEditor.AppInfoViewSaver : Object {
     public AppInfoView target { get; set; }
 
-    public static DesktopApp? create_new_local_app () {
+    public static DesktopApp? create_new_local_app (AppCategory? category) {
         string lang = Intl.get_language_names ()[0];
 
         var key = new KeyFile ();
         key.set_list_separator (DesktopApp.DEFAULT_LIST_SEPARATOR);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, _("New Application"));
+        if (category != null) {
+            string[] categories = { category.id };
+            key.set_string_list (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_CATEGORIES, categories);
+        }
 
         string path = AppDirectoryScanner.get_config_path ();
 

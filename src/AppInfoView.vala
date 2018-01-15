@@ -283,8 +283,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
             error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
         }
 
-        validate_cmdline_entry ();
-        update_restore_button ();
+        update_page ();
     }
 
     public bool get_changed () {
@@ -435,6 +434,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         terminal_switch.active = desktop_app.get_terminal ();
         notifications_switch.active = desktop_app.info.get_boolean (DesktopApp.USES_NOTIFICATIONS_KEY);
         
+        validate_cmdline_entry ();
         update_restore_button ();
     }
 

@@ -265,7 +265,13 @@ public class AppEditor.MainWindow : Gtk.Window {
     private void on_new_button_clicked () {
         search_entry.text = "";
 
-        var new_app = AppInfoViewSaver.create_new_local_app ();
+        AppCategory? current_category = null;
+        var current_view = app_info_view_stack.get_current_view ();
+        if (current_view != null) {
+            current_category = current_view.desktop_app.get_main_category ();
+        }
+
+        var new_app = AppInfoViewSaver.create_new_local_app (current_category);
         app_source_list.add_app (new_app, true);
     }
 

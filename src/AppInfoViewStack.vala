@@ -19,6 +19,7 @@
 
 public class AppEditor.AppInfoViewStack : Gtk.Stack {
     public signal void view_removed (AppInfoView view);
+    public signal void duplicate_app (DesktopApp app);
 
     construct {
         transition_type = Gtk.StackTransitionType.SLIDE_UP_DOWN;
@@ -68,6 +69,7 @@ public class AppEditor.AppInfoViewStack : Gtk.Stack {
         if (widget == null) {
             widget = new AppInfoView (desktop_app);
             widget.removed.connect (() => view_removed (widget));
+            widget.duplicate.connect (() => duplicate_app (desktop_app));
             add (widget);
         }
 

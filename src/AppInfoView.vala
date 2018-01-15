@@ -20,6 +20,7 @@
 public class AppEditor.AppInfoView : Gtk.Box {
     public DesktopApp desktop_app { get; construct set; }
     public signal void removed ();
+    public signal void duplicate ();
 
     public string save_display_name {
         get {
@@ -211,14 +212,19 @@ public class AppEditor.AppInfoView : Gtk.Box {
         var open_source_button = new Gtk.Button.with_label (_("Open in Text Editor"));
         open_source_button.clicked.connect (on_open_source_button_clicked);
 
+        var duplicate_button = new Gtk.Button.with_label (_("Duplicate"));
+        duplicate_button.clicked.connect (() => duplicate ());
+
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         size_group.add_widget (save_button);
         size_group.add_widget (restore_defaults_button);
+        size_group.add_widget (duplicate_button);
         size_group.add_widget (open_source_button);
 
         var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         button_box.margin = 6;
         button_box.pack_start (open_source_button, false, false);
+        button_box.pack_start (duplicate_button, false, false);
         button_box.pack_end (save_button, false, false);
         button_box.pack_end (restore_defaults_button, false, false);
 
@@ -415,11 +421,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         try {
             desktop_app.open_default_handler (get_screen ());
         } catch (Error e) {
-            var dialog = new MessageDialog (_("Could Not Open This Entry"), e.message, "dialog-error");
-            dialog.add_button (_("Close"), Gtk.ResponseType.CLOSE);
-            dialog.show_all ();
-            dialog.run ();
-            dialog.destroy ();
+            MessageDialog.show_default_dialog (_("Could Not Open This Entry"), e.message, "dialog-error");
         }
     }
 

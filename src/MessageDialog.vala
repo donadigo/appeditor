@@ -22,6 +22,14 @@ public class AppEditor.MessageDialog : Gtk.Dialog {
     public string secondary_text { get; construct set; }
     public string image_icon_name { get; construct set; }
 
+    public static void show_default_dialog (string primary_text, string secondary_text, string image_icon_name) {
+        var dialog = new MessageDialog (primary_text, secondary_text, image_icon_name);
+        dialog.add_button (_("Close"), Gtk.ResponseType.CLOSE);
+        dialog.show_all ();
+        dialog.run ();
+        dialog.destroy ();        
+    }
+
     public MessageDialog (string primary_text, string secondary_text, string image_icon_name) {
         Object (
             resizable: false,

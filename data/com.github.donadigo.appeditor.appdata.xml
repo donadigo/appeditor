@@ -31,6 +31,33 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.0.0" date="2018-01-15">
+      <description>
+        <p>This release contains many new features and bug fixes as well as added suport for translations:</p>
+        <ul>
+          <li>French translation (dabou)</li>
+          <li>Russian translation (Cammelan)</li>
+          <li>Spanish translation (Juan Gómez Carrillo)</li>
+        </ul>
+        <p>New features:</p>
+          <ul>
+            <li>Added a button to duplicate a specifc application entry</li>
+            <li>New "Advanced" section: add a new "Uses Notitifications" key</li>
+          </ul>
+        <p>Fixed:</p>
+          <ul>
+            <li>Fixed crashes when saving an entry with an equal sign in it's command line property</li>
+            <li>Sometimes deleting a local entry would cause it to stay in the sidebar until the next launch</li>
+            <li>Sometimes creating a new entry caused a crash</li>
+            <li>The page would not update after saving the entry</li>
+          </ul>
+        <p>Miscellaneous:</p>
+          <ul>
+            <li>Save unsaved entries when quitting the application</li>
+            <li>Clear the search entry when creating a new application entry</li>
+          </ul>
+      </description>
+    </release>
     <release version="0.9.3" date="2017-08-20">
       <description>
         <p>New features:</p>

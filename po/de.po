@@ -22,7 +22,7 @@ msgid "Comment"
 msgstr "Kommentar"
 
 #: AppInfoView.vala:128
-msgid "Show in launcher"
+msgid "Show in Launcher"
 msgstr "In Starter anzeigen"
 
 #: AppInfoView.vala:129
@@ -42,15 +42,15 @@ msgid "The working directory to run the program in"
 msgstr "Arbeitsverzeichnis in dem das Programm läuft"
 
 #: AppInfoView.vala:150
-msgid "Command line"
+msgid "Command Line"
 msgstr "Kommandozeile"
 
 #: AppInfoView.vala:151
-msgid "Working directory"
+msgid "Working Directory"
 msgstr "Arbeitsverzeichnis"
 
 #: AppInfoView.vala:152
-msgid "Launch in terminal"
+msgid "Launch in Terminal"
 msgstr "Im Terminal starten"
 
 #: AppInfoView.vala:154
@@ -129,8 +129,20 @@ msgid "Close"
 msgstr "Schließen"
 
 #: AppInfoView.vala:397
-msgid "Delete entry"
-msgstr "Eintrag löschen"
+msgid "Delete entry…"
+msgstr "Eintrag löschen…"
+
+#: AppInfoView.vala:215
+msgid "Duplicate"
+msgstr "Duplizieren"
+
+#: AppInfoView.vala:171
+msgid "Uses Notifications"
+msgstr "Benutzt Benachrichtigungen"
+
+#: AppInfoView.vala:180
+msgid "Advanced"
+msgstr "Erweiterte Einstellungen"
 
 #: AppInfoViewSaver.vala:29
 msgid "New Application"

@@ -1,5 +1,5 @@
 project('com.github.donadigo.appeditor', ['vala', 'c'],
-        version: '0.0.1')
+        version: '1.0.0')
 
 i18n = import('i18n')
 gnome = import('gnome')
@@ -19,7 +19,6 @@ deps = [
   dependency('gee-0.8'),
   meson.get_compiler('vala').find_library('posix')
 ]
-
 
 asresources = gnome.compile_resources(
     'as-resources', 'data/' + meson.project_name() + '.gresource.xml',

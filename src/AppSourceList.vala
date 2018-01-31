@@ -92,6 +92,7 @@ public class AppEditor.AppSourceList : Granite.Widgets.SourceList {
         foreach (var app_item in app_items) {
             if (app_item.desktop_app.compare (desktop_app)) {
                 app_item.parent.remove (app_item);
+                app_items.remove (app_item);
                 break;
             }
         }

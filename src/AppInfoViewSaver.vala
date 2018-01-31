@@ -20,18 +20,21 @@
 public class AppEditor.AppInfoViewSaver : Object {
     public AppInfoView target { get; set; }
 
-    public static DesktopApp? create_new_local_app () {
+    // TODO: make these functions fully async
+    public static DesktopApp? create_new_local_app (AppCategory? category) throws Error {
         string lang = Intl.get_language_names ()[0];
 
         var key = new KeyFile ();
         key.set_list_separator (DesktopApp.DEFAULT_LIST_SEPARATOR);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, _("New Application"));
+        if (category != null) {
+            string[] categories = { category.id };
+            key.set_string_list (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_CATEGORIES, categories);
+        }
 
-        string path = AppDirectoryScanner.get_config_path ();
-
-        uint next_index = get_next_local_app_index (path);
-        string new_filename = Path.build_filename (path, "%s%u%s".printf (DesktopApp.LOCAL_APP_NAME_PREFIX, next_index, DesktopApp.LOCAL_APP_NAME_SUFFIX));
+        string config_path = AppDirectoryScanner.get_config_path ();
+        string new_filename = get_next_local_filename (config_path);
         try {
             key.save_to_file (new_filename);
 
@@ -39,8 +42,34 @@ public class AppEditor.AppInfoViewSaver : Object {
             var desktop_app = new DesktopApp (app_info);
             return desktop_app;
         } catch (Error e) {
-            return null;
+            throw e;
         }
+    }
+
+    public static DesktopApp? create_new_clone_app (DesktopApp app) throws Error {
+        string target_filename = app.info.get_filename ();
+        string contents;
+        try {
+            FileUtils.get_contents (target_filename, out contents);
+        } catch (FileError e) {
+            throw e;
+        }
+
+        string config_path = AppDirectoryScanner.get_config_path ();
+        string new_filename = get_next_local_filename (config_path);
+        var file = File.new_for_path (new_filename);
+        try {
+            var os = file.create (FileCreateFlags.NONE);
+            os.write_all (contents.data, null);
+            os.close ();
+
+            var app_info = new DesktopAppInfo.from_filename (new_filename);
+            var desktop_app = new DesktopApp (app_info);
+            return desktop_app;
+        } catch (Error e) {
+            throw e;
+        }
+
     }
 
     public async void save () throws Error {
@@ -119,6 +148,11 @@ public class AppEditor.AppInfoViewSaver : Object {
 
     private static string format_desktop_entry_string (string str) {
         return str.escape ();
+    }
+
+    private static string get_next_local_filename (string path) {
+        uint next_index = get_next_local_app_index (path);
+        return Path.build_filename (path, "%s%u%s".printf (DesktopApp.LOCAL_APP_NAME_PREFIX, next_index, DesktopApp.LOCAL_APP_NAME_SUFFIX));
     }
 
     private static uint get_next_local_app_index (string path) {

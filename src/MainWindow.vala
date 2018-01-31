@@ -51,6 +51,7 @@ public class AppEditor.MainWindow : Gtk.Window {
 
         app_info_view_stack = new AppInfoViewStack ();
         app_info_view_stack.view_removed.connect (on_view_removed);
+        app_info_view_stack.duplicate_app.connect (on_duplicate_app);
 
         var show_hidden_label = new Gtk.Label (_("Show hidden entries"));
         show_hidden_label.get_style_context ().add_class ("h4");
@@ -262,11 +263,30 @@ public class AppEditor.MainWindow : Gtk.Window {
         app_source_list.remove_app (view.desktop_app);
     }
 
+    private void on_duplicate_app (DesktopApp desktop_app) {
+        try {
+            var new_app = AppInfoViewSaver.create_new_clone_app (desktop_app);
+            app_source_list.add_app (new_app, true);
+        } catch (Error e) {
+            MessageDialog.show_default_dialog (_("Could Not Duplicate %s").printf (desktop_app.get_display_name ()), e.message, "dialog-error");
+        }
+    }
+
     private void on_new_button_clicked () {
         search_entry.text = "";
 
-        var new_app = AppInfoViewSaver.create_new_local_app ();
-        app_source_list.add_app (new_app, true);
+        AppCategory? current_category = null;
+        var current_view = app_info_view_stack.get_current_view ();
+        if (current_view != null) {
+            current_category = current_view.desktop_app.get_main_category ();
+        }
+
+        try {
+            var new_app = AppInfoViewSaver.create_new_local_app (current_category);
+            app_source_list.add_app (new_app, true);
+        } catch (Error e) {
+            MessageDialog.show_default_dialog (_("Could Not Create a New Application"), e.message, "dialog-error");
+        }
     }
 
     private void on_show_hidden_switch_active_changed () {

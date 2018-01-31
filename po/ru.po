@@ -24,7 +24,7 @@ msgid "Comment"
 msgstr "Комментарий"
 
 #: AppInfoView.vala:128
-msgid "Show in launcher"
+msgid "Show in Launcher"
 msgstr "Отображать в меню приложений"
 
 #: AppInfoView.vala:129
@@ -44,15 +44,15 @@ msgid "The working directory to run the program in"
 msgstr "Рабочий каталог при запуске программы"
 
 #: AppInfoView.vala:150
-msgid "Command line"
+msgid "Command Line"
 msgstr "Командная строка"
 
 #: AppInfoView.vala:151
-msgid "Working directory"
+msgid "Working Directory"
 msgstr "Рабочая папка"
 
 #: AppInfoView.vala:152
-msgid "Launch in terminal"
+msgid "Launch in Terminal"
 msgstr "Запускать в терминале"
 
 #: AppInfoView.vala:154
@@ -127,7 +127,7 @@ msgid "Close"
 msgstr "Закрыть"
 
 #: AppInfoView.vala:397
-msgid "Delete entry"
+msgid "Delete entry…"
 msgstr "Удалить запись"
 
 #: AppInfoViewSaver.vala:29

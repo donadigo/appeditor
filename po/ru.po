@@ -1,144 +1,174 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Appeditor\n"
-"POT-Creation-Date: 2017-11-02 18:35+0400\n"
-"PO-Revision-Date: 2017-11-02 20:19+0400\n"
-"Last-Translator: Андрей Культяпов <camellan@yandex.ru>\n"
+"POT-Creation-Date: 2018-02-03 21:34+0400\n"
+"PO-Revision-Date: 2018-02-03 21:44+0400\n"
+"Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ../src\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: AppInfoView.vala:105
+#: AppInfoView.vala:114
 msgid "Display name"
 msgstr "Отображаемое имя"
 
-#: AppInfoView.vala:112
+#: AppInfoView.vala:121
 msgid "Comment"
 msgstr "Комментарий"
 
-#: AppInfoView.vala:128
-msgid "Show in launcher"
+#: AppInfoView.vala:137
+msgid "Show in Launcher"
 msgstr "Отображать в меню приложений"
 
-#: AppInfoView.vala:129
+#: AppInfoView.vala:138
 msgid "Category"
 msgstr "Категория"
 
-#: AppInfoView.vala:131
+#: AppInfoView.vala:140
 msgid "Visibility"
 msgstr "Отображение"
 
-#: AppInfoView.vala:138
+#: AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
 msgstr "Путь к программе вместе с агументами запуска"
 
-#: AppInfoView.vala:144
+#: AppInfoView.vala:153
 msgid "The working directory to run the program in"
 msgstr "Рабочий каталог при запуске программы"
 
-#: AppInfoView.vala:150
-msgid "Command line"
+#: AppInfoView.vala:159
+msgid "Command Line"
 msgstr "Командная строка"
 
-#: AppInfoView.vala:151
-msgid "Working directory"
+#: AppInfoView.vala:160
+msgid "Working Directory"
 msgstr "Рабочая папка"
 
-#: AppInfoView.vala:152
-msgid "Launch in terminal"
+#: AppInfoView.vala:161
+msgid "Launch in Terminal"
 msgstr "Запускать в терминале"
 
-#: AppInfoView.vala:154
+#: AppInfoView.vala:163
 msgid "Launching"
 msgstr "Параметры запуска"
 
-#: AppInfoView.vala:182
+#: AppInfoView.vala:171
+msgid "Uses Notifications"
+msgstr "Отображать уведомления"
+
+#: AppInfoView.vala:180
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: AppInfoView.vala:207
 msgid "Save"
 msgstr "Сохранить"
 
-#: AppInfoView.vala:187
+#: AppInfoView.vala:212
 msgid "Open in Text Editor"
 msgstr "Открыть в текстовом редакторе"
 
-#: AppInfoView.vala:280
-msgid "No visible title in the applications menu"
-msgstr "Не отображать название в меню приложений"
+#: AppInfoView.vala:215
+msgid "Duplicate"
+msgstr "Дублировать"
 
-#: AppInfoView.vala:295
-msgid "No program will be launched"
-msgstr "Программа не будет запущена"
-
-#: AppInfoView.vala:312
+#: AppInfoView.vala:285
 msgid "Changes successfully saved"
 msgstr "Изменения успешно сохранены"
 
-#: AppInfoView.vala:316
+#: AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
 msgstr "Что-то пошло не так, и изменения не могут быть сохранены: %s"
 
-#: AppInfoView.vala:329
+#: AppInfoView.vala:326
+msgid "No visible title in the applications menu"
+msgstr "Не отображать название в меню приложений"
+
+#: AppInfoView.vala:341
+msgid "No program will be launched"
+msgstr "Программа не будет запущена"
+
+#: AppInfoView.vala:345
+msgid "The executable name (first argument) cannot contain the equal sign"
+msgstr ""
+"Имя исполняемого файла (первый аргумент) не может содержать знак равенства"
+
+#: AppInfoView.vala:351
+msgid "Entered file does not exist"
+msgstr "Введённый файл не существует"
+
+#: AppInfoView.vala:357
+msgid "Entered program was not found"
+msgstr "Введённая программа не найдена"
+
+#: AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
 msgstr "Вы действительно хотите удалить эту запись?"
 
-#: AppInfoView.vala:330
+#: AppInfoView.vala:380
 msgid ""
 "Deleting this entry is permament and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
-"Удаление этой записи не может быть отменено. Это не удалит само приложение, "
-"только запись, отображаемую в меню приложений."
+"Удаление этой записи не может быть отменено. \n"
+"Будет удалено не само приложение, а только запись,\n"
+"отображаемая в меню приложений."
 
-#: AppInfoView.vala:331
+#: AppInfoView.vala:381
 msgid "Delete"
 msgstr "Удалить"
 
-#: AppInfoView.vala:333
+#: AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
 msgstr "Вы хотите восстановить значения по умолчанию?"
 
-#: AppInfoView.vala:334
+#: AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
 "Восстановление значений по умолчанию позволит отменить все изменения, "
 "сделанные в этой записи."
 
-#: AppInfoView.vala:335 AppInfoView.vala:399
+#: AppInfoView.vala:385
 msgid "Restore defaults"
 msgstr "Восстановить значения по умолчанию"
 
-#: AppInfoView.vala:342 IconChooserDialog.vala:29
+#: AppInfoView.vala:392 IconChooserDialog.vala:29
 msgid "Cancel"
 msgstr "Отмена"
 
-#: AppInfoView.vala:374
+#: AppInfoView.vala:424
 msgid "Could Not Open This Entry"
 msgstr "Невозможно открыть эту запись"
 
-#: AppInfoView.vala:375
-msgid "Close"
-msgstr "Закрыть"
+#: AppInfoView.vala:445
+msgid "Delete entry…"
+msgstr "Удалить запись…"
 
-#: AppInfoView.vala:397
-msgid "Delete entry"
-msgstr "Удалить запись"
+#: AppInfoView.vala:447
+msgid "Restore defaults…"
+msgstr "Восстановить значения по умолчанию…"
 
-#: AppInfoViewSaver.vala:29
-msgid "New application"
+#: AppInfoViewSaver.vala:30
+msgid "New Application"
 msgstr "Новое приложение"
 
-#: AppInfoViewStack.vala:28
+#: AppInfoViewSaver.vala:142
+msgid "Could not load the newly saved file."
+msgstr "Не удалось загрузить только что сохраненный файл."
+
+#: AppInfoViewStack.vala:29
 msgid "No Item Selected"
 msgstr "Ничего не выбрано"
 
-#: AppInfoViewStack.vala:28
+#: AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
 msgstr ""
 "Выберите приложение \n"
@@ -213,27 +243,27 @@ msgstr "Утилиты"
 msgid "Other"
 msgstr "Другое"
 
-#: IconButton.vala:64
+#: IconButton.vala:68
 msgid "Icon name or path to an image"
 msgstr "Имя значка или путь к изображению"
 
-#: IconButton.vala:68
+#: IconButton.vala:72
 msgid "Choose from file"
 msgstr "Выбрать из файла"
 
-#: IconButton.vala:72
+#: IconButton.vala:76
 msgid "Choose from available icons"
 msgstr "Выбрать из доступных значков"
 
-#: IconButton.vala:85
+#: IconButton.vala:89
 msgid "All Files"
 msgstr "Все файлы"
 
-#: IconButton.vala:89
+#: IconButton.vala:93
 msgid "Images"
 msgstr "Изображения"
 
-#: IconButton.vala:93
+#: IconButton.vala:97
 msgid "Select an image"
 msgstr "Выберите изображение"
 
@@ -249,26 +279,39 @@ msgstr "Поиск значка…"
 msgid "Choose an icon from the list"
 msgstr "Выбрать значок из списка"
 
-#: MainWindow.vala:50
+#: MainWindow.vala:56
 msgid "Show hidden entries"
 msgstr "Отображать скрытые записи"
 
-#: MainWindow.vala:94
+#: MainWindow.vala:100
 msgid "No Applications Found"
 msgstr "Приложения не найдены"
 
-#: MainWindow.vala:94
+#: MainWindow.vala:100
 msgid "Could not find any applications to edit on this system"
 msgstr "Не могу найти никаких приложений для редактирования в этой системе"
 
-#: MainWindow.vala:95
+#: MainWindow.vala:101
 msgid "Retry"
 msgstr "Повторить"
 
-#: MainWindow.vala:111
+#: MainWindow.vala:117
 msgid "Find…"
 msgstr "Поиск…"
 
-#: MainWindow.vala:119
+#: MainWindow.vala:125
 msgid "New entry"
 msgstr "Новая запись"
+
+#: MainWindow.vala:271
+#, c-format
+msgid "Could Not Duplicate %s"
+msgstr "Не удалось дублировать %s"
+
+#: MainWindow.vala:288
+msgid "Could Not Create a New Application"
+msgstr "Невозможно создать новое приложение"
+
+#: MessageDialog.vala:27
+msgid "Close"
+msgstr "Закрыть"

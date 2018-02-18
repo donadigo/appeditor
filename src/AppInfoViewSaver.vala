@@ -95,10 +95,10 @@ public class AppEditor.AppInfoViewSaver : Object {
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, name);
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_FULLNAME, lang, name);
         key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, lang, target.save_description);
-        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, format_desktop_entry_string (target.save_icon));
+        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, target.save_icon);
         key.set_boolean (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NO_DISPLAY, !target.save_display);
         key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, target.save_commandline);
-        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_PATH, format_desktop_entry_string (target.save_working_path));
+        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_PATH, target.save_working_path);
         key.set_boolean (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TERMINAL, target.save_terminal);
         key.set_boolean (KeyFileDesktop.GROUP, DesktopApp.USES_NOTIFICATIONS_KEY, target.uses_notifications);
 

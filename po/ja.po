@@ -1,0 +1,269 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: appeditor\n"
+"POT-Creation-Date: 2017-10-07 20:48+0200\n"
+"PO-Revision-Date: 2018-05-25 22:11+0900\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: AppInfoView.vala:105
+msgid "Display name"
+msgstr "表示名"
+
+#: AppInfoView.vala:112
+msgid "Comment"
+msgstr "コメント"
+
+#: AppInfoView.vala:128
+msgid "Show in launcher"
+msgstr "ランチャーに表示"
+
+#: AppInfoView.vala:129
+msgid "Category"
+msgstr "カテゴリー"
+
+#: AppInfoView.vala:131
+msgid "Visibility"
+msgstr "可視性"
+
+#: AppInfoView.vala:138
+msgid "Program to execute along with it's arguments"
+msgstr "引数と一緒に実行するプログラム"
+
+#: AppInfoView.vala:144
+msgid "The working directory to run the program in"
+msgstr "プログラムを実行するカレントディレクトリ"
+
+#: AppInfoView.vala:150
+msgid "Command line"
+msgstr "コマンドライン"
+
+#: AppInfoView.vala:151
+msgid "Working directory"
+msgstr "カレントディレクトリ"
+
+#: AppInfoView.vala:152
+msgid "Launch in terminal"
+msgstr "ターミナルで起動"
+
+#: AppInfoView.vala:154
+msgid "Launching"
+msgstr "起動"
+
+#: AppInfoView.vala:182
+msgid "Save"
+msgstr "保存"
+
+#: AppInfoView.vala:187
+msgid "Open in Text Editor"
+msgstr "テキストエディターで開く"
+
+#: AppInfoView.vala:255
+msgid "Changes successfully saved"
+msgstr "変更の保存が成功しました"
+
+#: AppInfoView.vala:259
+#, c-format
+msgid "Something went wrong and the changes could not be saved: %s"
+msgstr "間違った箇所があるため変更を保存することができませんでした: %s"
+
+#: AppInfoView.vala:296
+msgid "No visible title in the applications menu"
+msgstr "アプリケーションメニュー内に可視のタイトルがありません"
+
+#: AppInfoView.vala:311
+msgid "No program will be launched"
+msgstr "プログラムが実行されません"
+
+#: AppInfoView.vala:329
+msgid "Do You Want to Delete This Entry?"
+msgstr "このエントリーを削除してもよろしいですか？"
+
+#: AppInfoView.vala:330
+msgid ""
+"Deleting this entry is permament and cannot be undone. This does not delete "
+"the application itself, only the entry shown in the applications menu."
+msgstr ""
+"このエントリーの削除は永続的で元に戻すことはできません。この操作ではアプリ"
+"ケーション自体は削除されず、アプリケーションメニュー内で表示されるエントリー"
+"のみが削除されます。"
+
+#: AppInfoView.vala:331
+msgid "Delete"
+msgstr "削除"
+
+#: AppInfoView.vala:333
+msgid "Do You Want to Restore The Defaults?"
+msgstr "デフォルトに戻してもよろしいですか？"
+
+#: AppInfoView.vala:334
+msgid "Restoring defaults will undo all the changes done to this entry."
+msgstr ""
+"デフォルトに戻すことでこのエントリーに加えられた変更はすべて元に戻ります。"
+
+#: AppInfoView.vala:335 AppInfoView.vala:399
+msgid "Restore defaults"
+msgstr "デフォルトに戻す"
+
+#: AppInfoView.vala:342 IconChooserDialog.vala:29
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: AppInfoView.vala:374
+msgid "Could Not Open This Entry"
+msgstr "このエントリーを開くことができませんでした"
+
+#: AppInfoView.vala:375
+msgid "Close"
+msgstr "閉じる"
+
+#: AppInfoView.vala:397
+msgid "Delete entry"
+msgstr "エントリーを削除"
+
+#: AppInfoViewSaver.vala:29
+msgid "New Application"
+msgstr "新しいアプリケーション"
+
+#: AppInfoViewStack.vala:28
+msgid "No Item Selected"
+msgstr "アイテムが選択されていません"
+
+#: AppInfoViewStack.vala:28
+msgid "Select an application or start typing to edit one"
+msgstr "編集するにはアプリケーションを選択するかタイプしてください"
+
+#: AppItem.vala:35
+msgid "Unknown"
+msgstr "不明"
+
+#: Application.vala:37
+msgid "translator-credits"
+msgstr ""
+
+#: Constants.vala:21
+msgid "AppEditor"
+msgstr "AppEditor"
+
+#: DesktopAppManager.vala:56
+msgid "Sound & Video"
+msgstr "サウンドとビデオ"
+
+#: DesktopAppManager.vala:57
+msgid "Sound"
+msgstr "サウンド"
+
+#: DesktopAppManager.vala:58
+msgid "Video"
+msgstr "ビデオ"
+
+#: DesktopAppManager.vala:59
+msgid "Programming"
+msgstr "プログラミング"
+
+#: DesktopAppManager.vala:60
+msgid "Education"
+msgstr "教育"
+
+#: DesktopAppManager.vala:61
+msgid "Games"
+msgstr "ゲーム"
+
+#: DesktopAppManager.vala:62
+msgid "Graphics"
+msgstr "グラフィックス"
+
+#: DesktopAppManager.vala:63
+msgid "Internet"
+msgstr "インターネット"
+
+#: DesktopAppManager.vala:64
+msgid "Office"
+msgstr "オフィス"
+
+#: DesktopAppManager.vala:65
+msgid "Science"
+msgstr "科学"
+
+#: DesktopAppManager.vala:66
+msgid "Settings"
+msgstr "設定"
+
+#: DesktopAppManager.vala:67
+msgid "System Tools"
+msgstr "システムツール"
+
+#: DesktopAppManager.vala:68
+msgid "Accessories"
+msgstr "アクセサリー"
+
+#: DesktopAppManager.vala:69
+msgid "Other"
+msgstr "その他"
+
+#: IconButton.vala:64
+msgid "Icon name or path to an image"
+msgstr "アイコンの名前か画像のパス"
+
+#: IconButton.vala:68
+msgid "Choose from file"
+msgstr "ファイルから選択"
+
+#: IconButton.vala:72
+msgid "Choose from available icons"
+msgstr "利用可能なアイコンから選択"
+
+#: IconButton.vala:85
+msgid "All Files"
+msgstr "すべてのファイル"
+
+#: IconButton.vala:89
+msgid "Images"
+msgstr "画像"
+
+#: IconButton.vala:93
+msgid "Select an image"
+msgstr "画像を選択"
+
+#: IconChooserDialog.vala:31
+msgid "Choose"
+msgstr "選択"
+
+#: IconChooserDialog.vala:45
+msgid "Search icons…"
+msgstr "アイコンを検索…"
+
+#: IconChooserDialog.vala:59
+msgid "Choose an icon from the list"
+msgstr "リストからアイコンを選択"
+
+#: MainWindow.vala:50
+msgid "Show hidden entries"
+msgstr "隠されたエントリーを表示"
+
+#: MainWindow.vala:94
+msgid "No Applications Found"
+msgstr "アプリケーションが見つかりませんでした"
+
+#: MainWindow.vala:94
+msgid "Could not find any applications to edit on this system"
+msgstr ""
+"このシステム上に編集できるアプリケーションを見つけることができませんでした"
+
+#: MainWindow.vala:95
+msgid "Retry"
+msgstr "再試行"
+
+#: MainWindow.vala:111
+msgid "Find…"
+msgstr "検索…"
+
+#: MainWindow.vala:119
+msgid "New entry"
+msgstr "新しいエントリー"

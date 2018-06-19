@@ -1,3 +1,5 @@
+data/com.github.donadigo.appeditor.appdata.xml.in
+data/com.github.donadigo.appeditor.desktop.in
 src/AppInfoView.vala
 src/AppInfoViewSaver.vala
 src/AppInfoViewStack.vala

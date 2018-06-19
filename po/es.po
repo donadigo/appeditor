@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 19:12+0900\n"
+"POT-Creation-Date: 2018-06-19 22:15+0900\n"
 "PO-Revision-Date: 2017-10-07 23:32+0200\n"
 "Last-Translator:Juan Gómez Carrillo \n"
 "Language-Team: \n"
@@ -15,6 +15,60 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:7
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+msgid "AppEditor"
+msgstr "AppEditor"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:8
+#, fuzzy
+msgid "Edit application menu"
+msgstr "No se han encontrado aplicaciones"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:10
+msgid ""
+"Edit application entries shown in application menu and their properties."
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:13
+msgid "Features include:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:15
+#, fuzzy
+msgid "Hide and show applications from the application menu"
+msgstr "Título no visible en el menú de aplicaciones"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:16
+#, fuzzy
+msgid "Create new application entries"
+msgstr "Nueva aplicación"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:17
+msgid "Change application's display name, icon and more"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:23
+msgid "Adam Bieńkowski"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:5
+#, fuzzy
+msgid "Application Entry Editor"
+msgstr "No se han encontrado aplicaciones"
+
+#: data/com.github.donadigo.appeditor.desktop.in:6
+msgid "Edit application entries"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:7
+msgid "com.github.donadigo.appeditor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:12
+msgid "application;edit;entry;"
+msgstr ""
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
@@ -184,10 +238,6 @@ msgstr "Desconocido"
 #: src/Application.vala:37
 msgid "translator-credits"
 msgstr "Juan Gómez Carrillo"
-
-#: src/Constants.vala:21
-msgid "AppEditor"
-msgstr "AppEditor"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"

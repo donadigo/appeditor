@@ -1,0 +1,11 @@
+src/AppInfoView.vala
+src/AppInfoViewSaver.vala
+src/AppInfoViewStack.vala
+src/AppItem.vala
+src/Application.vala
+src/Constants.vala
+src/DesktopAppManager.vala
+src/IconButton.vala
+src/IconChooserDialog.vala
+src/MainWindow.vala
+src/MessageDialog.vala

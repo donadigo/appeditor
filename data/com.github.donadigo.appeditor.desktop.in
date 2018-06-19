@@ -3,6 +3,7 @@ Type=Application
 Name=AppEditor
 GenericName=Application Entry Editor
 Comment=Edit application entries
+# TRANSLATORS: Do not translate this string since this is an icon name!! By translating strings of icon names, they will not be displayed properly.
 Icon=com.github.donadigo.appeditor
 Exec=com.github.donadigo.appeditor
 Terminal=false

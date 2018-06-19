@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 19:12+0900\n"
+"POT-Creation-Date: 2018-06-19 22:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,56 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:7
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+msgid "AppEditor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:8
+msgid "Edit application menu"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:10
+msgid ""
+"Edit application entries shown in application menu and their properties."
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:13
+msgid "Features include:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:15
+msgid "Hide and show applications from the application menu"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:16
+msgid "Create new application entries"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:17
+msgid "Change application's display name, icon and more"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:23
+msgid "Adam Bieńkowski"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:5
+msgid "Application Entry Editor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:6
+msgid "Edit application entries"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:7
+msgid "com.github.donadigo.appeditor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:12
+msgid "application;edit;entry;"
+msgstr ""
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
@@ -174,10 +224,6 @@ msgstr ""
 
 #: src/Application.vala:37
 msgid "translator-credits"
-msgstr ""
-
-#: src/Constants.vala:21
-msgid "AppEditor"
 msgstr ""
 
 #: src/DesktopAppManager.vala:56

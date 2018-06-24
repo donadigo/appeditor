@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 22:44+0900\n"
+"POT-Creation-Date: 2018-06-24 23:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,12 +59,11 @@ msgstr ""
 msgid "Edit application entries"
 msgstr ""
 
-#. TRANSLATORS: Do not translate this string since this is an icon name!! By translating strings of icon names, they will not be displayed properly.
-#: data/com.github.donadigo.appeditor.desktop.in:8
+#: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
 msgstr ""
 
-#: data/com.github.donadigo.appeditor.desktop.in:13
+#: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
 msgstr ""
 

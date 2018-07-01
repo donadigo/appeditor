@@ -377,7 +377,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
         if (desktop_app.get_only_local ()) {
             title = _("Do You Want to Delete This Entry?");
-            description = _("Deleting this entry is permament and cannot be undone. This does not delete the application itself, only the entry shown in the applications menu.");
+            description = _("Deleting this entry is permanent and cannot be undone. This does not delete the application itself, only the entry shown in the applications menu.");
             button_title = _("Delete");
         } else {
             title = _("Do You Want to Restore The Defaults?");

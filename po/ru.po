@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-24 23:10+0900\n"
+"POT-Creation-Date: 2018-06-30 16:33+0900\n"
 "PO-Revision-Date: 2018-02-03 21:44+0400\n"
 "Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
 "Language-Team: \n"
@@ -170,7 +170,7 @@ msgstr "Вы действительно хотите удалить эту за�
 
 #: src/AppInfoView.vala:380
 msgid ""
-"Deleting this entry is permament and cannot be undone. This does not delete "
+"Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
 "Удаление этой записи не может быть отменено. \n"

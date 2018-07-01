@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-25 17:16+0900\n"
-"PO-Revision-Date: 2018-06-25 17:43+0900\n"
+"POT-Creation-Date: 2018-07-01 11:18+0900\n"
+"PO-Revision-Date: 2018-07-01 11:22+0900\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -170,7 +170,7 @@ msgstr "このエントリーを削除してもよろしいですか？"
 
 #: src/AppInfoView.vala:380
 msgid ""
-"Deleting this entry is permament and cannot be undone. This does not delete "
+"Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
 "このエントリーの削除は永続的で元に戻すことはできません。この操作ではアプリ"
@@ -215,7 +215,7 @@ msgstr "デフォルトを復元…"
 msgid "New Application"
 msgstr "新しいアプリケーション"
 
-#: src/AppInfoViewSaver.vala:143
+#: src/AppInfoViewSaver.vala:148
 msgid "Could not load the newly saved file."
 msgstr "新しく保存されたファイルを読み込めませんでした。"
 
@@ -231,9 +231,28 @@ msgstr "編集するにはアプリケーションを選択するかタイプし
 msgid "Unknown"
 msgstr "不明"
 
-#: src/Application.vala:37
-msgid "translator-credits"
-msgstr ""
+#: src/Application.vala:67
+#, c-format
+msgid "Could not Find \"%s\""
+msgstr "\"%s\" を見つけることができませんでした"
+
+#: src/Application.vala:67
+msgid "Could not Find Requested File"
+msgstr "要求されたファイルを見つけることができませんでした"
+
+#: src/Application.vala:68
+#, c-format
+msgid "File <b>\"%s\"</b> does not exist."
+msgstr "ファイル <b>\"%s\"</b> は存在しません。"
+
+#: src/Application.vala:76
+#, c-format
+msgid "Could Not Create a New Application Entry from \"%s\""
+msgstr "\"%s\" から新しいアプリケーションエントリーを作成できませんでした"
+
+#: src/Application.vala:77
+msgid "Could Not Create a New Application From Requested File"
+msgstr "要求されたファイルから新しいアプリケーションを作成できませんでした"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
@@ -352,14 +371,14 @@ msgstr "検索…"
 msgid "New entry"
 msgstr "新しいエントリー"
 
-#: src/MainWindow.vala:271
+#: src/MainWindow.vala:275
 #, c-format
 msgid "Could Not Duplicate %s"
 msgstr "%s を複製できませんでした"
 
-#: src/MainWindow.vala:288
-msgid "Could Not Create a New Application"
-msgstr "新しいアプリケーションを作成できませんでした"
+#: src/MainWindow.vala:292
+msgid "Could Not Create a New Application Entry"
+msgstr "新しいアプリケーションエントリーを作成できませんでした"
 
 #: src/MessageDialog.vala:27
 msgid "Close"

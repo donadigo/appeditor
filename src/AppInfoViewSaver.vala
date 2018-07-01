@@ -23,13 +23,18 @@ public class AppEditor.AppInfoViewSaver : Object {
     private const string KEY_FULLNAME = "X-GNOME-FullName";
 
     // TODO: make these functions fully async
-    public static DesktopApp? create_new_local_app (AppCategory? category) throws Error {
+    public static DesktopApp? create_new_local_app (AppCategory? category, string? exec_path, string? display_name) throws Error {
         string lang = Intl.get_language_names ()[0];
 
         var key = new KeyFile ();
-        key.set_list_separator (DesktopApp.DEFAULT_LIST_SEPARATOR);
-        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
-        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, _("New Application"));
+        key.set_list_separator (DesktopApp.DEFAULT_LIST_SEPARATOR); 
+        key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);        
+        key.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, lang, display_name ?? _("New Application"));
+
+        if (exec_path != null) {
+            key.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, format_desktop_entry_string (exec_path));
+        }
+
         if (category != null) {
             string[] categories = { category.id };
             key.set_string_list (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_CATEGORIES, categories);

@@ -160,6 +160,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         search_entry.grab_focus ();
     }
 
+    public void add_app (DesktopApp app, bool select) {
+        app_source_list.add_app (app, select);
+    }
+
     public override bool delete_event (Gdk.EventAny event) {
         int x, y;
         get_position (out x, out y);
@@ -282,10 +286,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         try {
-            var new_app = AppInfoViewSaver.create_new_local_app (current_category);
-            app_source_list.add_app (new_app, true);
+            var new_app = AppInfoViewSaver.create_new_local_app (current_category, null, null);
+            add_app (new_app, true);
         } catch (Error e) {
-            MessageDialog.show_default_dialog (_("Could Not Create a New Application"), e.message, "dialog-error");
+            MessageDialog.show_default_dialog (_("Could Not Create a New Application Entry"), e.message, "dialog-error");
         }
     }
 

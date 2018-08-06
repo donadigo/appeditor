@@ -114,6 +114,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         add (stack);
 
         search_entry = new Gtk.SearchEntry ();
+        if (Application.has_gtk_322 ()) {
+            search_entry.valign = Gtk.Align.CENTER;
+        }
+
         search_entry.placeholder_text = _("Find…");
         search_entry.changed.connect (() => app_source_list.search_query = search_entry.text);
 

@@ -24,6 +24,10 @@ public class AppEditor.Application : Gtk.Application {
         { null }
     };
 
+    public static bool has_gtk_322 () {
+        return Gtk.check_version (3, 22, 0) == null;
+    }
+
     private static string? create_exec_filename;
 
     private MainWindow? window = null;

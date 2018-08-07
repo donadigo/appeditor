@@ -36,6 +36,7 @@ public class AppEditor.MainWindow : Gtk.Window {
     private const string ACTION_QUIT = "action_quit";
     private const string ACTION_NEW = "action_new";
     private const string ACTION_DUP = "action_dup";
+    private const string ACTION_FIND = "action_find";
 
     private static Settings settings;
 
@@ -51,7 +52,8 @@ public class AppEditor.MainWindow : Gtk.Window {
     private const ActionEntry[] action_entries = {
         { ACTION_QUIT, action_quit },
         { ACTION_NEW, action_new }, 
-        { ACTION_DUP, action_dup }
+        { ACTION_DUP, action_dup },
+        { ACTION_FIND, action_find }
     };
 
     static construct {
@@ -61,6 +63,7 @@ public class AppEditor.MainWindow : Gtk.Window {
         action_accels[ACTION_QUIT] = "<Control>Q";
         action_accels[ACTION_NEW] = "<Control>N";
         action_accels[ACTION_DUP] = "<Control>D";
+        action_accels[ACTION_FIND] = "<Control>F";
     }
 
     construct {
@@ -236,6 +239,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         if (current_view != null) {
             current_view.duplicate ();
         }
+    }
+
+    private void action_find () {
+        search_entry.grab_focus ();
     }
 
     private void monitor_manager_state () {

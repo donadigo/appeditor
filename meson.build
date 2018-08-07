@@ -40,7 +40,6 @@ executable(
     'src/CategoryComboBox.vala',
     'src/AppInfoViewStack.vala',
     'src/AppInfoView.vala',
-    'src/MessageDialog.vala',
     'src/AppDirectoryScanner.vala',
     'src/DesktopApp.vala',
     'src/DesktopAppManager.vala',

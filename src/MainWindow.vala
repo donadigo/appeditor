@@ -177,8 +177,13 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         monitor_manager_state ();
+#if HAS_VALA040
         Unix.signal_add (Posix.Signal.INT, signal_source_func, Priority.HIGH);
         Unix.signal_add (Posix.Signal.TERM, signal_source_func, Priority.HIGH);
+#else
+        Unix.signal_add (Posix.SIGINT, signal_source_func, Priority.HIGH);
+        Unix.signal_add (Posix.SIGTERM, signal_source_func, Priority.HIGH);
+#endif
     }
 
     public MainWindow () {

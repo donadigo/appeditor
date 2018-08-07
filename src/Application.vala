@@ -36,15 +36,6 @@ public class AppEditor.Application : Gtk.Application {
         application_id = "com.github.donadigo.appeditor";
         add_main_option_entries (OPTIONS);
 
-        var quit_action = new SimpleAction ("quit", null);
-        add_action (quit_action);
-        add_accelerator ("<Control>q", "app.quit", null);
-        quit_action.activate.connect (() => {
-            if (window != null) {
-                window.close ();
-            }
-        });
-
         AppDirectoryScanner.init ();
         var manager = DesktopAppManager.get_default ();
         manager.load ();
@@ -68,8 +59,15 @@ public class AppEditor.Application : Gtk.Application {
             var file = File.new_for_commandline_arg (create_exec_filename);
             string? basename = file.get_basename ();
             if (!file.query_exists ()) {
-                MessageDialog.show_default_dialog (basename != null ? _("Could not Find \"%s\"").printf (basename) : _("Could not Find Requested File"),
-                                                _("File <b>\"%s\"</b> does not exist.").printf (file.get_path ()), "dialog-error");
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    basename != null ? _("Could not Find \"%s\"").printf (basename) : _("Could not Find Requested File"),
+                    _("File <b>\"%s\"</b> does not exist.").printf (file.get_path ()),
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+    
+                message_dialog.run ();
+                message_dialog.destroy ();
                 return;
             }
 
@@ -77,9 +75,16 @@ public class AppEditor.Application : Gtk.Application {
                 var new_app = AppInfoViewSaver.create_new_local_app (null, create_exec_filename, basename);
                 window.add_app (new_app, true);
             } catch (Error e) {
-                MessageDialog.show_default_dialog (basename != null ? _("Could Not Create a New Application Entry from \"%s\"").printf (basename) :
-                                                _("Could Not Create a New Application From Requested File"),
-                                                e.message, "dialog-error");
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    basename != null ? _("Could Not Create a New Application Entry from \"%s\"").printf (basename) :
+                                    _("Could Not Create a New Application From Requested File"),
+                    e.message,
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+    
+                message_dialog.run ();
+                message_dialog.destroy ();
             }
         }
     }

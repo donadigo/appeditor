@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9),
                libgranite-dev,
                libgtk-3-dev,
                meson,
-               valac (>= 0.40)
+               valac (>= 0.26)
 
 Standards-Version: 3.9.6
 Package: com.github.donadigo.appeditor

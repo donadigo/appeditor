@@ -51,12 +51,26 @@ public class AppEditor.IconButton : Gtk.MenuButton {
         }
     """;
 
+    private const string BUTTON_CSS_322 = """
+        button {
+            border-width: 1px;
+            border-color: #c8c8c8;
+        }
+    """;
+
     static construct {
         default_icon = new ThemedIcon ("application-x-executable");
     }
 
     construct {
-        Granite.Widgets.Utils.set_theming (this, BUTTON_CSS, "flat", Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        string css;
+        if (Application.has_gtk_322 ()) {
+            css = BUTTON_CSS_322;
+        } else {
+            css = BUTTON_CSS;
+        }
+
+        Granite.Widgets.Utils.set_theming (this, css, "flat", Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         icon_image = new Gtk.Image ();
         icon_image.pixel_size = 64;

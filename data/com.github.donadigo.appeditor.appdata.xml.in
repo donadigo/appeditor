@@ -22,7 +22,7 @@
   </provides>
   <developer_name>Adam Bieńkowski</developer_name>
   <url type="homepage">https://github.com/donadigo/appeditor</url>
-  <url type="bugtracker">https://github.com/donadigo/appeditor</url>
+  <url type="bugtracker">https://github.com/donadigo/appeditor/issues</url>
   <url type="help">https://github.com/donadigo/appeditor</url>
   <update_contact>donadigos159@gmail.com</update_contact>
   <screenshots>
@@ -31,6 +31,29 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.1.0" date="2018-08-11">
+      <description>
+        <p>This release includes added support for elementary OS Juno, miscellaneous improvements and new translations:</p>
+          <ul>
+            <li>German translation (ChristianPauly)</li>
+            <li>Japanese translation (Ryo Nakano)</li>
+            <li>Brazilian Portuguese translation (Filipe de Almeida Garrett)</li>
+          </ul>
+        <p>New features:</p>
+          <ul>
+            <li>It is now possible to create a menu entry directly from the file manager: right click on an executable file and choose "Create a Menu Entry"</li>
+            <li>New shortcuts added:</li>
+            <li>Ctrl+N: Create a new menu entry</li>
+            <li>Ctrl+F: Focus the search entry</li>
+            <li>Ctrl+D: Duplicate selected entry</li>
+          </ul>
+        <p>Fixed:</p>
+          <ul>
+            <li>Some strings are not displayed in translated languages (Ryo Nakano)</li>
+            <li>Improper escaping of special characters in display name and description</li>
+          </ul>
+      </description>
+    </release>
     <release version="1.0.0" date="2018-01-15">
       <description>
         <p>This release contains many new features and bug fixes as well as added suport for translations:</p>

@@ -1,0 +1,6 @@
+[Contractor Entry]
+Name=Create a Menu Entry
+Description=Create a new menu entry for executing this file
+Icon=com.github.donadigo.appeditor
+MimeType=application/x-executable;text/x-python;application/x-shellscript
+Exec=com.github.donadigo.appeditor -c %f

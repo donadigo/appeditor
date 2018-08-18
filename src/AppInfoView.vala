@@ -377,7 +377,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
         if (desktop_app.get_only_local ()) {
             title = _("Do You Want to Delete This Entry?");
-            description = _("Deleting this entry is permament and cannot be undone. This does not delete the application itself, only the entry shown in the applications menu.");
+            description = _("Deleting this entry is permanent and cannot be undone. This does not delete the application itself, only the entry shown in the applications menu.");
             button_title = _("Delete");
         } else {
             title = _("Do You Want to Restore The Defaults?");
@@ -388,7 +388,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         var button = new Gtk.Button.with_label (button_title);
         button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-        var dialog = new MessageDialog (title, description, "dialog-warning");
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (title, description, "dialog-warning", Gtk.ButtonsType.NONE);
         dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         dialog.add_action_widget (button, Gtk.ResponseType.APPLY);
         dialog.show_all ();
@@ -421,7 +421,15 @@ public class AppEditor.AppInfoView : Gtk.Box {
         try {
             desktop_app.open_default_handler (get_screen ());
         } catch (Error e) {
-            MessageDialog.show_default_dialog (_("Could Not Open This Entry"), e.message, "dialog-error");
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Could Not Open This Entry"),
+                e.message,
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            message_dialog.run ();
+            message_dialog.destroy ();
         }
     }
 

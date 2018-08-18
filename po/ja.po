@@ -1,25 +1,22 @@
+# Japanese translations for com.github.donadigo.appeditor package.
+# Copyright (C) 2018 THE com.github.donadigo.appeditor'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# Automatically generated, 2018.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Appeditor\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2018-08-18 21:01+0400\n"
-"PO-Revision-Date: 2018-08-18 21:02+0400\n"
-=======
+"Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-30 16:33+0900\n"
-"PO-Revision-Date: 2018-02-03 21:44+0400\n"
->>>>>>> 0de9a598639230558e6e3e40052806890f240d08
-"Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
-"Language-Team: \n"
-"Language: ru\n"
+"POT-Creation-Date: 2018-07-01 11:18+0900\n"
+"PO-Revision-Date: 2018-07-01 11:22+0900\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: none\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
-"X-Poedit-Basepath: ../src\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
@@ -27,45 +24,44 @@ msgid "AppEditor"
 msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
-#, fuzzy
 msgid "Edit application menu"
-msgstr "Приложения не найдены"
+msgstr "アプリケーションメニューを編集します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
 msgstr ""
+"アプリケーションメニューに表示されるアプリケーションのエントリーとプロパティ"
+"を編集します。"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "含まれる機能:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
-#, fuzzy
 msgid "Hide and show applications from the application menu"
-msgstr "Не отображать название в меню приложений"
+msgstr ""
+"アプリケーションをアプリケーションメニューから隠したり表示したりします"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
-#, fuzzy
 msgid "Create new application entries"
-msgstr "Невозможно создать новое приложение"
+msgstr "新しいアプリケーションのエントリーを作成します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "アプリケーションの表示名やアイコンなどを変更します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
-msgstr ""
+msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
-#, fuzzy
 msgid "Application Entry Editor"
-msgstr "Приложения не найдены"
+msgstr "アプリケーションエントリーエディター"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "アプリケーションのエントリーを編集します"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
@@ -73,301 +69,317 @@ msgstr ""
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr ""
+msgstr "アプリケーション;編集;エントリー;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
-msgstr "Отображаемое имя"
+msgstr "表示名"
 
 #: src/AppInfoView.vala:121
 msgid "Comment"
-msgstr "Комментарий"
+msgstr "コメント"
 
 #: src/AppInfoView.vala:137
 msgid "Show in Launcher"
-msgstr "Отображать в меню приложений"
+msgstr "ランチャーに表示"
 
 #: src/AppInfoView.vala:138
 msgid "Category"
-msgstr "Категория"
+msgstr "カテゴリー"
 
 #: src/AppInfoView.vala:140
 msgid "Visibility"
-msgstr "Отображение"
+msgstr "可視性"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
-msgstr "Путь к программе вместе с агументами запуска"
+msgstr "引数と一緒に実行するプログラム"
 
 #: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
-msgstr "Рабочий каталог при запуске программы"
+msgstr "プログラムを実行するカレントディレクトリ"
 
 #: src/AppInfoView.vala:159
 msgid "Command Line"
-msgstr "Командная строка"
+msgstr "コマンドライン"
 
 #: src/AppInfoView.vala:160
 msgid "Working Directory"
-msgstr "Рабочая папка"
+msgstr "カレントディレクトリ"
 
 #: src/AppInfoView.vala:161
 msgid "Launch in Terminal"
-msgstr "Запускать в терминале"
+msgstr "ターミナルで起動"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
-msgstr "Параметры запуска"
+msgstr "起動"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr "Отображать уведомления"
+msgstr "通知を使用"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr "Дополнительно"
+msgstr "高度な設定"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
-msgstr "Сохранить"
+msgstr "保存"
 
 #: src/AppInfoView.vala:212
 msgid "Open in Text Editor"
-msgstr "Открыть в текстовом редакторе"
+msgstr "テキストエディターで開く"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr "Дублировать"
+msgstr "複製"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
-msgstr "Изменения успешно сохранены"
+msgstr "変更の保存が成功しました"
 
 #: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
-msgstr "Что-то пошло не так, и изменения не могут быть сохранены: %s"
+msgstr "間違った箇所があるため変更を保存することができませんでした: %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
-msgstr "Не отображать название в меню приложений"
+msgstr "アプリケーションメニュー内に可視のタイトルがありません"
 
 #: src/AppInfoView.vala:341
 msgid "No program will be launched"
-msgstr "Программа не будет запущена"
+msgstr "プログラムが起動されません"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
-msgstr ""
-"Имя исполняемого файла (первый аргумент) не может содержать знак равенства"
+msgstr "実行可能な名前 (第一引数) に等号を含めることはできません"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr "Введённый файл не существует"
+msgstr "入力されたファイルは存在しません"
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr "Введённая программа не найдена"
+msgstr "入力されたプログラムが見つかりませんでした"
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
-msgstr "Вы действительно хотите удалить эту запись?"
+msgstr "このエントリーを削除してもよろしいですか？"
 
 #: src/AppInfoView.vala:380
 msgid ""
 "Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
-"Удаление этой записи не может быть отменено. \n"
-"Будет удалено не само приложение, а только запись,\n"
-"отображаемая в меню приложений."
+"このエントリーの削除は永続的で元に戻すことはできません。この操作ではアプリ"
+"ケーション自体は削除されず、アプリケーションメニュー内で表示されるエントリー"
+"のみが削除されます。"
 
 #: src/AppInfoView.vala:381
 msgid "Delete"
-msgstr "Удалить"
+msgstr "削除"
 
 #: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
-msgstr "Вы хотите восстановить значения по умолчанию?"
+msgstr "デフォルトに復元してもよろしいですか？"
 
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
-"Восстановление значений по умолчанию позволит отменить все изменения, "
-"сделанные в этой записи."
+"デフォルトに復元することでこのエントリーに加えられた変更はすべて元に戻りま"
+"す。"
 
 #: src/AppInfoView.vala:385
 msgid "Restore defaults"
-msgstr "Восстановить значения по умолчанию"
+msgstr "デフォルトに復元"
 
 #: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "キャンセル"
 
 #: src/AppInfoView.vala:424
 msgid "Could Not Open This Entry"
-msgstr "Невозможно открыть эту запись"
+msgstr "このエントリーを開くことができませんでした"
 
 #: src/AppInfoView.vala:445
 msgid "Delete entry…"
-msgstr "Удалить запись…"
+msgstr "エントリーを削除…"
 
 #: src/AppInfoView.vala:447
 msgid "Restore defaults…"
-msgstr "Восстановить значения по умолчанию…"
+msgstr "デフォルトを復元…"
 
 #: src/AppInfoViewSaver.vala:32
 msgid "New Application"
-msgstr "Новое приложение"
+msgstr "新しいアプリケーション"
 
-#: src/AppInfoViewSaver.vala:143
+#: src/AppInfoViewSaver.vala:148
 msgid "Could not load the newly saved file."
-msgstr "Не удалось загрузить только что сохраненный файл."
+msgstr "新しく保存されたファイルを読み込めませんでした。"
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
-msgstr "Ничего не выбрано"
+msgstr "アイテムが選択されていません"
 
 #: src/AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
-msgstr ""
-"Выберите приложение \n"
-"или начните вводить текст\n"
-"для поиска нужного элемента"
+msgstr "編集するにはアプリケーションを選択するかタイプしてください"
 
 #: src/AppItem.vala:35
 msgid "Unknown"
-msgstr "Неизвестно"
+msgstr "不明"
 
-#: src/Application.vala:37
-msgid "translator-credits"
-msgstr "translator-credits"
+#: src/Application.vala:67
+#, c-format
+msgid "Could not Find \"%s\""
+msgstr "\"%s\" を見つけることができませんでした"
+
+#: src/Application.vala:67
+msgid "Could not Find Requested File"
+msgstr "要求されたファイルを見つけることができませんでした"
+
+#: src/Application.vala:68
+#, c-format
+msgid "File <b>\"%s\"</b> does not exist."
+msgstr "ファイル <b>\"%s\"</b> は存在しません。"
+
+#: src/Application.vala:76
+#, c-format
+msgid "Could Not Create a New Application Entry from \"%s\""
+msgstr "\"%s\" から新しいアプリケーションエントリーを作成できませんでした"
+
+#: src/Application.vala:77
+msgid "Could Not Create a New Application From Requested File"
+msgstr "要求されたファイルから新しいアプリケーションを作成できませんでした"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
-msgstr "Аудио и видео"
+msgstr "サウンドとビデオ"
 
 #: src/DesktopAppManager.vala:57
 msgid "Sound"
-msgstr "Аудио"
+msgstr "サウンド"
 
 #: src/DesktopAppManager.vala:58
 msgid "Video"
-msgstr "Видео"
+msgstr "ビデオ"
 
 #: src/DesktopAppManager.vala:59
 msgid "Programming"
-msgstr "Программирование"
+msgstr "プログラミング"
 
 #: src/DesktopAppManager.vala:60
 msgid "Education"
-msgstr "Образование"
+msgstr "教育・教養"
 
 #: src/DesktopAppManager.vala:61
 msgid "Games"
-msgstr "Игры"
+msgstr "ゲーム"
 
 #: src/DesktopAppManager.vala:62
 msgid "Graphics"
-msgstr "Графика"
+msgstr "グラフィックス"
 
 #: src/DesktopAppManager.vala:63
 msgid "Internet"
-msgstr "Интернет"
+msgstr "インターネット"
 
 #: src/DesktopAppManager.vala:64
 msgid "Office"
-msgstr "Офис"
+msgstr "オフィス"
 
 #: src/DesktopAppManager.vala:65
 msgid "Science"
-msgstr "Наука"
+msgstr "科学"
 
 #: src/DesktopAppManager.vala:66
 msgid "Settings"
-msgstr "Настройки"
+msgstr "設定"
 
 #: src/DesktopAppManager.vala:67
 msgid "System Tools"
-msgstr "Системные утилиты"
+msgstr "システムツール"
 
 #: src/DesktopAppManager.vala:68
 msgid "Accessories"
-msgstr "Утилиты"
+msgstr "アクセサリー"
 
 #: src/DesktopAppManager.vala:69
 msgid "Other"
-msgstr "Другое"
+msgstr "未分類"
 
 #: src/IconButton.vala:68
 msgid "Icon name or path to an image"
-msgstr "Имя значка или путь к изображению"
+msgstr "アイコンの名前または画像のパス"
 
 #: src/IconButton.vala:72
 msgid "Choose from file"
-msgstr "Выбрать из файла"
+msgstr "ファイルから選択"
 
 #: src/IconButton.vala:76
 msgid "Choose from available icons"
-msgstr "Выбрать из доступных значков"
+msgstr "利用可能なアイコンから選択"
 
 #: src/IconButton.vala:89
 msgid "All Files"
-msgstr "Все файлы"
+msgstr "すべてのファイル"
 
 #: src/IconButton.vala:93
 msgid "Images"
-msgstr "Изображения"
+msgstr "画像"
 
 #: src/IconButton.vala:97
 msgid "Select an image"
-msgstr "Выберите изображение"
+msgstr "画像を選択"
 
 #: src/IconChooserDialog.vala:31
 msgid "Choose"
-msgstr "Выбрать"
+msgstr "選択"
 
 #: src/IconChooserDialog.vala:45
 msgid "Search icons…"
-msgstr "Поиск значка…"
+msgstr "アイコンを検索…"
 
 #: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
-msgstr "Выбрать значок из списка"
+msgstr "リストからアイコンを選択します"
 
 #: src/MainWindow.vala:56
 msgid "Show hidden entries"
-msgstr "Отображать скрытые записи"
+msgstr "隠されたエントリーを表示"
 
 #: src/MainWindow.vala:100
 msgid "No Applications Found"
-msgstr "Приложения не найдены"
+msgstr "アプリケーションが見つかりませんでした"
 
 #: src/MainWindow.vala:100
 msgid "Could not find any applications to edit on this system"
-msgstr "Не могу найти никаких приложений для редактирования в этой системе"
+msgstr ""
+"このシステム上に編集できるアプリケーションを見つけることができませんでした"
 
 #: src/MainWindow.vala:101
 msgid "Retry"
-msgstr "Повторить"
+msgstr "再試行"
 
 #: src/MainWindow.vala:117
 msgid "Find…"
-msgstr "Поиск…"
+msgstr "検索…"
 
 #: src/MainWindow.vala:125
 msgid "New entry"
-msgstr "Новая запись"
+msgstr "新しいエントリー"
 
-#: src/MainWindow.vala:271
+#: src/MainWindow.vala:275
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr "Не удалось дублировать %s"
+msgstr "%s を複製できませんでした"
 
-#: src/MainWindow.vala:288
-msgid "Could Not Create a New Application"
-msgstr "Невозможно создать новое приложение"
+#: src/MainWindow.vala:292
+msgid "Could Not Create a New Application Entry"
+msgstr "新しいアプリケーションエントリーを作成できませんでした"
 
 #: src/MessageDialog.vala:27
 msgid "Close"
-msgstr "Закрыть"
+msgstr "閉じる"

@@ -1,35 +1,30 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Appeditor\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2018-08-18 21:01+0400\n"
-"PO-Revision-Date: 2018-08-18 21:02+0400\n"
-=======
+"Project-Id-Version: appeditor\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-30 16:33+0900\n"
-"PO-Revision-Date: 2018-02-03 21:44+0400\n"
->>>>>>> 0de9a598639230558e6e3e40052806890f240d08
-"Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
+"PO-Revision-Date: 2018-02-22 23:32+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: ru\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ../src\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
 msgid "AppEditor"
-msgstr "AppEditor"
+msgstr ""
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
 #, fuzzy
 msgid "Edit application menu"
-msgstr "Приложения не найдены"
+msgstr "Keine Anwendungen gefunden"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
@@ -43,12 +38,12 @@ msgstr ""
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 #, fuzzy
 msgid "Hide and show applications from the application menu"
-msgstr "Не отображать название в меню приложений"
+msgstr "Kein sichtbarer Titel im Anwendungsmenü"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
 #, fuzzy
 msgid "Create new application entries"
-msgstr "Невозможно создать новое приложение"
+msgstr "Neue Anwendung"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
@@ -61,7 +56,7 @@ msgstr ""
 #: data/com.github.donadigo.appeditor.desktop.in:5
 #, fuzzy
 msgid "Application Entry Editor"
-msgstr "Приложения не найдены"
+msgstr "Keine Anwendungen gefunden"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
@@ -77,297 +72,302 @@ msgstr ""
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
-msgstr "Отображаемое имя"
+msgstr "Bezeichnung"
 
 #: src/AppInfoView.vala:121
 msgid "Comment"
-msgstr "Комментарий"
+msgstr "Beschreibung"
 
 #: src/AppInfoView.vala:137
+#, fuzzy
 msgid "Show in Launcher"
-msgstr "Отображать в меню приложений"
+msgstr "Unter Anwendungen sichtbar"
 
 #: src/AppInfoView.vala:138
 msgid "Category"
-msgstr "Категория"
+msgstr "Kategorie"
 
 #: src/AppInfoView.vala:140
 msgid "Visibility"
-msgstr "Отображение"
+msgstr "Sichtbarkeit"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
-msgstr "Путь к программе вместе с агументами запуска"
+msgstr "Auszuführendes Programm zusammen mit den Argumenten"
 
 #: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
-msgstr "Рабочий каталог при запуске программы"
+msgstr "Verzeichnis in dem das Programm ausgeführt werden soll"
 
 #: src/AppInfoView.vala:159
+#, fuzzy
 msgid "Command Line"
-msgstr "Командная строка"
+msgstr "Kommandozeile"
 
 #: src/AppInfoView.vala:160
+#, fuzzy
 msgid "Working Directory"
-msgstr "Рабочая папка"
+msgstr "Arbeitsverzeichnis"
 
 #: src/AppInfoView.vala:161
+#, fuzzy
 msgid "Launch in Terminal"
-msgstr "Запускать в терминале"
+msgstr "Im Terminal starten"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
-msgstr "Параметры запуска"
+msgstr "Starten"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr "Отображать уведомления"
+msgstr ""
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr "Дополнительно"
+msgstr ""
 
 #: src/AppInfoView.vala:207
 msgid "Save"
-msgstr "Сохранить"
+msgstr "Speichern"
 
 #: src/AppInfoView.vala:212
 msgid "Open in Text Editor"
-msgstr "Открыть в текстовом редакторе"
+msgstr "Im Editor öffnen"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr "Дублировать"
+msgstr ""
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
-msgstr "Изменения успешно сохранены"
+msgstr "Änderungen wurden gespeichert"
 
 #: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
-msgstr "Что-то пошло не так, и изменения не могут быть сохранены: %s"
+msgstr ""
+"Ein Fehler ist aufgetreten und die Änderungen konnten nicht gespeichert "
+"werden: %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
-msgstr "Не отображать название в меню приложений"
+msgstr "Kein sichtbarer Titel im Anwendungsmenü"
 
 #: src/AppInfoView.vala:341
 msgid "No program will be launched"
-msgstr "Программа не будет запущена"
+msgstr "Kein Programm angegeben, das gestartet werden soll"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
 msgstr ""
-"Имя исполняемого файла (первый аргумент) не может содержать знак равенства"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr "Введённый файл не существует"
+msgstr ""
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr "Введённая программа не найдена"
+msgstr ""
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
-msgstr "Вы действительно хотите удалить эту запись?"
+msgstr "Möchtest du diesen Eintrag löschen?"
 
 #: src/AppInfoView.vala:380
 msgid ""
 "Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
-"Удаление этой записи не может быть отменено. \n"
-"Будет удалено не само приложение, а только запись,\n"
-"отображаемая в меню приложений."
+"Die Löschung dieses Eintrags ist permanent und kann nicht rückgängig gemacht "
+"werden. Das Programm selbst wird dabei nicht gelöscht, nur der Eintrag im "
+"Anwendungsmenü. "
 
 #: src/AppInfoView.vala:381
 msgid "Delete"
-msgstr "Удалить"
+msgstr "Löschen"
 
 #: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
-msgstr "Вы хотите восстановить значения по умолчанию?"
+msgstr "Standarteinstellungen wiederherstellen?"
 
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
-"Восстановление значений по умолчанию позволит отменить все изменения, "
-"сделанные в этой записи."
+"Wiederherstellung der Standarteinstellungen wird alle Änderungen "
+"diesesEintrags rückgängig machen."
 
 #: src/AppInfoView.vala:385
 msgid "Restore defaults"
-msgstr "Восстановить значения по умолчанию"
+msgstr "Wiederherstellen"
 
 #: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "Abbrechen"
 
 #: src/AppInfoView.vala:424
 msgid "Could Not Open This Entry"
-msgstr "Невозможно открыть эту запись"
+msgstr "Dieser Eintrag konnte nicht geöffnet werden"
 
 #: src/AppInfoView.vala:445
+#, fuzzy
 msgid "Delete entry…"
-msgstr "Удалить запись…"
+msgstr "Eintrag löschen"
 
 #: src/AppInfoView.vala:447
+#, fuzzy
 msgid "Restore defaults…"
-msgstr "Восстановить значения по умолчанию…"
+msgstr "Wiederherstellen"
 
 #: src/AppInfoViewSaver.vala:32
 msgid "New Application"
-msgstr "Новое приложение"
+msgstr "Neue Anwendung"
 
 #: src/AppInfoViewSaver.vala:143
 msgid "Could not load the newly saved file."
-msgstr "Не удалось загрузить только что сохраненный файл."
+msgstr ""
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
-msgstr "Ничего не выбрано"
+msgstr "Kein Eintrag ausgewählt"
 
 #: src/AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
-msgstr ""
-"Выберите приложение \n"
-"или начните вводить текст\n"
-"для поиска нужного элемента"
+msgstr "Anwendung wählen oder tippen, um eine zu bearbeiten"
 
 #: src/AppItem.vala:35
 msgid "Unknown"
-msgstr "Неизвестно"
+msgstr "Unbekannt"
 
 #: src/Application.vala:37
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr ""
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
-msgstr "Аудио и видео"
+msgstr ""
 
 #: src/DesktopAppManager.vala:57
 msgid "Sound"
-msgstr "Аудио"
+msgstr "Audio"
 
 #: src/DesktopAppManager.vala:58
 msgid "Video"
-msgstr "Видео"
+msgstr ""
 
 #: src/DesktopAppManager.vala:59
 msgid "Programming"
-msgstr "Программирование"
+msgstr "Software-Entwicklung"
 
 #: src/DesktopAppManager.vala:60
 msgid "Education"
-msgstr "Образование"
+msgstr "Bildung"
 
 #: src/DesktopAppManager.vala:61
 msgid "Games"
-msgstr "Игры"
+msgstr "Spiele"
 
 #: src/DesktopAppManager.vala:62
 msgid "Graphics"
-msgstr "Графика"
+msgstr "Grafik"
 
 #: src/DesktopAppManager.vala:63
 msgid "Internet"
-msgstr "Интернет"
+msgstr "Internet"
 
 #: src/DesktopAppManager.vala:64
 msgid "Office"
-msgstr "Офис"
+msgstr "Büro"
 
 #: src/DesktopAppManager.vala:65
 msgid "Science"
-msgstr "Наука"
+msgstr "Wissenschaft"
 
 #: src/DesktopAppManager.vala:66
 msgid "Settings"
-msgstr "Настройки"
+msgstr "System"
 
 #: src/DesktopAppManager.vala:67
 msgid "System Tools"
-msgstr "Системные утилиты"
+msgstr "Systemwerkzeuge"
 
 #: src/DesktopAppManager.vala:68
 msgid "Accessories"
-msgstr "Утилиты"
+msgstr "Zubehör"
 
 #: src/DesktopAppManager.vala:69
 msgid "Other"
-msgstr "Другое"
+msgstr "Sonstiges"
 
 #: src/IconButton.vala:68
 msgid "Icon name or path to an image"
-msgstr "Имя значка или путь к изображению"
+msgstr "Icon-Name oder Pfad zum Bild"
 
 #: src/IconButton.vala:72
 msgid "Choose from file"
-msgstr "Выбрать из файла"
+msgstr "Datei auswählen"
 
 #: src/IconButton.vala:76
 msgid "Choose from available icons"
-msgstr "Выбрать из доступных значков"
+msgstr "Wähle aus den verfügbaren Icons"
 
 #: src/IconButton.vala:89
 msgid "All Files"
-msgstr "Все файлы"
+msgstr "Alle DAteien"
 
 #: src/IconButton.vala:93
 msgid "Images"
-msgstr "Изображения"
+msgstr "Bilder"
 
 #: src/IconButton.vala:97
 msgid "Select an image"
-msgstr "Выберите изображение"
+msgstr "Wähle ein Bild"
 
 #: src/IconChooserDialog.vala:31
 msgid "Choose"
-msgstr "Выбрать"
+msgstr "Wähle"
 
 #: src/IconChooserDialog.vala:45
 msgid "Search icons…"
-msgstr "Поиск значка…"
+msgstr "Suche Icons ..."
 
 #: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
-msgstr "Выбрать значок из списка"
+msgstr "Wähle ein Icon aus der Liste"
 
 #: src/MainWindow.vala:56
 msgid "Show hidden entries"
-msgstr "Отображать скрытые записи"
+msgstr "Verborgene Einträge anzeigen"
 
 #: src/MainWindow.vala:100
 msgid "No Applications Found"
-msgstr "Приложения не найдены"
+msgstr "Keine Anwendungen gefunden"
 
 #: src/MainWindow.vala:100
 msgid "Could not find any applications to edit on this system"
-msgstr "Не могу найти никаких приложений для редактирования в этой системе"
+msgstr "Es konnte keine Anwendung zur Bearbeitung gefunden werden"
 
 #: src/MainWindow.vala:101
 msgid "Retry"
-msgstr "Повторить"
+msgstr "Versuche erneut"
 
 #: src/MainWindow.vala:117
 msgid "Find…"
-msgstr "Поиск…"
+msgstr "Suche ..."
 
 #: src/MainWindow.vala:125
 msgid "New entry"
-msgstr "Новая запись"
+msgstr "Neuer Eintrag"
 
 #: src/MainWindow.vala:271
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr "Не удалось дублировать %s"
+msgstr ""
 
 #: src/MainWindow.vala:288
+#, fuzzy
 msgid "Could Not Create a New Application"
-msgstr "Невозможно создать новое приложение"
+msgstr "Neue Anwendung"
 
 #: src/MessageDialog.vala:27
 msgid "Close"
-msgstr "Закрыть"
+msgstr "Schließen"

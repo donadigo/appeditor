@@ -29,6 +29,17 @@ public class AppEditor.FieldEntry : Gtk.Box {
         }
     """;
 
+    private const string ENTRY_CSS_322 = """
+        entry.flat {
+            background-color: rgba(0,0,0,0);
+        }
+
+        entry.flat:selected,
+        entry.flat:selected:focus {
+            background-color: @colorAccent;
+        }
+    """;
+
     public Gtk.Entry entry { get; construct; }
 
     private Gtk.Revealer revealer;
@@ -36,7 +47,14 @@ public class AppEditor.FieldEntry : Gtk.Box {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        Granite.Widgets.Utils.set_theming (entry, ENTRY_CSS, Gtk.STYLE_CLASS_FLAT, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        string css;
+        if (Application.has_gtk_322 ()) {
+            css = ENTRY_CSS_322;
+        } else {
+            css = ENTRY_CSS;
+        }
+
+        Granite.Widgets.Utils.set_theming (entry, css, Gtk.STYLE_CLASS_FLAT, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         entry.changed.connect (update_header_visibility);
         entry.focus_in_event.connect (on_entry_focus_in_event);

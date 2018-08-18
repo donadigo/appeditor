@@ -1,20 +1,22 @@
+# Japanese translations for com.github.donadigo.appeditor package.
+# Copyright (C) 2018 THE com.github.donadigo.appeditor'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# Automatically generated, 2018.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: appeditor\n"
+"Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-30 16:33+0900\n"
-"PO-Revision-Date: 2017-10-07 23:32+0200\n"
-"Last-Translator:Juan Gómez Carrillo \n"
-"Language-Team: \n"
-"Language: es\n"
+"POT-Creation-Date: 2018-07-01 11:18+0900\n"
+"PO-Revision-Date: 2018-07-01 11:22+0900\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: none\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"X-Poedit-Basepath: ../src\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
@@ -22,45 +24,44 @@ msgid "AppEditor"
 msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
-#, fuzzy
 msgid "Edit application menu"
-msgstr "No se han encontrado aplicaciones"
+msgstr "アプリケーションメニューを編集します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
 msgstr ""
+"アプリケーションメニューに表示されるアプリケーションのエントリーとプロパティ"
+"を編集します。"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "含まれる機能:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
-#, fuzzy
 msgid "Hide and show applications from the application menu"
-msgstr "Título no visible en el menú de aplicaciones"
+msgstr ""
+"アプリケーションをアプリケーションメニューから隠したり表示したりします"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
-#, fuzzy
 msgid "Create new application entries"
-msgstr "Nueva aplicación"
+msgstr "新しいアプリケーションのエントリーを作成します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "アプリケーションの表示名やアイコンなどを変更します"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
-msgstr ""
+msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
-#, fuzzy
 msgid "Application Entry Editor"
-msgstr "No se han encontrado aplicaciones"
+msgstr "アプリケーションエントリーエディター"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "アプリケーションのエントリーを編集します"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
@@ -68,303 +69,317 @@ msgstr ""
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr ""
+msgstr "アプリケーション;編集;エントリー;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
-msgstr "Nombre mostrado"
+msgstr "表示名"
 
 #: src/AppInfoView.vala:121
 msgid "Comment"
-msgstr "Descripción"
+msgstr "コメント"
 
 #: src/AppInfoView.vala:137
-#, fuzzy
 msgid "Show in Launcher"
-msgstr "Mostrar en el menú"
+msgstr "ランチャーに表示"
 
 #: src/AppInfoView.vala:138
 msgid "Category"
-msgstr "Categoría"
+msgstr "カテゴリー"
 
 #: src/AppInfoView.vala:140
 msgid "Visibility"
-msgstr "Visibilidad"
+msgstr "可視性"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
-msgstr "Aplicación a ejecutar y argumentos de la misma"
+msgstr "引数と一緒に実行するプログラム"
 
 #: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
-msgstr "Directorio de ejecución del programa"
+msgstr "プログラムを実行するカレントディレクトリ"
 
 #: src/AppInfoView.vala:159
-#, fuzzy
 msgid "Command Line"
-msgstr "Linea de comandos"
+msgstr "コマンドライン"
 
 #: src/AppInfoView.vala:160
-#, fuzzy
 msgid "Working Directory"
-msgstr "Directorio de trabajo"
+msgstr "カレントディレクトリ"
 
 #: src/AppInfoView.vala:161
-#, fuzzy
 msgid "Launch in Terminal"
-msgstr "Ejecutar en la terminal"
+msgstr "ターミナルで起動"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
-msgstr "Ejecutar"
+msgstr "起動"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr ""
+msgstr "通知を使用"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr ""
+msgstr "高度な設定"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
-msgstr "Guardar"
+msgstr "保存"
 
 #: src/AppInfoView.vala:212
 msgid "Open in Text Editor"
-msgstr "Abrir en el editor de textos"
+msgstr "テキストエディターで開く"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr ""
+msgstr "複製"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
-msgstr "Cambios guardados correctamente"
+msgstr "変更の保存が成功しました"
 
 #: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
-msgstr "Algo salió mal y no se han podido guardar los cambios: %s"
+msgstr "間違った箇所があるため変更を保存することができませんでした: %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
-msgstr "Título no visible en el menú de aplicaciones"
+msgstr "アプリケーションメニュー内に可視のタイトルがありません"
 
 #: src/AppInfoView.vala:341
 msgid "No program will be launched"
-msgstr "No se ejecutará ningún programa"
+msgstr "プログラムが起動されません"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
-msgstr ""
+msgstr "実行可能な名前 (第一引数) に等号を含めることはできません"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr ""
+msgstr "入力されたファイルは存在しません"
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr ""
+msgstr "入力されたプログラムが見つかりませんでした"
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
-msgstr "¿Quiere eliminar esta entrada?"
+msgstr "このエントリーを削除してもよろしいですか？"
 
 #: src/AppInfoView.vala:380
 msgid ""
 "Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
-"Borrar esta entrada es permanente y no se puede deshacer. Esto no elimina la "
-"aplicación en si, sino la entrada que se muestra en el menú de aplicaciones."
+"このエントリーの削除は永続的で元に戻すことはできません。この操作ではアプリ"
+"ケーション自体は削除されず、アプリケーションメニュー内で表示されるエントリー"
+"のみが削除されます。"
 
 #: src/AppInfoView.vala:381
 msgid "Delete"
-msgstr "Eliminar"
+msgstr "削除"
 
 #: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
-msgstr "¿Restaurar valores predeterminados?"
+msgstr "デフォルトに復元してもよろしいですか？"
 
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
-"Restaurar los valores predeterminados deshará todos los cambios realizados "
-"para esta entrada."
+"デフォルトに復元することでこのエントリーに加えられた変更はすべて元に戻りま"
+"す。"
 
 #: src/AppInfoView.vala:385
 msgid "Restore defaults"
-msgstr "Restaurar valores predeterminados"
+msgstr "デフォルトに復元"
 
 #: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "キャンセル"
 
 #: src/AppInfoView.vala:424
 msgid "Could Not Open This Entry"
-msgstr "No se pudo abrir esta entrada"
+msgstr "このエントリーを開くことができませんでした"
 
 #: src/AppInfoView.vala:445
-#, fuzzy
 msgid "Delete entry…"
-msgstr "Eliminar entrada"
+msgstr "エントリーを削除…"
 
 #: src/AppInfoView.vala:447
-#, fuzzy
 msgid "Restore defaults…"
-msgstr "Restaurar valores predeterminados"
+msgstr "デフォルトを復元…"
 
 #: src/AppInfoViewSaver.vala:32
 msgid "New Application"
-msgstr "Nueva aplicación"
+msgstr "新しいアプリケーション"
 
-#: src/AppInfoViewSaver.vala:143
+#: src/AppInfoViewSaver.vala:148
 msgid "Could not load the newly saved file."
-msgstr ""
+msgstr "新しく保存されたファイルを読み込めませんでした。"
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
-msgstr "Ningún elemento seleccionado"
+msgstr "アイテムが選択されていません"
 
 #: src/AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
-msgstr "Seleccione una aplicación o escriba para editar una concreta"
+msgstr "編集するにはアプリケーションを選択するかタイプしてください"
 
 #: src/AppItem.vala:35
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr "不明"
 
-#: src/Application.vala:37
-msgid "translator-credits"
-msgstr "Juan Gómez Carrillo"
+#: src/Application.vala:67
+#, c-format
+msgid "Could not Find \"%s\""
+msgstr "\"%s\" を見つけることができませんでした"
+
+#: src/Application.vala:67
+msgid "Could not Find Requested File"
+msgstr "要求されたファイルを見つけることができませんでした"
+
+#: src/Application.vala:68
+#, c-format
+msgid "File <b>\"%s\"</b> does not exist."
+msgstr "ファイル <b>\"%s\"</b> は存在しません。"
+
+#: src/Application.vala:76
+#, c-format
+msgid "Could Not Create a New Application Entry from \"%s\""
+msgstr "\"%s\" から新しいアプリケーションエントリーを作成できませんでした"
+
+#: src/Application.vala:77
+msgid "Could Not Create a New Application From Requested File"
+msgstr "要求されたファイルから新しいアプリケーションを作成できませんでした"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
-msgstr "Sonido y video"
+msgstr "サウンドとビデオ"
 
 #: src/DesktopAppManager.vala:57
 msgid "Sound"
-msgstr "Sonido"
+msgstr "サウンド"
 
 #: src/DesktopAppManager.vala:58
 msgid "Video"
-msgstr "Video"
+msgstr "ビデオ"
 
 #: src/DesktopAppManager.vala:59
 msgid "Programming"
-msgstr "Programación"
+msgstr "プログラミング"
 
 #: src/DesktopAppManager.vala:60
 msgid "Education"
-msgstr "Educación"
+msgstr "教育・教養"
 
 #: src/DesktopAppManager.vala:61
 msgid "Games"
-msgstr "Juegos"
+msgstr "ゲーム"
 
 #: src/DesktopAppManager.vala:62
 msgid "Graphics"
-msgstr "Gráficos"
+msgstr "グラフィックス"
 
 #: src/DesktopAppManager.vala:63
 msgid "Internet"
-msgstr "Internet"
+msgstr "インターネット"
 
 #: src/DesktopAppManager.vala:64
 msgid "Office"
-msgstr "Ofimática"
+msgstr "オフィス"
 
 #: src/DesktopAppManager.vala:65
 msgid "Science"
-msgstr "Ciencia"
+msgstr "科学"
 
 #: src/DesktopAppManager.vala:66
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "設定"
 
 #: src/DesktopAppManager.vala:67
 msgid "System Tools"
-msgstr "Utilidades del sistema"
+msgstr "システムツール"
 
 #: src/DesktopAppManager.vala:68
 msgid "Accessories"
-msgstr "Accesorios"
+msgstr "アクセサリー"
 
 #: src/DesktopAppManager.vala:69
 msgid "Other"
-msgstr "Otros"
+msgstr "未分類"
 
 #: src/IconButton.vala:68
 msgid "Icon name or path to an image"
-msgstr "Nombre de icono o directorio a una imágen"
+msgstr "アイコンの名前または画像のパス"
 
 #: src/IconButton.vala:72
 msgid "Choose from file"
-msgstr "Seleccione un archivo"
+msgstr "ファイルから選択"
 
 #: src/IconButton.vala:76
 msgid "Choose from available icons"
-msgstr "Seleccionar de los iconos disponibles"
+msgstr "利用可能なアイコンから選択"
 
 #: src/IconButton.vala:89
 msgid "All Files"
-msgstr "Todos los archivos"
+msgstr "すべてのファイル"
 
 #: src/IconButton.vala:93
 msgid "Images"
-msgstr "Imágenes"
+msgstr "画像"
 
 #: src/IconButton.vala:97
 msgid "Select an image"
-msgstr "Seleccione una imagen"
+msgstr "画像を選択"
 
 #: src/IconChooserDialog.vala:31
 msgid "Choose"
-msgstr "Seleccionar"
+msgstr "選択"
 
 #: src/IconChooserDialog.vala:45
 msgid "Search icons…"
-msgstr "Buscar iconos…"
+msgstr "アイコンを検索…"
 
 #: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
-msgstr "Seleccione un icono de la lista"
+msgstr "リストからアイコンを選択します"
 
 #: src/MainWindow.vala:56
 msgid "Show hidden entries"
-msgstr "Mostrar entradas ocultas"
+msgstr "隠されたエントリーを表示"
 
 #: src/MainWindow.vala:100
 msgid "No Applications Found"
-msgstr "No se han encontrado aplicaciones"
+msgstr "アプリケーションが見つかりませんでした"
 
 #: src/MainWindow.vala:100
 msgid "Could not find any applications to edit on this system"
-msgstr "No se han encontrado aplicaciones que editar en este sistema"
+msgstr ""
+"このシステム上に編集できるアプリケーションを見つけることができませんでした"
 
 #: src/MainWindow.vala:101
 msgid "Retry"
-msgstr "Reintentar"
+msgstr "再試行"
 
 #: src/MainWindow.vala:117
 msgid "Find…"
-msgstr "Buscar…"
+msgstr "検索…"
 
 #: src/MainWindow.vala:125
 msgid "New entry"
-msgstr "Nueva entrada"
+msgstr "新しいエントリー"
 
-#: src/MainWindow.vala:271
+#: src/MainWindow.vala:275
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr ""
+msgstr "%s を複製できませんでした"
 
-#: src/MainWindow.vala:288
-#, fuzzy
-msgid "Could Not Create a New Application"
-msgstr "Nueva aplicación"
+#: src/MainWindow.vala:292
+msgid "Could Not Create a New Application Entry"
+msgstr "新しいアプリケーションエントリーを作成できませんでした"
 
 #: src/MessageDialog.vala:27
 msgid "Close"
-msgstr "Cerrar"
+msgstr "閉じる"

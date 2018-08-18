@@ -17,35 +17,24 @@
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
  */
 
-public class AppEditor.Application : Granite.Application {
+public class AppEditor.Application : Gtk.Application {
+    public const OptionEntry[] OPTIONS = {
+        { "create", 'c', 0, OptionArg.FILENAME, out create_exec_filename,
+        "Create an application entry from an executable path", "FILENAME" },
+        { null }
+    };
+
+    public static bool has_gtk_322 () {
+        return Gtk.check_version (3, 22, 0) == null;
+    }
+
+    private static string? create_exec_filename;
+
     private MainWindow? window = null;
 
     construct {
         application_id = "com.github.donadigo.appeditor";
-        program_name = Constants.APP_NAME;
-        app_years = "2016-2017";
-        exec_name = Constants.EXEC_NAME;
-        app_launcher = Constants.DESKTOP_NAME;
-
-        build_version = Constants.VERSION;
-        app_icon = "com.github.donadigo.appeditor";
-        main_url = "https://github.com/donadigo/appeditor";
-        bug_url = "https://github.com/donadigo/appeditor/issues";
-        help_url = "https://github.com/donadigo/appeditor";
-        translate_url = "https://github.com/donadigo/appeditor";
-        about_authors = {"Adam Bieńkowski <donadigos159gmail.com>", null};
-        about_translators = _("translator-credits");
-
-        about_license_type = Gtk.License.GPL_3_0;
-
-        var quit_action = new SimpleAction ("quit", null);
-        add_action (quit_action);
-        add_accelerator ("<Control>q", "app.quit", null);
-        quit_action.activate.connect (() => {
-            if (window != null) {
-                window.close ();
-            }
-        });
+        add_main_option_entries (OPTIONS);
 
         AppDirectoryScanner.init ();
         var manager = DesktopAppManager.get_default ();
@@ -64,6 +53,39 @@ public class AppEditor.Application : Granite.Application {
             window.show_all ();
         } else {
             window.present ();
+        }
+
+        if (create_exec_filename != null) {
+            var file = File.new_for_commandline_arg (create_exec_filename);
+            string? basename = file.get_basename ();
+            if (!file.query_exists ()) {
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    basename != null ? _("Could not Find \"%s\"").printf (basename) : _("Could not Find Requested File"),
+                    _("File <b>\"%s\"</b> does not exist.").printf (file.get_path ()),
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+    
+                message_dialog.run ();
+                message_dialog.destroy ();
+                return;
+            }
+
+            try {
+                var new_app = AppInfoViewSaver.create_new_local_app (null, create_exec_filename, basename);
+                window.add_app (new_app, true);
+            } catch (Error e) {
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    basename != null ? _("Could Not Create a New Application Entry from \"%s\"").printf (basename) :
+                                    _("Could Not Create a New Application From Requested File"),
+                    e.message,
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+    
+                message_dialog.run ();
+                message_dialog.destroy ();
+            }
         }
     }
 }

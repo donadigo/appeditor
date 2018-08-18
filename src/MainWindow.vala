@@ -32,6 +32,12 @@ public class AppEditor.MainWindow : Gtk.Window {
     private const string LOADING_GRID_ID = "loading-grid";
     private const string NO_APPS_GRID_ID = "no-apps-grid";
 
+    private const string ACTION_PREFIX = "win.";
+    private const string ACTION_QUIT = "action_quit";
+    private const string ACTION_NEW = "action_new";
+    private const string ACTION_DUP = "action_dup";
+    private const string ACTION_FIND = "action_find";
+
     private static Settings settings;
 
     private Gtk.Stack stack;
@@ -41,11 +47,35 @@ public class AppEditor.MainWindow : Gtk.Window {
     private AppSourceList app_source_list;
     private AppInfoViewStack app_info_view_stack;
     
+    private static Gee.MultiMap<string, string> action_accels;
+
+    private const ActionEntry[] action_entries = {
+        { ACTION_QUIT, action_quit },
+        { ACTION_NEW, action_new }, 
+        { ACTION_DUP, action_dup },
+        { ACTION_FIND, action_find }
+    };
+
     static construct {
         settings = new Settings (Constants.SETTINGS_SCHEMA);
+
+        action_accels = new Gee.HashMultiMap<string, string> ();
+        action_accels[ACTION_QUIT] = "<Control>Q";
+        action_accels[ACTION_NEW] = "<Control>N";
+        action_accels[ACTION_DUP] = "<Control>D";
+        action_accels[ACTION_FIND] = "<Control>F";
     }
 
     construct {
+        var actions = new SimpleActionGroup ();
+        actions.add_action_entries (action_entries, this);
+        insert_action_group ("win", actions);
+
+        foreach (var action in action_accels.get_keys ()) {
+            var app = (Gtk.Application)GLib.Application.get_default ();
+            app.set_accels_for_action (ACTION_PREFIX + action, action_accels[action].to_array ());
+        }
+
         app_source_list = new AppSourceList ();
         app_source_list.app_selected.connect (on_app_selected);
 
@@ -114,6 +144,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         add (stack);
 
         search_entry = new Gtk.SearchEntry ();
+        if (Application.has_gtk_322 ()) {
+            search_entry.valign = Gtk.Align.CENTER;
+        }
+
         search_entry.placeholder_text = _("Find…");
         search_entry.changed.connect (() => app_source_list.search_query = search_entry.text);
 
@@ -143,8 +177,13 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         monitor_manager_state ();
+#if HAS_VALA040
+        Unix.signal_add (Posix.Signal.INT, signal_source_func, Priority.HIGH);
+        Unix.signal_add (Posix.Signal.TERM, signal_source_func, Priority.HIGH);
+#else
         Unix.signal_add (Posix.SIGINT, signal_source_func, Priority.HIGH);
         Unix.signal_add (Posix.SIGTERM, signal_source_func, Priority.HIGH);
+#endif
     }
 
     public MainWindow () {
@@ -160,6 +199,10 @@ public class AppEditor.MainWindow : Gtk.Window {
         search_entry.grab_focus ();
     }
 
+    public void add_app (DesktopApp app, bool select) {
+        app_source_list.add_app (app, select);
+    }
+
     public override bool delete_event (Gdk.EventAny event) {
         int x, y;
         get_position (out x, out y);
@@ -167,7 +210,6 @@ public class AppEditor.MainWindow : Gtk.Window {
         settings.set_int ("window-x", x);
         settings.set_int ("window-y", y);
 
-        
         var current_view = app_info_view_stack.get_current_view ();
 
         string selected_desktop_id;
@@ -187,6 +229,25 @@ public class AppEditor.MainWindow : Gtk.Window {
     private bool signal_source_func () {
         close ();
         return true;
+    }
+
+    private void action_quit () {
+        close ();
+    }
+
+    private void action_new () {
+        on_new_button_clicked ();
+    }
+
+    private void action_dup () {
+        var current_view = app_info_view_stack.get_current_view ();
+        if (current_view != null) {
+            current_view.duplicate ();
+        }
+    }
+
+    private void action_find () {
+        search_entry.grab_focus ();
     }
 
     private void monitor_manager_state () {
@@ -268,7 +329,15 @@ public class AppEditor.MainWindow : Gtk.Window {
             var new_app = AppInfoViewSaver.create_new_clone_app (desktop_app);
             app_source_list.add_app (new_app, true);
         } catch (Error e) {
-            MessageDialog.show_default_dialog (_("Could Not Duplicate %s").printf (desktop_app.get_display_name ()), e.message, "dialog-error");
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Could Not Duplicate %s").printf (desktop_app.get_display_name ()),
+                e.message,
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            message_dialog.run ();
+            message_dialog.destroy ();
         }
     }
 
@@ -282,10 +351,18 @@ public class AppEditor.MainWindow : Gtk.Window {
         }
 
         try {
-            var new_app = AppInfoViewSaver.create_new_local_app (current_category);
-            app_source_list.add_app (new_app, true);
+            var new_app = AppInfoViewSaver.create_new_local_app (current_category, null, null);
+            add_app (new_app, true);
         } catch (Error e) {
-            MessageDialog.show_default_dialog (_("Could Not Create a New Application"), e.message, "dialog-error");
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Could Not Create a New Application Entry"),
+                e.message,
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+             );
+
+            message_dialog.run ();
+            message_dialog.destroy ();
         }
     }
 

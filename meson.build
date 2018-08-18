@@ -1,5 +1,5 @@
 project('com.github.donadigo.appeditor', ['vala', 'c'],
-        version: '1.0.0')
+        version: '1.1.0')
 
 i18n = import('i18n')
 gnome = import('gnome')
@@ -13,12 +13,21 @@ c_args = [
   '-include', 'config.h'
 ]
 
+vala = meson.get_compiler('vala')
+vala_flags = []
+
 deps = [
   dependency('granite'),
   dependency('gtk+-3.0'),
   dependency('gee-0.8'),
-  meson.get_compiler('vala').find_library('posix')
+  vala.find_library('posix')
 ]
+
+if vala.version().version_compare('>= 0.40.0')
+    vala_flags += ['--define', 'HAS_VALA040']
+endif
+
+add_project_arguments(vala_flags, language: 'vala')
 
 asresources = gnome.compile_resources(
     'as-resources', 'data/' + meson.project_name() + '.gresource.xml',
@@ -40,7 +49,6 @@ executable(
     'src/CategoryComboBox.vala',
     'src/AppInfoViewStack.vala',
     'src/AppInfoView.vala',
-    'src/MessageDialog.vala',
     'src/AppDirectoryScanner.vala',
     'src/DesktopApp.vala',
     'src/DesktopAppManager.vala',

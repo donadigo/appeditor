@@ -253,7 +253,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
         unowned Gtk.Container content = error_info_bar.get_content_area ();
         content.add (error_label);
-        
+
         pack_start (error_info_bar, false, false);
         pack_start (overlay, false, false);
         add (scrolled);
@@ -286,7 +286,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
             toast.send_notification ();
         } catch (Error e) {
             set_widget_visible (error_info_bar, true);
-            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
+            error_label.label = (_("Something went wrong and the changes could not be saved: %s").printf (e.message));
         }
 
         update_page ();
@@ -443,7 +443,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         path_entry.text = desktop_app.get_path ();
         terminal_switch.active = desktop_app.get_terminal ();
         notifications_switch.active = desktop_app.info.get_boolean (DesktopApp.USES_NOTIFICATIONS_KEY);
-        
+
         validate_cmdline_entry ();
         update_restore_button ();
     }

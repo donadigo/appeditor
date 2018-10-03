@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.donadigo.appeditor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-30 16:33+0900\n"
+"PO-Revision-Date: 2018-09-06 17:48+0200\n"
+"Language-Team: Dutch <vistausss@outlook.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_NL\n"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:7
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+msgid "AppEditor"
+msgstr "AppBewerker"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:8
+msgid "Edit application menu"
+msgstr "Applicatemenu bewerken"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:10
+msgid ""
+"Edit application entries shown in application menu and their properties."
+msgstr ""
+"Applicatie-items uit het applicatiemenu bewerken, inclusief eigenschappen."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:13
+msgid "Features include:"
+msgstr "Het bevat de volgende functies:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:15
+msgid "Hide and show applications from the application menu"
+msgstr "Applicaties tonen en verbergen uit het applicatiemenu"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:16
+msgid "Create new application entries"
+msgstr "Nieuwe menu-items creëren"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:17
+msgid "Change application's display name, icon and more"
+msgstr "Weergavenaam, pictogram en meer wijzigen"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:23
+msgid "Adam Bieńkowski"
+msgstr "Adam Bieńkowski"
+
+#: data/com.github.donadigo.appeditor.desktop.in:5
+msgid "Application Entry Editor"
+msgstr "Menu-itembewerker"
+
+#: data/com.github.donadigo.appeditor.desktop.in:6
+msgid "Edit application entries"
+msgstr "Menu-items bewerken"
+
+#: data/com.github.donadigo.appeditor.desktop.in:7
+msgid "com.github.donadigo.appeditor"
+msgstr "com.github.donadigo.appeditor"
+
+#: data/com.github.donadigo.appeditor.desktop.in:12
+msgid "application;edit;entry;"
+msgstr "applicatie;bewerken;item;"
+
+#: src/AppInfoView.vala:114
+msgid "Display name"
+msgstr "Weergavenaam"
+
+#: src/AppInfoView.vala:121
+msgid "Comment"
+msgstr "Opmerking"
+
+#: src/AppInfoView.vala:137
+msgid "Show in Launcher"
+msgstr "Tonen in Applicatiestarter"
+
+#: src/AppInfoView.vala:138
+msgid "Category"
+msgstr "Categorie"
+
+#: src/AppInfoView.vala:140
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+#: src/AppInfoView.vala:147
+msgid "Program to execute along with it's arguments"
+msgstr "Het uit te voeren programma en evt. argumenten"
+
+#: src/AppInfoView.vala:153
+msgid "The working directory to run the program in"
+msgstr "De werkmap van het uit te voeren programma"
+
+#: src/AppInfoView.vala:159
+msgid "Command Line"
+msgstr "Opdrachtregel"
+
+#: src/AppInfoView.vala:160
+msgid "Working Directory"
+msgstr "Werkmap"
+
+#: src/AppInfoView.vala:161
+msgid "Launch in Terminal"
+msgstr "Opstarten in terminalvenster"
+
+#: src/AppInfoView.vala:163
+msgid "Launching"
+msgstr "Bezig met opstarten"
+
+#: src/AppInfoView.vala:171
+msgid "Uses Notifications"
+msgstr "Meldingen gebruiken"
+
+#: src/AppInfoView.vala:180
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: src/AppInfoView.vala:207
+msgid "Save"
+msgstr "Opslaan"
+
+#: src/AppInfoView.vala:212
+msgid "Open in Text Editor"
+msgstr "Openen in tekstbewerker"
+
+#: src/AppInfoView.vala:215
+msgid "Duplicate"
+msgstr "Dupliceren"
+
+#: src/AppInfoView.vala:285
+msgid "Changes successfully saved"
+msgstr "Wijzigingen zijn opgeslagen"
+
+#: src/AppInfoView.vala:289
+#, c-format
+msgid "Something went wrong and the changes could not be saved: %s"
+msgstr "Er is iets misgegaan waardoor de wijzigingen niet zijn opgeslagen: %s"
+
+#: src/AppInfoView.vala:326
+msgid "No visible title in the applications menu"
+msgstr "Geen zichtbare titel in het applicatiemenu"
+
+#: src/AppInfoView.vala:341
+msgid "No program will be launched"
+msgstr "Er wordt geen programma uitgevoerd"
+
+#: src/AppInfoView.vala:345
+msgid "The executable name (first argument) cannot contain the equal sign"
+msgstr ""
+"De naam van het uitvoerbare bestand (eerste argument) mag niet het teken = "
+"gebruiken"
+
+#: src/AppInfoView.vala:351
+msgid "Entered file does not exist"
+msgstr "Het opgegeven bestand bestaat niet"
+
+#: src/AppInfoView.vala:357
+msgid "Entered program was not found"
+msgstr "Het opgegeven programma is niet aangetroffen"
+
+#: src/AppInfoView.vala:379
+msgid "Do You Want to Delete This Entry?"
+msgstr "Wil je dit item verwijderen?"
+
+#: src/AppInfoView.vala:380
+msgid ""
+"Deleting this entry is permanent and cannot be undone. This does not delete "
+"the application itself, only the entry shown in the applications menu."
+msgstr ""
+"Verwijderen is permanent en kan dus niet ongedaan worden gemaakt. Dit "
+"verwijdert niet de applicatie zelf, alleen het menu-item."
+
+#: src/AppInfoView.vala:381
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: src/AppInfoView.vala:383
+msgid "Do You Want to Restore The Defaults?"
+msgstr "Wil je de standaardwaarden herstellen?"
+
+#: src/AppInfoView.vala:384
+msgid "Restoring defaults will undo all the changes done to this entry."
+msgstr "Hierdoor worden alle aangebrachte wijzigingen ongedaan gemaakt."
+
+#: src/AppInfoView.vala:385
+msgid "Restore defaults"
+msgstr "Standaardwaarden"
+
+#: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/AppInfoView.vala:424
+msgid "Could Not Open This Entry"
+msgstr "Dit item kan niet worden geopend"
+
+#: src/AppInfoView.vala:445
+msgid "Delete entry…"
+msgstr "Item verwijderen…"
+
+#: src/AppInfoView.vala:447
+msgid "Restore defaults…"
+msgstr "Standaardwaarden…"
+
+#: src/AppInfoViewSaver.vala:32
+msgid "New Application"
+msgstr "Nieuwe applicatie"
+
+#: src/AppInfoViewSaver.vala:143
+msgid "Could not load the newly saved file."
+msgstr "Het nieuwe opgeslagen bestand kan niet worden geopend."
+
+#: src/AppInfoViewStack.vala:29
+msgid "No Item Selected"
+msgstr "Geen item geselecteerd"
+
+#: src/AppInfoViewStack.vala:29
+msgid "Select an application or start typing to edit one"
+msgstr "Selecteer een applicatie of begin met typen om te bewerken"
+
+#: src/AppItem.vala:35
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: src/Application.vala:37
+msgid "translator-credits"
+msgstr "Heimen Stoffels"
+
+#: src/DesktopAppManager.vala:56
+msgid "Sound & Video"
+msgstr "Audio en video"
+
+#: src/DesktopAppManager.vala:57
+msgid "Sound"
+msgstr "Audio"
+
+#: src/DesktopAppManager.vala:58
+msgid "Video"
+msgstr "Video"
+
+#: src/DesktopAppManager.vala:59
+msgid "Programming"
+msgstr "Programmeren"
+
+#: src/DesktopAppManager.vala:60
+msgid "Education"
+msgstr "Educatie"
+
+#: src/DesktopAppManager.vala:61
+msgid "Games"
+msgstr "Spellen"
+
+#: src/DesktopAppManager.vala:62
+msgid "Graphics"
+msgstr "Grafisch"
+
+#: src/DesktopAppManager.vala:63
+msgid "Internet"
+msgstr "Internet"
+
+#: src/DesktopAppManager.vala:64
+msgid "Office"
+msgstr "Kantoor"
+
+#: src/DesktopAppManager.vala:65
+msgid "Science"
+msgstr "Wetenschap"
+
+#: src/DesktopAppManager.vala:66
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/DesktopAppManager.vala:67
+msgid "System Tools"
+msgstr "Systeemhulpmiddelen"
+
+#: src/DesktopAppManager.vala:68
+msgid "Accessories"
+msgstr "Accessoires"
+
+#: src/DesktopAppManager.vala:69
+msgid "Other"
+msgstr "Overig"
+
+#: src/IconButton.vala:68
+msgid "Icon name or path to an image"
+msgstr "Pictogramnaam of pad naar een afbeelding"
+
+#: src/IconButton.vala:72
+msgid "Choose from file"
+msgstr "Kiezen uit bestand"
+
+#: src/IconButton.vala:76
+msgid "Choose from available icons"
+msgstr "Kiezen uit beschikbare pictogrammen"
+
+#: src/IconButton.vala:89
+msgid "All Files"
+msgstr "Alle bestanden"
+
+#: src/IconButton.vala:93
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: src/IconButton.vala:97
+msgid "Select an image"
+msgstr "Kies een afbeelding"
+
+#: src/IconChooserDialog.vala:31
+msgid "Choose"
+msgstr "Kiezen"
+
+#: src/IconChooserDialog.vala:45
+msgid "Search icons…"
+msgstr "Pictogrammen doorzoeken…"
+
+#: src/IconChooserDialog.vala:59
+msgid "Choose an icon from the list"
+msgstr "Kies een pictogram uit de lijst"
+
+#: src/MainWindow.vala:56
+msgid "Show hidden entries"
+msgstr "Verborgen items tonen"
+
+#: src/MainWindow.vala:100
+msgid "No Applications Found"
+msgstr "Geen applicaties aangetroffen"
+
+#: src/MainWindow.vala:100
+msgid "Could not find any applications to edit on this system"
+msgstr "Kan geen te bewerken applicaties vinden op dit systeem"
+
+#: src/MainWindow.vala:101
+msgid "Retry"
+msgstr "Opnieuw"
+
+#: src/MainWindow.vala:117
+msgid "Find…"
+msgstr "Zoeken…"
+
+#: src/MainWindow.vala:125
+msgid "New entry"
+msgstr "Nieuw item"
+
+#: src/MainWindow.vala:271
+#, c-format
+msgid "Could Not Duplicate %s"
+msgstr "Kan %s niet dupliceren"
+
+#: src/MainWindow.vala:288
+msgid "Could Not Create a New Application"
+msgstr "Kan geen nieuwe applicatie creëren"
+
+#: src/MessageDialog.vala:27
+msgid "Close"
+msgstr "Sluiten"

@@ -29,11 +29,11 @@ msgstr "Aucune Application trouvée"
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
-msgstr ""
+msgstr "Modifiez les raccourcis et leurs propriétés dans le menu des l'applications."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "Fonctionnalités incluent:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 #, fuzzy
@@ -47,7 +47,7 @@ msgstr "Nouvelle application"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "Changer le nom d'une application, son icône, etc."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
@@ -60,7 +60,7 @@ msgstr "Aucune Application trouvée"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "Modifier les raccourcis "
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
@@ -81,7 +81,7 @@ msgstr "Description"
 #: src/AppInfoView.vala:137
 #, fuzzy
 msgid "Show in Launcher"
-msgstr "Afficher dans le menu"
+msgstr "Afficher dans le Menu"
 
 #: src/AppInfoView.vala:138
 msgid "Category"
@@ -102,17 +102,17 @@ msgstr "Le répertoire de travail dans lequel exécuter le programme"
 #: src/AppInfoView.vala:159
 #, fuzzy
 msgid "Command Line"
-msgstr "Ligne de commande"
+msgstr "Ligne de Commande"
 
 #: src/AppInfoView.vala:160
 #, fuzzy
 msgid "Working Directory"
-msgstr "Répertoire de travail"
+msgstr "Répertoire de Travail"
 
 #: src/AppInfoView.vala:161
 #, fuzzy
 msgid "Launch in Terminal"
-msgstr "Lancer dans le terminal"
+msgstr "Lancer dans le Terminal"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
@@ -120,11 +120,11 @@ msgstr "Lancement"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr ""
+msgstr "Utiliser les Notifications"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr ""
+msgstr "Avancé"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
@@ -136,7 +136,7 @@ msgstr "Ouvrir dans un éditeur de texte"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr ""
+msgstr "Dupliquer"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
@@ -159,15 +159,15 @@ msgstr "Aucun programme ne sera lancé"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
-msgstr ""
+msgstr "Le nom de l'exécutable (premier argument) ne peut pas contenir le signe égal"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr ""
+msgstr "Le fichier saisi n'existe pas"
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr ""
+msgstr "Le programme est introuvable"
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
@@ -224,7 +224,7 @@ msgstr "Nouvelle application"
 
 #: src/AppInfoViewSaver.vala:143
 msgid "Could not load the newly saved file."
-msgstr ""
+msgstr "Impossible de charger le nouveau fichier enregistré."
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
@@ -361,7 +361,7 @@ msgstr "Nouveau raccourci"
 #: src/MainWindow.vala:271
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr ""
+msgstr "Impossible de dupliquer %s"
 
 #: src/MainWindow.vala:288
 #, fuzzy

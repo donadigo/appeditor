@@ -1,517 +1,547 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Catalan translation for AppEditor.
+# Copyright (C) 2018 Adolfo Jayme Barrientos
 # This file is distributed under the same license as the com.github.donadigo.appeditor package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Adolfo Jayme Barrientos <fitojb@ubuntu.com>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-26 09:26-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-10-26 09:57-0500\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: \n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
 msgid "AppEditor"
-msgstr ""
+msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
 msgid "Edit application menu"
-msgstr ""
+msgstr "Modifiqueu el menú d’aplicacions"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
 msgstr ""
+"Modifiqueu les entrades mostrades al menú d’aplicacions i les seves "
+"propietats."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "Funcionalitats distintives:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 msgid "Hide and show applications from the application menu"
-msgstr ""
+msgstr "Amagueu i mostreu entrades al menú d’aplicacions"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
 msgid "Create new application entries"
-msgstr ""
+msgstr "Creeu-ne de noves"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "Canvieu el nom visible, la icona i molt més per cada aplicació"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
-msgstr ""
+msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:36
 msgid ""
 "This release includes added support for elementary OS Juno, miscellaneous "
 "improvements and new translations:"
 msgstr ""
+"Aquesta versió inclou compatibilitat amb l’elementary OS Juno, altres "
+"millores i traduccions noves:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:38
 msgid "German translation (ChristianPauly)"
-msgstr ""
+msgstr "Traducció a l’alemany (ChristianPauly)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:39
 msgid "Japanese translation (Ryo Nakano)"
-msgstr ""
+msgstr "Traducció al japonès (Ryo Nakano)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:40
 msgid "Brazilian Portuguese translation (Filipe de Almeida Garrett)"
-msgstr ""
+msgstr "Traducció al portuguès brasiler (Filipe de Almeida Garrett)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:42
 #: data/com.github.donadigo.appeditor.appdata.xml.in:65
 #: data/com.github.donadigo.appeditor.appdata.xml.in:86
 msgid "New features:"
-msgstr ""
+msgstr "Funcionalitats noves:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:44
 msgid ""
 "It is now possible to create a menu entry directly from the file manager: "
 "right click on an executable file and choose \"Create a Menu Entry\""
 msgstr ""
+"Ara és possible crear una entrada del menú directament des del gestor de "
+"fitxers: feu clic dret a un executable i trieu «Crea una entrada del menú»"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:45
 msgid "New shortcuts added:"
-msgstr ""
+msgstr "S’hi han afegit dreceres noves:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:46
 msgid "Ctrl+N: Create a new menu entry"
-msgstr ""
+msgstr "Ctrl+N: crea una entrada del menú nova"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:47
 msgid "Ctrl+F: Focus the search entry"
-msgstr ""
+msgstr "Ctrl+F: focalitza el quadre de cerca"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:48
 msgid "Ctrl+D: Duplicate selected entry"
-msgstr ""
+msgstr "Ctrl+D: duplica l’entrada seleccionada"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:50
 #: data/com.github.donadigo.appeditor.appdata.xml.in:70
 msgid "Fixed:"
-msgstr ""
+msgstr "Correccions:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:52
 msgid "Some strings are not displayed in translated languages (Ryo Nakano)"
 msgstr ""
+"Algunes cadenes no apareixien traduïdes en altres llengües (Ryo Nakano)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:53
 msgid "Improper escaping of special characters in display name and description"
 msgstr ""
+"Escapada incorrecta de caràcters especials al nom visible i a la descripció"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:59
 msgid ""
 "This release contains many new features and bug fixes as well as added "
 "suport for translations:"
 msgstr ""
+"Aquesta versió conté moltes funcionalitats noves i correccions d’errors, i "
+"també compatibilitat amb traduccions:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:61
 msgid "French translation (dabou)"
-msgstr ""
+msgstr "Traducció al francès (dabou)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:62
 msgid "Russian translation (Cammelan)"
-msgstr ""
+msgstr "Traducció al rus (Cammelan)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:63
 msgid "Spanish translation (Juan Gómez Carrillo)"
-msgstr ""
+msgstr "Traducció al castellà (Juan Gómez Carrillo)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:67
 msgid "Added a button to duplicate a specifc application entry"
-msgstr ""
+msgstr "S’ha afegit un botó per a duplicar una entrada d’aplicació específica"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:68
 msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
-msgstr ""
+msgstr "Secció «Avançat» nova: permet afegir la clau «Utilitza notificacions»"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:72
 msgid ""
 "Fixed crashes when saving an entry with an equal sign in it's command line "
 "property"
 msgstr ""
+"S’han reparat les fallides quan es desava una entrada amb un signe igual a "
+"la seva propietat de línia d’ordres"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:73
 msgid ""
 "Sometimes deleting a local entry would cause it to stay in the sidebar until "
 "the next launch"
 msgstr ""
+"De vegades, suprimir una entrada local causava que es quedés a la barra "
+"lateral fins la propera execució"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:74
 msgid "Sometimes creating a new entry caused a crash"
-msgstr ""
+msgstr "De vegades, crear una entrada nova causava una fallida"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:75
 msgid "The page would not update after saving the entry"
-msgstr ""
+msgstr "La pàgina no s’actualitzava després de desar l’entrada"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:77
 #: data/com.github.donadigo.appeditor.appdata.xml.in:91
 msgid "Miscellaneous:"
-msgstr ""
+msgstr "Miscel·lània:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:79
 msgid "Save unsaved entries when quitting the application"
-msgstr ""
+msgstr "Desament de les entrades no desades en sortir de l’aplicació"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:80
 msgid "Clear the search entry when creating a new application entry"
-msgstr ""
+msgstr "Buidatge del quadre de cerca en crear una entrada d’aplicació nova"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:88
 msgid "Added a button to open the entry in a text editor"
-msgstr ""
+msgstr "S’ha afegit un botó per a obrir l’entrada amb un editor de text"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:89
 msgid "Added a switch to show hidden entries (disabled by default)"
 msgstr ""
+"S’ha afegit un commutador per a mostrar les entrades amagades (inhabilitat "
+"per defecte)"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:93
 msgid "Fixed some applications like Inkscape not saving their name properly"
 msgstr ""
+"S’ha corregit el problema que impedia que a aplicacions com ara l’Inkscape "
+"no es desés adequadament el nom"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:94
 msgid "The main window can be now maximized"
-msgstr ""
+msgstr "La finestra principal ara es pot maximitzar"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:100
 msgid "Add meson dependency to debian packaging"
-msgstr ""
+msgstr "Addició del Meson com a dependència per a l’empaquetament Debian"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:105
 msgid "Fix debian packaging"
-msgstr ""
+msgstr "Correcció de l’empaquetament Debian"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:110
 msgid "Initial release"
-msgstr ""
+msgstr "Publicació inicial"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
 msgid "Application Entry Editor"
-msgstr ""
+msgstr "Editor d’entrades d’aplicació"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "Edita les entrades d’aplicació"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
-msgstr ""
+msgstr "com.github.donadigo.appeditor"
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr ""
+msgstr "aplicació;edició;entrada;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
-msgstr ""
+msgstr "Nom visible"
 
 #: src/AppInfoView.vala:121
 msgid "Comment"
-msgstr ""
+msgstr "Comentari"
 
 #: src/AppInfoView.vala:137
 msgid "Show in Launcher"
-msgstr ""
+msgstr "Mostra al llançador"
 
 #: src/AppInfoView.vala:138
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: src/AppInfoView.vala:140
 msgid "Visibility"
-msgstr ""
+msgstr "Visibilitat"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
-msgstr ""
+msgstr "Programa que executar i els seus arguments"
 
 #: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
-msgstr ""
+msgstr "El directori de treball on executar el programa"
 
 #: src/AppInfoView.vala:159
 msgid "Command Line"
-msgstr ""
+msgstr "Línia d’ordres"
 
 #: src/AppInfoView.vala:160
 msgid "Working Directory"
-msgstr ""
+msgstr "Directori de treball"
 
 #: src/AppInfoView.vala:161
 msgid "Launch in Terminal"
-msgstr ""
+msgstr "Executa en el terminal"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
-msgstr ""
+msgstr "Execució"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr ""
+msgstr "Utilitza notificacions"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr ""
+msgstr "Avançat"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
-msgstr ""
+msgstr "Desa"
 
 #: src/AppInfoView.vala:212
 msgid "Open in Text Editor"
-msgstr ""
+msgstr "Obre amb l’editor de text"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplica"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
-msgstr ""
+msgstr "S’han desat els canvis correctament"
 
 #: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
-msgstr ""
+msgstr "S’ha produït un error i no s’han pogut desar els canvis: %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
-msgstr ""
+msgstr "No hi ha cap títol visible al menú d’aplicacions"
 
 #: src/AppInfoView.vala:341
 msgid "No program will be launched"
-msgstr ""
+msgstr "No s’iniciarà cap programa"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
 msgstr ""
+"El nom de l’executable (primer argument) no pot contenir el signe igual"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr ""
+msgstr "El fitxer introduït no existeix"
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr ""
+msgstr "No s’ha trobat el programa introduït"
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
-msgstr ""
+msgstr "Voleu suprimir aquesta entrada?"
 
 #: src/AppInfoView.vala:380
 msgid ""
 "Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
+"La supressió d’aquesta entrada és permanent i no es pot desfer. Això no "
+"desinstal·la l’aplicació; només n’esborra l’entrada del menú d’aplicacions."
 
 #: src/AppInfoView.vala:381
 msgid "Delete"
-msgstr ""
+msgstr "Suprimeix"
 
 #: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
-msgstr ""
+msgstr "Voleu restaurar els valors per defecte?"
 
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
+"La restauració dels valors per defecte desfarà tots els canvis fets en "
+"aquesta entrada."
 
 #: src/AppInfoView.vala:385
 msgid "Restore defaults"
-msgstr ""
+msgstr "Restaura els valors per defecte"
 
 #: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: src/AppInfoView.vala:425
 msgid "Could Not Open This Entry"
-msgstr ""
+msgstr "No s’ha pogut obrir aquesta entrada"
 
 #: src/AppInfoView.vala:453
 msgid "Delete entry…"
-msgstr ""
+msgstr "Suprimeix l’entrada…"
 
 #: src/AppInfoView.vala:455
 msgid "Restore defaults…"
-msgstr ""
+msgstr "Restaura els valors per defecte…"
 
 #: src/AppInfoViewSaver.vala:32
 msgid "New Application"
-msgstr ""
+msgstr "Aplicació nova"
 
 #: src/AppInfoViewSaver.vala:148
 msgid "Could not load the newly saved file."
-msgstr ""
+msgstr "No s’ha pogut carregar el fitxer acabat de crear."
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
-msgstr ""
+msgstr "No s’ha seleccionat cap element"
 
 #: src/AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
-msgstr ""
+msgstr "Seleccioneu una aplicació o comenceu a escriure per a editar-ne una"
 
 #: src/AppItem.vala:35
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
 #: src/Application.vala:63
 #, c-format
 msgid "Could not Find \"%s\""
-msgstr ""
+msgstr "No s’ha pogut trobar «%s»"
 
 #: src/Application.vala:63
 msgid "Could not Find Requested File"
-msgstr ""
+msgstr "No s’ha pogut trobar el fitxer sol·licitat"
 
 #: src/Application.vala:64
 #, c-format
 msgid "File <b>\"%s\"</b> does not exist."
-msgstr ""
+msgstr "El fitxer «<b>%s</b>» no existeix."
 
 #: src/Application.vala:79
 #, c-format
 msgid "Could Not Create a New Application Entry from \"%s\""
-msgstr ""
+msgstr "No s’ha pogut crear una entrada d’aplicació nova des de «%s»"
 
 #: src/Application.vala:80
 msgid "Could Not Create a New Application From Requested File"
-msgstr ""
+msgstr "No s’ha pogut crear una aplicació nova des del fitxer sol·licitat"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
-msgstr ""
+msgstr "So i vídeo"
 
 #: src/DesktopAppManager.vala:57
 msgid "Sound"
-msgstr ""
+msgstr "So"
 
 #: src/DesktopAppManager.vala:58
 msgid "Video"
-msgstr ""
+msgstr "Vídeo"
 
 #: src/DesktopAppManager.vala:59
 msgid "Programming"
-msgstr ""
+msgstr "Programació"
 
 #: src/DesktopAppManager.vala:60
 msgid "Education"
-msgstr ""
+msgstr "Educació"
 
 #: src/DesktopAppManager.vala:61
 msgid "Games"
-msgstr ""
+msgstr "Jocs"
 
 #: src/DesktopAppManager.vala:62
 msgid "Graphics"
-msgstr ""
+msgstr "Gràfiques"
 
 #: src/DesktopAppManager.vala:63
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: src/DesktopAppManager.vala:64
 msgid "Office"
-msgstr ""
+msgstr "Oficina"
 
 #: src/DesktopAppManager.vala:65
 msgid "Science"
-msgstr ""
+msgstr "Ciència"
 
 #: src/DesktopAppManager.vala:66
 msgid "Settings"
-msgstr ""
+msgstr "Paràmetres"
 
 #: src/DesktopAppManager.vala:67
 msgid "System Tools"
-msgstr ""
+msgstr "Eines del sistema"
 
 #: src/DesktopAppManager.vala:68
 msgid "Accessories"
-msgstr ""
+msgstr "Accessoris"
 
 #: src/DesktopAppManager.vala:69
 msgid "Other"
-msgstr ""
+msgstr "Altres"
 
 #: src/IconButton.vala:82
 msgid "Icon name or path to an image"
-msgstr ""
+msgstr "Nom de la icona o camí a una imatge"
 
 #: src/IconButton.vala:86
 msgid "Choose from file"
-msgstr ""
+msgstr "Tria un fitxer"
 
 #: src/IconButton.vala:90
 msgid "Choose from available icons"
-msgstr ""
+msgstr "Tria una de les icones disponibles"
 
 #: src/IconButton.vala:103
 msgid "All Files"
-msgstr ""
+msgstr "Tots els fitxers"
 
 #: src/IconButton.vala:107
 msgid "Images"
-msgstr ""
+msgstr "Imatges"
 
 #: src/IconButton.vala:111
 msgid "Select an image"
-msgstr ""
+msgstr "Seleccioneu una imatge"
 
 #: src/IconChooserDialog.vala:31
 msgid "Choose"
-msgstr ""
+msgstr "Tria"
 
 #: src/IconChooserDialog.vala:45
 msgid "Search icons…"
-msgstr ""
+msgstr "Cerca icones…"
 
 #: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
-msgstr ""
+msgstr "Trieu una icona de la llista"
 
 #: src/MainWindow.vala:86
 msgid "Show hidden entries"
-msgstr ""
+msgstr "Mostra les entrades amagades"
 
 #: src/MainWindow.vala:130
 msgid "No Applications Found"
-msgstr ""
+msgstr "No s’ha trobat cap aplicació"
 
 #: src/MainWindow.vala:130
 msgid "Could not find any applications to edit on this system"
-msgstr ""
+msgstr "No s’ha pogut trobar cap aplicació modificable en el sistema"
 
 #: src/MainWindow.vala:131
 msgid "Retry"
-msgstr ""
+msgstr "Torna-ho a provar"
 
 #: src/MainWindow.vala:151
 msgid "Find…"
-msgstr ""
+msgstr "Cerca…"
 
 #: src/MainWindow.vala:159
 msgid "New entry"
-msgstr ""
+msgstr "Entrada nova"
 
 #: src/MainWindow.vala:333
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr ""
+msgstr "No s’ha pogut duplicar %s"
 
 #: src/MainWindow.vala:358
 msgid "Could Not Create a New Application Entry"
-msgstr ""
+msgstr "No s’ha pogut crear una entrada d’aplicació nova"
+
+#~ msgid "translator-credits"
+#~ msgstr "Adolfo Jayme Barrientos <fitojb@ubuntu.com>, 2018"
+
+#~ msgid "Close"
+#~ msgstr "Tanca"

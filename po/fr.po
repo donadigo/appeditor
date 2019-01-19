@@ -1,74 +1,75 @@
+# French translations for com.github.donadigo.appeditor package.
+# Copyright (C) 2019 THE com.github.donadigo.appeditor'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# NathanBnm, 2019.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: appeditor\n"
+"Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-30 16:33+0900\n"
-"PO-Revision-Date: 2017-10-07 23:32+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2019-01-19 22:45+0100\n"
+"Last-Translator: NathanBnm\n"
+"Language-Team: Français\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"X-Poedit-Basepath: ../src\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
 msgid "AppEditor"
-msgstr ""
+msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
 #, fuzzy
 msgid "Edit application menu"
-msgstr "Aucune Application trouvée"
+msgstr "Modifier le menu des applications"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
 msgstr ""
+"Modifiez les raccourcis d'application affichées dans le menu des applications et leurs propriétés."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "Fonctionnalités incluses :"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 #, fuzzy
 msgid "Hide and show applications from the application menu"
-msgstr "Aucun titre visible dans le menu des applications"
+msgstr "Masquer et afficher les applications du menu des applications"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
 #, fuzzy
 msgid "Create new application entries"
-msgstr "Nouvelle application"
+msgstr "Créer de nouveaux raccourcis d'application"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "Modifier le nom affiché de l'application, l'icône et plus"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
-msgstr ""
+msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
 #, fuzzy
 msgid "Application Entry Editor"
-msgstr "Aucune Application trouvée"
+msgstr "Éditeur de raccourci d'application"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "Modifier les raccourcis des applications"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
-msgstr ""
+msgstr "com.github.donadigo.appeditor"
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr ""
+msgstr "application;modifier;raccourci;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
@@ -93,7 +94,7 @@ msgstr "Visibilité"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
-msgstr "Application à lancer avec ses arguments"
+msgstr "Application à exécuter avec ses arguments"
 
 #: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
@@ -112,7 +113,7 @@ msgstr "Répertoire de travail"
 #: src/AppInfoView.vala:161
 #, fuzzy
 msgid "Launch in Terminal"
-msgstr "Lancer dans le terminal"
+msgstr "Lancer dans le Terminal"
 
 #: src/AppInfoView.vala:163
 msgid "Launching"
@@ -120,11 +121,11 @@ msgstr "Lancement"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr ""
+msgstr "Utilise les notifications"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
-msgstr ""
+msgstr "Avancé"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
@@ -136,7 +137,7 @@ msgstr "Ouvrir dans un éditeur de texte"
 
 #: src/AppInfoView.vala:215
 msgid "Duplicate"
-msgstr ""
+msgstr "Dupliquer"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
@@ -146,8 +147,8 @@ msgstr "Les modifications ont bien été enregistrées"
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
 msgstr ""
-"Quelque chose a mal tourné et les modifications n'ont pas pu être "
-"enregistrées: %s"
+"Quelque s'est mal passé et les modifications n'ont pas pu être "
+"enregistrées : %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
@@ -159,19 +160,19 @@ msgstr "Aucun programme ne sera lancé"
 
 #: src/AppInfoView.vala:345
 msgid "The executable name (first argument) cannot contain the equal sign"
-msgstr ""
+msgstr "Le nom de l'exécutable (premier argument) ne peut pas contenir le signe égal"
 
 #: src/AppInfoView.vala:351
 msgid "Entered file does not exist"
-msgstr ""
+msgstr "Le fichier saisi n'existe pas"
 
 #: src/AppInfoView.vala:357
 msgid "Entered program was not found"
-msgstr ""
+msgstr "Le programme saisi n'a pas été trouvé"
 
 #: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
-msgstr "Voulez-vous supprimer ce raccourci?"
+msgstr "Voulez-vous supprimer ce raccourci ?"
 
 #: src/AppInfoView.vala:380
 msgid ""
@@ -188,7 +189,7 @@ msgstr "Supprimer"
 
 #: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
-msgstr "Voulez-vous restaurer les paramètres par défaut?"
+msgstr "Voulez-vous restaurer les paramètres par défaut ?"
 
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
@@ -211,12 +212,12 @@ msgstr "Impossible d'ouvrir le raccourci"
 #: src/AppInfoView.vala:445
 #, fuzzy
 msgid "Delete entry…"
-msgstr "Supprimer le raccourci"
+msgstr "Supprimer le raccourci…"
 
 #: src/AppInfoView.vala:447
 #, fuzzy
 msgid "Restore defaults…"
-msgstr "Réinitialiser"
+msgstr "Réinitialiser…"
 
 #: src/AppInfoViewSaver.vala:32
 msgid "New Application"
@@ -224,7 +225,7 @@ msgstr "Nouvelle application"
 
 #: src/AppInfoViewSaver.vala:143
 msgid "Could not load the newly saved file."
-msgstr ""
+msgstr "Impossible de charger le nouveau fichier sauvegardé."
 
 #: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
@@ -240,63 +241,66 @@ msgstr "Inconnu"
 
 #: src/Application.vala:37
 msgid "translator-credits"
-msgstr "Damien Bouthier"
+msgstr 
+"Crédits de traduction :\n"
+"Damien Bouthier\n"
+"NathaBnm"
 
 #: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
-msgstr ""
+msgstr "Son & Vidéo"
 
 #: src/DesktopAppManager.vala:57
 msgid "Sound"
-msgstr ""
+msgstr "Son"
 
 #: src/DesktopAppManager.vala:58
 msgid "Video"
-msgstr ""
+msgstr "Vidéo"
 
 #: src/DesktopAppManager.vala:59
 msgid "Programming"
-msgstr ""
+msgstr "Développement"
 
 #: src/DesktopAppManager.vala:60
 msgid "Education"
-msgstr ""
+msgstr "Éducation"
 
 #: src/DesktopAppManager.vala:61
 msgid "Games"
-msgstr ""
+msgstr "Jeux"
 
 #: src/DesktopAppManager.vala:62
 msgid "Graphics"
-msgstr ""
+msgstr "Infographie"
 
 #: src/DesktopAppManager.vala:63
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: src/DesktopAppManager.vala:64
 msgid "Office"
-msgstr ""
+msgstr "Bureautique"
 
 #: src/DesktopAppManager.vala:65
 msgid "Science"
-msgstr ""
+msgstr "Science"
 
 #: src/DesktopAppManager.vala:66
 msgid "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 #: src/DesktopAppManager.vala:67
 msgid "System Tools"
-msgstr ""
+msgstr "Outils système"
 
 #: src/DesktopAppManager.vala:68
 msgid "Accessories"
-msgstr ""
+msgstr "Accessoires"
 
 #: src/DesktopAppManager.vala:69
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 #: src/IconButton.vala:68
 msgid "Icon name or path to an image"
@@ -328,7 +332,7 @@ msgstr "Sélectionner"
 
 #: src/IconChooserDialog.vala:45
 msgid "Search icons…"
-msgstr "Rechercher un icône..."
+msgstr "Rechercher un icône…"
 
 #: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
@@ -340,7 +344,7 @@ msgstr "Afficher les raccourcis cachés"
 
 #: src/MainWindow.vala:100
 msgid "No Applications Found"
-msgstr "Aucune Application trouvée"
+msgstr "Aucune application trouvée"
 
 #: src/MainWindow.vala:100
 msgid "Could not find any applications to edit on this system"
@@ -352,7 +356,7 @@ msgstr "Recommencez"
 
 #: src/MainWindow.vala:117
 msgid "Find…"
-msgstr "Rechercher..."
+msgstr "Rechercher…"
 
 #: src/MainWindow.vala:125
 msgid "New entry"
@@ -361,12 +365,12 @@ msgstr "Nouveau raccourci"
 #: src/MainWindow.vala:271
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr ""
+msgstr "Impossible de dupiquer %s"
 
 #: src/MainWindow.vala:288
 #, fuzzy
 msgid "Could Not Create a New Application"
-msgstr "Nouvelle application"
+msgstr "Impossible de créer une nouvelle application"
 
 #: src/MessageDialog.vala:27
 msgid "Close"

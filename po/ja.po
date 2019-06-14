@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 11:18+0900\n"
-"PO-Revision-Date: 2018-07-01 11:22+0900\n"
+"POT-Creation-Date: 2018-12-18 20:50+0900\n"
+"PO-Revision-Date: 2018-12-18 21:00+0900\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
@@ -65,11 +65,11 @@ msgstr "アプリケーションのエントリーを編集します"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
-msgstr ""
+msgstr "com.github.donadigo.appeditor"
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr "アプリケーション;編集;エントリー;"
+msgstr "アプリケーション;編集;エントリー;application;edit;entry;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
@@ -89,7 +89,7 @@ msgstr "カテゴリー"
 
 #: src/AppInfoView.vala:140
 msgid "Visibility"
-msgstr "可視性"
+msgstr "表示"
 
 #: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
@@ -117,7 +117,7 @@ msgstr "起動"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr "通知を使用"
+msgstr "通知を使う"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
@@ -137,16 +137,16 @@ msgstr "複製"
 
 #: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
-msgstr "変更の保存が成功しました"
+msgstr "変更は正しく保存されました"
 
 #: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
-msgstr "間違った箇所があるため変更を保存することができませんでした: %s"
+msgstr "間違った箇所があるため、変更を保存できませんでした: %s"
 
 #: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
-msgstr "アプリケーションメニュー内に可視のタイトルがありません"
+msgstr "アプリケーションメニュー内に表示可能なタイトルがありません"
 
 #: src/AppInfoView.vala:341
 msgid "No program will be launched"
@@ -188,7 +188,7 @@ msgstr "デフォルトに復元してもよろしいですか？"
 #: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
-"デフォルトに復元することでこのエントリーに加えられた変更はすべて元に戻りま"
+"デフォルトに復元することで、このエントリーに加えられた変更はすべて元に戻りま"
 "す。"
 
 #: src/AppInfoView.vala:385
@@ -199,15 +199,15 @@ msgstr "デフォルトに復元"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/AppInfoView.vala:424
+#: src/AppInfoView.vala:425
 msgid "Could Not Open This Entry"
-msgstr "このエントリーを開くことができませんでした"
+msgstr "このエントリーを開けませんでした"
 
-#: src/AppInfoView.vala:445
+#: src/AppInfoView.vala:453
 msgid "Delete entry…"
 msgstr "エントリーを削除…"
 
-#: src/AppInfoView.vala:447
+#: src/AppInfoView.vala:455
 msgid "Restore defaults…"
 msgstr "デフォルトを復元…"
 
@@ -231,26 +231,26 @@ msgstr "編集するにはアプリケーションを選択するかタイプし
 msgid "Unknown"
 msgstr "不明"
 
-#: src/Application.vala:67
+#: src/Application.vala:63
 #, c-format
 msgid "Could not Find \"%s\""
-msgstr "\"%s\" を見つけることができませんでした"
+msgstr "\"%s\" を見つけられませんでした"
 
-#: src/Application.vala:67
+#: src/Application.vala:63
 msgid "Could not Find Requested File"
-msgstr "要求されたファイルを見つけることができませんでした"
+msgstr "要求されたファイルを見つけられませんでした"
 
-#: src/Application.vala:68
+#: src/Application.vala:64
 #, c-format
 msgid "File <b>\"%s\"</b> does not exist."
 msgstr "ファイル <b>\"%s\"</b> は存在しません。"
 
-#: src/Application.vala:76
+#: src/Application.vala:79
 #, c-format
 msgid "Could Not Create a New Application Entry from \"%s\""
 msgstr "\"%s\" から新しいアプリケーションエントリーを作成できませんでした"
 
-#: src/Application.vala:77
+#: src/Application.vala:80
 msgid "Could Not Create a New Application From Requested File"
 msgstr "要求されたファイルから新しいアプリケーションを作成できませんでした"
 
@@ -310,27 +310,27 @@ msgstr "アクセサリー"
 msgid "Other"
 msgstr "未分類"
 
-#: src/IconButton.vala:68
+#: src/IconButton.vala:82
 msgid "Icon name or path to an image"
 msgstr "アイコンの名前または画像のパス"
 
-#: src/IconButton.vala:72
+#: src/IconButton.vala:86
 msgid "Choose from file"
 msgstr "ファイルから選択"
 
-#: src/IconButton.vala:76
+#: src/IconButton.vala:90
 msgid "Choose from available icons"
 msgstr "利用可能なアイコンから選択"
 
-#: src/IconButton.vala:89
+#: src/IconButton.vala:103
 msgid "All Files"
 msgstr "すべてのファイル"
 
-#: src/IconButton.vala:93
+#: src/IconButton.vala:107
 msgid "Images"
 msgstr "画像"
 
-#: src/IconButton.vala:97
+#: src/IconButton.vala:111
 msgid "Select an image"
 msgstr "画像を選択"
 
@@ -346,40 +346,38 @@ msgstr "アイコンを検索…"
 msgid "Choose an icon from the list"
 msgstr "リストからアイコンを選択します"
 
-#: src/MainWindow.vala:56
+#: src/MainWindow.vala:86
 msgid "Show hidden entries"
 msgstr "隠されたエントリーを表示"
 
-#: src/MainWindow.vala:100
+#: src/MainWindow.vala:130
 msgid "No Applications Found"
 msgstr "アプリケーションが見つかりませんでした"
 
-#: src/MainWindow.vala:100
+#: src/MainWindow.vala:130
 msgid "Could not find any applications to edit on this system"
-msgstr ""
-"このシステム上に編集できるアプリケーションを見つけることができませんでした"
+msgstr "このシステム上に編集できるアプリケーションを見つけられませんでした"
 
-#: src/MainWindow.vala:101
+#: src/MainWindow.vala:131
 msgid "Retry"
 msgstr "再試行"
 
-#: src/MainWindow.vala:117
+#: src/MainWindow.vala:151
 msgid "Find…"
 msgstr "検索…"
 
-#: src/MainWindow.vala:125
+#: src/MainWindow.vala:159
 msgid "New entry"
 msgstr "新しいエントリー"
 
-#: src/MainWindow.vala:275
+#: src/MainWindow.vala:333
 #, c-format
 msgid "Could Not Duplicate %s"
 msgstr "%s を複製できませんでした"
 
-#: src/MainWindow.vala:292
+#: src/MainWindow.vala:358
 msgid "Could Not Create a New Application Entry"
 msgstr "新しいアプリケーションエントリーを作成できませんでした"
 
-#: src/MessageDialog.vala:27
-msgid "Close"
-msgstr "閉じる"
+#~ msgid "Close"
+#~ msgstr "閉じる"

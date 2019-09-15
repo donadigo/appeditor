@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Appeditor\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-30 16:33+0900\n"
-"PO-Revision-Date: 2018-02-03 21:44+0400\n"
+"PO-Revision-Date: 2018-08-18 21:43+0400\n"
 "Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -22,53 +22,49 @@ msgid "AppEditor"
 msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
-#, fuzzy
 msgid "Edit application menu"
-msgstr "Приложения не найдены"
+msgstr "Изменяйте меню приложений"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
-msgstr ""
+msgstr "Редактирование описания и свойств программ в меню приложений."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr ""
+msgstr "Доступные возможности:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
-#, fuzzy
 msgid "Hide and show applications from the application menu"
-msgstr "Не отображать название в меню приложений"
+msgstr "Скрытие и отображение программ в меню приложений"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
-#, fuzzy
 msgid "Create new application entries"
-msgstr "Невозможно создать новое приложение"
+msgstr "Создание новых записей о приложениях"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr ""
+msgstr "Изменение отображаемого имени приложение, значка и многого другого"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
-msgstr ""
+msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
-#, fuzzy
 msgid "Application Entry Editor"
-msgstr "Приложения не найдены"
+msgstr "Редактор свойств приложений"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "Редактирование свойств приложений"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
-msgstr ""
+msgstr "com.github.donadigo.appeditor"
 
 #: data/com.github.donadigo.appeditor.desktop.in:12
 msgid "application;edit;entry;"
-msgstr ""
+msgstr "application;edit;entry;"
 
 #: src/AppInfoView.vala:114
 msgid "Display name"
@@ -366,3 +362,28 @@ msgstr "Невозможно создать новое приложение"
 #: src/MessageDialog.vala:27
 msgid "Close"
 msgstr "Закрыть"
+
+#, fuzzy
+#~| msgid "Could Not Duplicate %s"
+#~ msgid "Could not Find \"%s\""
+#~ msgstr "Не удалось дублировать %s"
+
+#, fuzzy
+#~| msgid "Could not load the newly saved file."
+#~ msgid "Could not Find Requested File"
+#~ msgstr "Не удалось загрузить только что сохраненный файл."
+
+#, fuzzy
+#~| msgid "Entered file does not exist"
+#~ msgid "File <b>\"%s\"</b> does not exist."
+#~ msgstr "Введённый файл не существует"
+
+#, fuzzy
+#~| msgid "Could Not Create a New Application"
+#~ msgid "Could Not Create a New Application Entry from \"%s\""
+#~ msgstr "Невозможно создать новое приложение"
+
+#, fuzzy
+#~| msgid "Could Not Create a New Application"
+#~ msgid "Could Not Create a New Application From Requested File"
+#~ msgstr "Невозможно создать новое приложение"

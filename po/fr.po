@@ -30,11 +30,11 @@ msgstr "Modifier le menu des applications"
 msgid ""
 "Edit application entries shown in application menu and their properties."
 msgstr ""
-"Modifiez les raccourcis d'application affichées dans le menu des applications et leurs propriétés."
+"Modifiez les raccourcis et leurs propriétés dans le menu des applications."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr "Fonctionnalités incluses :"
+msgstr "Fonctionnalités incluses:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 #, fuzzy
@@ -48,7 +48,7 @@ msgstr "Créer de nouveaux raccourcis d'application"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr "Modifier le nom affiché de l'application, l'icône et plus"
+msgstr "Changer le nom d'une application, son icône, etc"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
@@ -61,7 +61,7 @@ msgstr "Éditeur de raccourci d'application"
 
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr "Modifier les raccourcis des applications"
+msgstr "Modifier les raccourcis d'application"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"
@@ -121,7 +121,7 @@ msgstr "Lancement"
 
 #: src/AppInfoView.vala:171
 msgid "Uses Notifications"
-msgstr "Utilise les notifications"
+msgstr "Utiliser les Notifications"
 
 #: src/AppInfoView.vala:180
 msgid "Advanced"
@@ -365,7 +365,7 @@ msgstr "Nouveau raccourci"
 #: src/MainWindow.vala:271
 #, c-format
 msgid "Could Not Duplicate %s"
-msgstr "Impossible de dupiquer %s"
+msgstr "Impossible de dupliquer %s"
 
 #: src/MainWindow.vala:288
 #, fuzzy

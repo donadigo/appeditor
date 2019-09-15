@@ -286,7 +286,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
             toast.send_notification ();
         } catch (Error e) {
             set_widget_visible (error_info_bar, true);
-            error_label.label = _("Something went wrong and the changes could not be saved: %s".printf (e.message));
+            error_label.label = (_("Something went wrong and the changes could not be saved: %s").printf (e.message));
         }
 
         update_page ();

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.donadigo.appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-18 20:50+0900\n"
-"PO-Revision-Date: 2018-12-18 21:00+0900\n"
+"POT-Creation-Date: 2019-09-15 22:50+0200\n"
+"PO-Revision-Date: 2019-09-15 22:59+0200\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
 #: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
@@ -40,8 +40,7 @@ msgstr "含まれる機能:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 msgid "Hide and show applications from the application menu"
-msgstr ""
-"アプリケーションをアプリケーションメニューから隠したり表示したりします"
+msgstr "アプリケーションをアプリケーションメニューから隠したり表示したりします"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:16
 msgid "Create new application entries"
@@ -54,6 +53,158 @@ msgstr "アプリケーションの表示名やアイコンなどを変更しま
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
 msgstr "Adam Bieńkowski"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:36
+msgid ""
+"This release includes added support for elementary OS Juno, miscellaneous "
+"improvements and new translations:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:38
+msgid "German translation (ChristianPauly)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:39
+msgid "Japanese translation (Ryo Nakano)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:40
+msgid "Brazilian Portuguese translation (Filipe de Almeida Garrett)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:42
+#: data/com.github.donadigo.appeditor.appdata.xml.in:65
+#: data/com.github.donadigo.appeditor.appdata.xml.in:86
+#, fuzzy
+#| msgid "New entry"
+msgid "New features:"
+msgstr "新しいエントリー"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:44
+msgid ""
+"It is now possible to create a menu entry directly from the file manager: "
+"right click on an executable file and choose \"Create a Menu Entry\""
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:45
+msgid "New shortcuts added:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:46
+#, fuzzy
+#| msgid "Could Not Create a New Application Entry"
+msgid "Ctrl+N: Create a new menu entry"
+msgstr "新しいアプリケーションエントリーを作成できませんでした"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:47
+msgid "Ctrl+F: Focus the search entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:48
+msgid "Ctrl+D: Duplicate selected entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:50
+#: data/com.github.donadigo.appeditor.appdata.xml.in:70
+msgid "Fixed:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:52
+msgid "Some strings are not displayed in translated languages (Ryo Nakano)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:53
+msgid "Improper escaping of special characters in display name and description"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:59
+msgid ""
+"This release contains many new features and bug fixes as well as added "
+"suport for translations:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:61
+msgid "French translation (dabou)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:62
+msgid "Russian translation (Cammelan)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:63
+msgid "Spanish translation (Juan Gómez Carrillo)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:67
+msgid "Added a button to duplicate a specifc application entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:68
+msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:72
+msgid ""
+"Fixed crashes when saving an entry with an equal sign in it's command line "
+"property"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:73
+msgid ""
+"Sometimes deleting a local entry would cause it to stay in the sidebar until "
+"the next launch"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:74
+msgid "Sometimes creating a new entry caused a crash"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:75
+msgid "The page would not update after saving the entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:77
+#: data/com.github.donadigo.appeditor.appdata.xml.in:91
+msgid "Miscellaneous:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:79
+msgid "Save unsaved entries when quitting the application"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:80
+#, fuzzy
+#| msgid "Create new application entries"
+msgid "Clear the search entry when creating a new application entry"
+msgstr "新しいアプリケーションのエントリーを作成します"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:88
+msgid "Added a button to open the entry in a text editor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:89
+msgid "Added a switch to show hidden entries (disabled by default)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:93
+msgid "Fixed some applications like Inkscape not saving their name properly"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:94
+msgid "The main window can be now maximized"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:100
+msgid "Add meson dependency to debian packaging"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:105
+msgid "Fix debian packaging"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:110
+msgid "Initial release"
+msgstr ""
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
 msgid "Application Entry Editor"

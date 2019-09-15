@@ -1,269 +1,548 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: appeditor\n"
-"POT-Creation-Date: 2018-03-22 21:24-0300\n"
-"PO-Revision-Date: 2018-03-22 21:59-0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-15 22:50+0200\n"
+"PO-Revision-Date: 2019-09-15 23:00+0200\n"
+"Last-Translator: Filipe de Almeida Garrett <filipe.garrett@gmail.com>\n"
 "Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: Filipe de Almeida Garrett <filipe.garrett@gmail.com>\n"
-"Language: pt_BR\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: AppInfoView.vala:105
+#: data/com.github.donadigo.appeditor.appdata.xml.in:7
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+msgid "AppEditor"
+msgstr "AppEditor"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:8
+#, fuzzy
+#| msgid "No Applications Found"
+msgid "Edit application menu"
+msgstr "Nenhum aplicativo encontrado"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:10
+msgid ""
+"Edit application entries shown in application menu and their properties."
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:13
+msgid "Features include:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:15
+#, fuzzy
+#| msgid "No visible title in the applications menu"
+msgid "Hide and show applications from the application menu"
+msgstr "Nenhum título visível no menu de aplicativos"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:16
+msgid "Create new application entries"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:17
+msgid "Change application's display name, icon and more"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:23
+msgid "Adam Bieńkowski"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:36
+msgid ""
+"This release includes added support for elementary OS Juno, miscellaneous "
+"improvements and new translations:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:38
+msgid "German translation (ChristianPauly)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:39
+msgid "Japanese translation (Ryo Nakano)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:40
+msgid "Brazilian Portuguese translation (Filipe de Almeida Garrett)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:42
+#: data/com.github.donadigo.appeditor.appdata.xml.in:65
+#: data/com.github.donadigo.appeditor.appdata.xml.in:86
+#, fuzzy
+#| msgid "New entry"
+msgid "New features:"
+msgstr "Novo item"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:44
+msgid ""
+"It is now possible to create a menu entry directly from the file manager: "
+"right click on an executable file and choose \"Create a Menu Entry\""
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:45
+msgid "New shortcuts added:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:46
+msgid "Ctrl+N: Create a new menu entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:47
+msgid "Ctrl+F: Focus the search entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:48
+msgid "Ctrl+D: Duplicate selected entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:50
+#: data/com.github.donadigo.appeditor.appdata.xml.in:70
+msgid "Fixed:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:52
+msgid "Some strings are not displayed in translated languages (Ryo Nakano)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:53
+msgid "Improper escaping of special characters in display name and description"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:59
+msgid ""
+"This release contains many new features and bug fixes as well as added "
+"suport for translations:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:61
+msgid "French translation (dabou)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:62
+msgid "Russian translation (Cammelan)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:63
+msgid "Spanish translation (Juan Gómez Carrillo)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:67
+msgid "Added a button to duplicate a specifc application entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:68
+msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:72
+msgid ""
+"Fixed crashes when saving an entry with an equal sign in it's command line "
+"property"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:73
+msgid ""
+"Sometimes deleting a local entry would cause it to stay in the sidebar until "
+"the next launch"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:74
+msgid "Sometimes creating a new entry caused a crash"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:75
+msgid "The page would not update after saving the entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:77
+#: data/com.github.donadigo.appeditor.appdata.xml.in:91
+msgid "Miscellaneous:"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:79
+msgid "Save unsaved entries when quitting the application"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:80
+msgid "Clear the search entry when creating a new application entry"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:88
+msgid "Added a button to open the entry in a text editor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:89
+msgid "Added a switch to show hidden entries (disabled by default)"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:93
+msgid "Fixed some applications like Inkscape not saving their name properly"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:94
+msgid "The main window can be now maximized"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:100
+msgid "Add meson dependency to debian packaging"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:105
+msgid "Fix debian packaging"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:110
+msgid "Initial release"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:5
+#, fuzzy
+#| msgid "No Applications Found"
+msgid "Application Entry Editor"
+msgstr "Nenhum aplicativo encontrado"
+
+#: data/com.github.donadigo.appeditor.desktop.in:6
+msgid "Edit application entries"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:7
+msgid "com.github.donadigo.appeditor"
+msgstr ""
+
+#: data/com.github.donadigo.appeditor.desktop.in:12
+msgid "application;edit;entry;"
+msgstr ""
+
+#: src/AppInfoView.vala:114
 msgid "Display name"
 msgstr "Nome exibido"
 
-#: AppInfoView.vala:112
+#: src/AppInfoView.vala:121
 msgid "Comment"
 msgstr "Descrição"
 
-#: AppInfoView.vala:128
-msgid "Show in launcher"
+#: src/AppInfoView.vala:137
+#, fuzzy
+#| msgid "Show in launcher"
+msgid "Show in Launcher"
 msgstr "Mostrar no Launcher"
 
-#: AppInfoView.vala:129
+#: src/AppInfoView.vala:138
 msgid "Category"
 msgstr "Categoria"
 
-#: AppInfoView.vala:131
+#: src/AppInfoView.vala:140
 msgid "Visibility"
 msgstr "Visibilidade"
 
-#: AppInfoView.vala:138
+#: src/AppInfoView.vala:147
 msgid "Program to execute along with it's arguments"
 msgstr "Aplicativo para executar com seus argumentos"
 
-#: AppInfoView.vala:144
+#: src/AppInfoView.vala:153
 msgid "The working directory to run the program in"
 msgstr "O diretório de trabalho para rodar o aplicativo"
 
-#: AppInfoView.vala:150
-msgid "Command line"
+#: src/AppInfoView.vala:159
+#, fuzzy
+#| msgid "Command line"
+msgid "Command Line"
 msgstr "Linha de comando"
 
-#: AppInfoView.vala:151
-msgid "Working directory"
+#: src/AppInfoView.vala:160
+#, fuzzy
+#| msgid "Working directory"
+msgid "Working Directory"
 msgstr "Diretório de trabalho"
 
-#: AppInfoView.vala:152
-msgid "Launch in terminal"
+#: src/AppInfoView.vala:161
+#, fuzzy
+#| msgid "Launch in terminal"
+msgid "Launch in Terminal"
 msgstr "Executar no Terminal"
 
-#: AppInfoView.vala:154
+#: src/AppInfoView.vala:163
 msgid "Launching"
 msgstr "Abrindo"
 
-#: AppInfoView.vala:182
+#: src/AppInfoView.vala:171
+msgid "Uses Notifications"
+msgstr ""
+
+#: src/AppInfoView.vala:180
+msgid "Advanced"
+msgstr ""
+
+#: src/AppInfoView.vala:207
 msgid "Save"
 msgstr "Salvar"
 
-#: AppInfoView.vala:187
+#: src/AppInfoView.vala:212
 msgid "Open in Text Editor"
 msgstr "Abrir no editor de texto"
 
-#: AppInfoView.vala:255
+#: src/AppInfoView.vala:215
+msgid "Duplicate"
+msgstr ""
+
+#: src/AppInfoView.vala:285
 msgid "Changes successfully saved"
 msgstr "Alterações salvas com sucesso"
 
-#: AppInfoView.vala:259
+#: src/AppInfoView.vala:289
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
 msgstr "Algo deu errado e as alterações não puderam ser salvas: %s"
 
-#: AppInfoView.vala:296
+#: src/AppInfoView.vala:326
 msgid "No visible title in the applications menu"
 msgstr "Nenhum título visível no menu de aplicativos"
 
-#: AppInfoView.vala:311
+#: src/AppInfoView.vala:341
 msgid "No program will be launched"
 msgstr "Nenhum programa será executado"
 
-#: AppInfoView.vala:329
+#: src/AppInfoView.vala:345
+msgid "The executable name (first argument) cannot contain the equal sign"
+msgstr ""
+
+#: src/AppInfoView.vala:351
+msgid "Entered file does not exist"
+msgstr ""
+
+#: src/AppInfoView.vala:357
+msgid "Entered program was not found"
+msgstr ""
+
+#: src/AppInfoView.vala:379
 msgid "Do You Want to Delete This Entry?"
 msgstr "Você deseja deletar este item?"
 
-#: AppInfoView.vala:330
+#: src/AppInfoView.vala:380
+#, fuzzy
+#| msgid ""
+#| "Deleting this entry is permament and cannot be undone. This does not "
+#| "delete the application itself, only the entry shown in the applications "
+#| "menu."
 msgid ""
-"Deleting this entry is permament and cannot be undone. This does not delete "
+"Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
 "Ao apagar este item ele será removido permanentemente e não poderá ser "
 "restaurado. Essa ação não deleta o aplicativo em si, apenas a entrada "
 "exibida no menu de aplicativos"
 
-#: AppInfoView.vala:331
+#: src/AppInfoView.vala:381
 msgid "Delete"
 msgstr "Apagar"
 
-#: AppInfoView.vala:333
+#: src/AppInfoView.vala:383
 msgid "Do You Want to Restore The Defaults?"
 msgstr "Você deseja restaurar os padrões?"
 
-#: AppInfoView.vala:334
+#: src/AppInfoView.vala:384
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
 "Restaurar os padrões irá eliminar todas as alterações feitas nesta entrada"
 
-#: AppInfoView.vala:335 AppInfoView.vala:399
+#: src/AppInfoView.vala:385
 msgid "Restore defaults"
 msgstr "Restaurar padrões"
 
-#: AppInfoView.vala:342 IconChooserDialog.vala:29
+#: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: AppInfoView.vala:374
+#: src/AppInfoView.vala:425
 msgid "Could Not Open This Entry"
 msgstr "Não foi possível abrir esta entrada"
 
-#: AppInfoView.vala:375
-msgid "Close"
-msgstr "Fechar"
-
-#: AppInfoView.vala:397
-msgid "Delete entry"
+#: src/AppInfoView.vala:453
+#, fuzzy
+#| msgid "Delete entry"
+msgid "Delete entry…"
 msgstr "Apagar item"
 
-#: AppInfoViewSaver.vala:29
+#: src/AppInfoView.vala:455
+#, fuzzy
+#| msgid "Restore defaults"
+msgid "Restore defaults…"
+msgstr "Restaurar padrões"
+
+#: src/AppInfoViewSaver.vala:32
 msgid "New Application"
 msgstr "Novo aplicativo"
 
-#: AppInfoViewStack.vala:28
+#: src/AppInfoViewSaver.vala:148
+msgid "Could not load the newly saved file."
+msgstr ""
+
+#: src/AppInfoViewStack.vala:29
 msgid "No Item Selected"
 msgstr "Nenhum item selecionado"
 
-#: AppInfoViewStack.vala:28
+#: src/AppInfoViewStack.vala:29
 msgid "Select an application or start typing to edit one"
 msgstr "Selecione um aplicativo ou comece a digitar para editar"
 
-#: AppItem.vala:35
+#: src/AppItem.vala:35
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: Application.vala:37
-msgid "translator-credits"
-msgstr "Filipe de Almeida Garrett"
+#: src/Application.vala:63
+#, c-format
+msgid "Could not Find \"%s\""
+msgstr ""
 
-#: Constants.vala:21
-msgid "AppEditor"
-msgstr "AppEditor"
+#: src/Application.vala:63
+msgid "Could not Find Requested File"
+msgstr ""
 
-#: DesktopAppManager.vala:56
+#: src/Application.vala:64
+#, c-format
+msgid "File <b>\"%s\"</b> does not exist."
+msgstr ""
+
+#: src/Application.vala:79
+#, c-format
+msgid "Could Not Create a New Application Entry from \"%s\""
+msgstr ""
+
+#: src/Application.vala:80
+msgid "Could Not Create a New Application From Requested File"
+msgstr ""
+
+#: src/DesktopAppManager.vala:56
 msgid "Sound & Video"
 msgstr "Som & Vídeo"
 
-#: DesktopAppManager.vala:57
+#: src/DesktopAppManager.vala:57
 msgid "Sound"
 msgstr "Som"
 
-#: DesktopAppManager.vala:58
+#: src/DesktopAppManager.vala:58
 msgid "Video"
 msgstr "Vídeo"
 
-#: DesktopAppManager.vala:59
+#: src/DesktopAppManager.vala:59
 msgid "Programming"
 msgstr "Desenvolvimento"
 
-#: DesktopAppManager.vala:60
+#: src/DesktopAppManager.vala:60
 msgid "Education"
 msgstr "Educação"
 
-#: DesktopAppManager.vala:61
+#: src/DesktopAppManager.vala:61
 msgid "Games"
 msgstr "Jogos"
 
-#: DesktopAppManager.vala:62
+#: src/DesktopAppManager.vala:62
 msgid "Graphics"
 msgstr "Gráficos"
 
-#: DesktopAppManager.vala:63
+#: src/DesktopAppManager.vala:63
 msgid "Internet"
 msgstr "Internet"
 
-#: DesktopAppManager.vala:64
+#: src/DesktopAppManager.vala:64
 msgid "Office"
 msgstr "Escritório"
 
-#: DesktopAppManager.vala:65
+#: src/DesktopAppManager.vala:65
 msgid "Science"
 msgstr "Ciência"
 
-#: DesktopAppManager.vala:66
+#: src/DesktopAppManager.vala:66
 msgid "Settings"
 msgstr "Configurações"
 
-#: DesktopAppManager.vala:67
+#: src/DesktopAppManager.vala:67
 msgid "System Tools"
 msgstr "Ferramentas de sistema"
 
-#: DesktopAppManager.vala:68
+#: src/DesktopAppManager.vala:68
 msgid "Accessories"
 msgstr "Acessórios"
 
-#: DesktopAppManager.vala:69
+#: src/DesktopAppManager.vala:69
 msgid "Other"
 msgstr "Outro"
 
-#: IconButton.vala:64
+#: src/IconButton.vala:82
 msgid "Icon name or path to an image"
 msgstr "Nome do ícone ou caminho para uma imagem"
 
-#: IconButton.vala:68
+#: src/IconButton.vala:86
 msgid "Choose from file"
 msgstr "Escolher do arquivo"
 
-#: IconButton.vala:72
+#: src/IconButton.vala:90
 msgid "Choose from available icons"
 msgstr "Escolher entre ícones disponíveis"
 
-#: IconButton.vala:85
+#: src/IconButton.vala:103
 msgid "All Files"
 msgstr "Todos os arquivos"
 
-#: IconButton.vala:89
+#: src/IconButton.vala:107
 msgid "Images"
 msgstr "Imagens"
 
-#: IconButton.vala:93
+#: src/IconButton.vala:111
 msgid "Select an image"
 msgstr "Selecionar uma imagem"
 
-#: IconChooserDialog.vala:31
+#: src/IconChooserDialog.vala:31
 msgid "Choose"
 msgstr "Escolher"
 
-#: IconChooserDialog.vala:45
+#: src/IconChooserDialog.vala:45
 msgid "Search icons…"
 msgstr "Procurar ícones..."
 
-#: IconChooserDialog.vala:59
+#: src/IconChooserDialog.vala:59
 msgid "Choose an icon from the list"
 msgstr "Escolher um ícone da lista"
 
-#: MainWindow.vala:50
+#: src/MainWindow.vala:86
 msgid "Show hidden entries"
 msgstr "Mostrar itens ocultos"
 
-#: MainWindow.vala:94
+#: src/MainWindow.vala:130
 msgid "No Applications Found"
 msgstr "Nenhum aplicativo encontrado"
 
-#: MainWindow.vala:94
+#: src/MainWindow.vala:130
 msgid "Could not find any applications to edit on this system"
-msgstr ""
-"Não foi possível encontrar nenhum aplicativo para editar neste sistema"
+msgstr "Não foi possível encontrar nenhum aplicativo para editar neste sistema"
 
-#: MainWindow.vala:95
+#: src/MainWindow.vala:131
 msgid "Retry"
 msgstr "Tentar novamente"
 
-#: MainWindow.vala:111
+#: src/MainWindow.vala:151
 msgid "Find…"
 msgstr "Encontrar"
 
-#: MainWindow.vala:119
+#: src/MainWindow.vala:159
 msgid "New entry"
 msgstr "Novo item"
+
+#: src/MainWindow.vala:333
+#, c-format
+msgid "Could Not Duplicate %s"
+msgstr ""
+
+#: src/MainWindow.vala:358
+msgid "Could Not Create a New Application Entry"
+msgstr ""
+
+#~ msgid "Close"
+#~ msgstr "Fechar"
+
+#~ msgid "translator-credits"
+#~ msgstr "Filipe de Almeida Garrett"

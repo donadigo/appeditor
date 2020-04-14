@@ -130,7 +130,7 @@ public class AppEditor.DesktopApp : Object {
 
     public unowned string get_path () {
         if (path == null) {
-            unowned string _path = info.get_string (KeyFileDesktop.KEY_PATH);
+            string _path = info.get_string (KeyFileDesktop.KEY_PATH);
             if (_path == null) {
                 _path = "";
             }

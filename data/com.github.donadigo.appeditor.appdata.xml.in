@@ -31,6 +31,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.1.1" date="2020-04-17">
+      <description>
+        <p>This release includes translation updates:</p>
+        <ul>
+          <li>Dutch translation (Heimen Stoffels)</li>
+          <li>Spanish, Catalan translation (Adolfo Jayme-Barrientos)</li>
+          <li>Japanese translation (Ryo Nakano)</li>
+          <li>French translation (Nathan Bonnemains, dabou)</li>
+          <li>Turkish translation (Serdar Sağlam)</li>
+          <li>Russian translation (Camellan)</li>
+          <li>Lithuanian translation (welaq)</li>
+          <li>Italian translation</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.0" date="2018-08-11">
       <description>
         <p>This release includes added support for elementary OS Juno, miscellaneous improvements and new translations:</p>
@@ -145,5 +160,6 @@
   <custom>
     <value key="x-appcenter-color-primary">#32e3ca</value>
     <value key="x-appcenter-color-primary-text">#0A332D</value>
+    <value key="x-appcenter-suggested-price">5</value>
   </custom>
 </component>

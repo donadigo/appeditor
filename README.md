@@ -18,10 +18,11 @@ These dependencies must be present before building
  - `gtk+-3.0`
  - `granite`
  - `meson`
+ - `gettext`
 
  **You can install these on a Ubuntu-based system by executing this command:**
 
- `sudo apt install valac libgranite-dev meson`
+ `sudo apt install valac libgranite-dev meson gettext`
 
  ### Building
 ```

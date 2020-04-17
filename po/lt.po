@@ -200,15 +200,9 @@ msgstr ""
 msgid "Initial release"
 msgstr ""
 
-#: data/com.github.donadigo.appeditor.desktop.in:5
-#, fuzzy
-#| msgid "No Applications Found"
-msgid "Application Entry Editor"
-msgstr "Programų nerasta"
-
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
-msgstr ""
+msgstr "Programų įrašų redaktorius"
 
 #: data/com.github.donadigo.appeditor.desktop.in:7
 msgid "com.github.donadigo.appeditor"

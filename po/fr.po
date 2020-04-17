@@ -204,11 +204,6 @@ msgstr ""
 msgid "Initial release"
 msgstr ""
 
-#: data/com.github.donadigo.appeditor.desktop.in:5
-#, fuzzy
-msgid "Application Entry Editor"
-msgstr "Éditeur de raccourci d'application"
-
 #: data/com.github.donadigo.appeditor.desktop.in:6
 msgid "Edit application entries"
 msgstr "Modifier les raccourcis d'application"

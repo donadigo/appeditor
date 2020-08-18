@@ -146,7 +146,7 @@ msgstr "Botão adicionado para duplicar uma entrada de aplicação específica"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:68
 msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
-msgstr "Nova seção \"Avançada\": adicionada uma nova chave \"Notificações\""
+msgstr "Nova secção \"Avançada\": adicionada uma nova chave \"Notificações\""
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:72
 msgid ""

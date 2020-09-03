@@ -153,7 +153,7 @@ msgid ""
 "Fixed crashes when saving an entry with an equal sign in it's command line "
 "property"
 msgstr ""
-"Falhas corrigidas ao gravar uma entrada com um sinal de igual nas "
+"Falhas corrigidas ao guardar uma entrada com um sinal de igual nas "
 "propriedades da sua linha de comandos"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:73
@@ -170,7 +170,7 @@ msgstr "Por vezes ao criar uma nova entrada esta causava uma falha"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:75
 msgid "The page would not update after saving the entry"
-msgstr "A página não atualizava depois de gravar uma entrada"
+msgstr "A página não atualizava depois de guardar uma entrada"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:77
 #: data/com.github.donadigo.appeditor.appdata.xml.in:91
@@ -179,7 +179,7 @@ msgstr "Diversos:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:79
 msgid "Save unsaved entries when quitting the application"
-msgstr "Gravar entradas não gravadas ao sair da aplicação"
+msgstr "Guardar entradas não guardadas ao sair da aplicação"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:80
 msgid "Clear the search entry when creating a new application entry"
@@ -286,7 +286,7 @@ msgstr "Avançado"
 
 #: src/AppInfoView.vala:207
 msgid "Save"
-msgstr "Gravar"
+msgstr "Guardar"
 
 #: src/AppInfoView.vala:212
 msgid "Open in Text Editor"

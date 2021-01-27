@@ -71,7 +71,7 @@
     </release>
     <release version="1.0.0" date="2018-01-15">
       <description>
-        <p>This release contains many new features and bug fixes as well as added suport for translations:</p>
+        <p>This release contains many new features and bug fixes as well as added support for translations:</p>
         <ul>
           <li>French translation (dabou)</li>
           <li>Russian translation (Cammelan)</li>
@@ -79,7 +79,7 @@
         </ul>
         <p>New features:</p>
           <ul>
-            <li>Added a button to duplicate a specifc application entry</li>
+            <li>Added a button to duplicate a specific application entry</li>
             <li>New "Advanced" section: add a new "Uses Notitifications" key</li>
           </ul>
         <p>Fixed:</p>

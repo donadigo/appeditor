@@ -144,7 +144,7 @@ msgstr ""
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:72
 msgid ""
-"Fixed crashes when saving an entry with an equal sign in it's command line "
+"Fixed crashes when saving an entry with an equal sign in its command line "
 "property"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgid "Visibility"
 msgstr "Visibilité"
 
 #: src/AppInfoView.vala:147
-msgid "Program to execute along with it's arguments"
+msgid "Program to execute along with its arguments"
 msgstr "Application à exécuter avec ses arguments"
 
 #: src/AppInfoView.vala:153

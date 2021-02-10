@@ -145,7 +145,7 @@ msgstr "Sección «Avanzado» nueva: adición de clave «Utiliza notificaciones�
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:72
 msgid ""
-"Fixed crashes when saving an entry with an equal sign in it's command line "
+"Fixed crashes when saving an entry with an equal sign in its command line "
 "property"
 msgstr ""
 "Se repararon los cuelgues al guardar una entrada con un signo de igualdad en "
@@ -250,7 +250,7 @@ msgid "Visibility"
 msgstr "Visibilidad"
 
 #: src/AppInfoView.vala:147
-msgid "Program to execute along with it's arguments"
+msgid "Program to execute along with its arguments"
 msgstr "Programa que ejecutar y sus argumentos"
 
 #: src/AppInfoView.vala:153

@@ -144,7 +144,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
         cmdline_entry = new PersistentPlaceholderEntry ();
         cmdline_entry.width_request = 300;
         cmdline_entry.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        cmdline_entry.placeholder_text = _("Program to execute along with it's arguments");
+        cmdline_entry.placeholder_text = _("Program to execute along with its arguments");
         cmdline_entry.changed.connect (on_cmdline_entry_changed);
 
         path_entry = new PersistentPlaceholderEntry ();

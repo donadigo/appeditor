@@ -14,7 +14,7 @@
         <key name="selected-desktop-id" type="s">
             <default>""</default>
             <summary>Last selected desktop ID</summary>
-            <description>The desktop ID that was choosen when the window closed</description>
+            <description>The desktop ID that was chosen when the window closed</description>
         </key>
         <key name="show-hidden-entries" type="b">
             <default>false</default>

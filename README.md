@@ -3,7 +3,7 @@
 
 ![screenshot](Screenshot.png)
 
-AppEditor allows you to edit application entries in the application menu. Some of it's features include:
+AppEditor allows you to edit application entries in the application menu. Some of its features include:
 
 * Hide and show applications from the application menu
 * Create new application entries

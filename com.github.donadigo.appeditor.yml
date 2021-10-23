@@ -1,0 +1,25 @@
+
+app-id: com.github.donadigo.appeditor
+runtime: io.elementary.Platform
+runtime-version: '6'
+sdk: io.elementary.Sdk
+command: com.github.donadigo.appeditor
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --share=network
+  - --filesystem=home:ro
+cleanup:
+  - '*.a'
+  - '*.la'
+  - '/include'
+modules:
+  - name: eddy
+    buildsystem: meson
+    builddir: true
+    sources:
+      - type: dir
+        path: .
+    config-opts:
+      - --buildtype=release

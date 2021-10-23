@@ -158,6 +158,7 @@
   </content_rating>
 
   <custom>
+    <value key="x-appcenter-stripe">pk_live_a5CWlfLgKcxATZoB4vRa50UP006vX7CjBc</value>
     <value key="x-appcenter-color-primary">#32e3ca</value>
     <value key="x-appcenter-color-primary-text">#0A332D</value>
     <value key="x-appcenter-suggested-price">5</value>

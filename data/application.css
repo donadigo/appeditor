@@ -49,3 +49,7 @@ window {
     font-size: 0;
     text-shadow: none;
 }
+
+entry {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}

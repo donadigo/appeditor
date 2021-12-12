@@ -31,6 +31,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.1.2" date="2021-12-12">
+      <description>
+        <p>This release makes AppEditor available on elementary OS 6.0.</p>
+        <p>New translations:</p>
+        <ul>
+          <li>Portuguese-Portugal (rottenpants466)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.1" date="2020-04-17">
       <description>
         <p>This release includes translation updates:</p>

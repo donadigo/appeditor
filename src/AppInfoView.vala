@@ -343,6 +343,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
             cmdline_entry.secondary_icon_tooltip_text = _("The executable name (first argument) cannot contain the equal sign");
             cmdline_valid = false;
         } else {
+#if !FLATPAK
             if (cmdline_entry.text.has_prefix (Path.DIR_SEPARATOR_S) &&
                 !FileUtils.test (cmdline_entry.text.split (" ")[0], FileTest.EXISTS)) {
                 cmdline_entry.secondary_icon_name = "dialog-error-symbolic";
@@ -360,6 +361,9 @@ public class AppEditor.AppInfoView : Gtk.Box {
                     cmdline_valid = true;
                 }
             }
+#else
+            cmdline_valid = true;
+#endif
         }
     }
 

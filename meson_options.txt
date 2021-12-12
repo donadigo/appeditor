@@ -1,0 +1,1 @@
+option('flatpak', type : 'boolean', value : 'false', description : 'Disables some defunct features when building with Flatpak')

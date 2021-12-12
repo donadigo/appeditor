@@ -27,6 +27,10 @@ if vala.version().version_compare('>= 0.40.0')
     vala_flags += ['--define', 'HAS_VALA040']
 endif
 
+if get_option('flatpak')
+  add_project_arguments('--define=FLATPAK', language: 'vala')
+endif
+
 add_project_arguments(vala_flags, language: 'vala')
 
 asresources = gnome.compile_resources(

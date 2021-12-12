@@ -84,14 +84,6 @@ public class AppEditor.DesktopAppManager : Object {
             }
         });
 
-        var f = File.new_for_path ("/usr/share/applications");
-        var enumerator = f.enumerate_children ("*", FileQueryInfoFlags.NONE, null);
-
-        FileInfo? info = null;
-        while ((info = enumerator.next_file (null)) != null) {
-            print ("%s\n", info.get_name ());
-        }
-
         loaded = true;
     }
 

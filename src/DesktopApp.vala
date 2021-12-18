@@ -78,20 +78,15 @@ public class AppEditor.DesktopApp : Object {
     public void open_default_handler () throws Error {
         // Gtk.show_uri_on_window does not seem to fully work in a Flatpak environment
         // so instead we directly call the freedesktop OpenURI DBus interface instead.
-        var file = File.new_for_path (info.get_filename ());
-        InputStream ios = file.read ();
-        var stream = new UnixInputStream (((UnixInputStream)ios).get_fd (), true);
+        int fd = Posix.open (info.get_filename (), Posix.O_RDONLY);
         try {
             var portal = get_desktop_portal ();
             if (portal != null) {
-                portal.open_file ("", stream, new GLib.HashTable<string, GLib.Variant> (null, null));
+                portal.open_file ("", new UnixInputStream(fd, true), new GLib.HashTable<string, GLib.Variant> (null, null));
             }
         } catch (Error e) {
-            stream.close ();
             throw e;
         }
-
-        stream.close ();
     }
 
     public bool get_only_local () {

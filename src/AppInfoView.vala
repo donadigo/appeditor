@@ -421,7 +421,7 @@ public class AppEditor.AppInfoView : Gtk.Box {
 
     private void on_open_source_button_clicked () {
         try {
-            desktop_app.open_default_handler (get_screen ());
+            desktop_app.open_default_handler ();
         } catch (Error e) {
             var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 _("Could Not Open This Entry"),

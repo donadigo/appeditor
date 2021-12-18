@@ -15,6 +15,11 @@
  * with this program. If not, see http://www.gnu.org/licenses/.
  */
 
+ [DBus (name = "org.freedesktop.portal.OpenURI")]
+public interface FDODesktopPortal : Object {
+    public abstract string open_file (string parent_window, UnixInputStream fd, HashTable<string, Variant> options) throws GLib.Error;
+}
+
 public class AppEditor.DesktopApp : Object {
     public const char DEFAULT_LIST_SEPARATOR = ';';
     public const string LOCAL_APP_NAME_PREFIX = "appeditor-local-application-";
@@ -36,6 +41,7 @@ public class AppEditor.DesktopApp : Object {
     public DesktopAppInfo info { get; construct set; }
 
     private static Icon default_icon;
+    private static FDODesktopPortal? desktop_portal = null;
 
     static construct {
         default_icon = new ThemedIcon (DEFAULT_ICON_NAME);
@@ -53,13 +59,39 @@ public class AppEditor.DesktopApp : Object {
         Object (info: info);
     }
 
-    public void open_default_handler (Gdk.Screen? screen) throws Error {
+    private static FDODesktopPortal? get_desktop_portal () throws Error {
+        if (desktop_portal == null) {
+            try {
+                desktop_portal = Bus.get_proxy_sync (
+                    BusType.SESSION,
+                    "org.freedesktop.portal.Desktop",
+                    "/org/freedesktop/portal/desktop"
+                );
+            } catch (Error e) {
+                throw e;
+            }
+        }
+
+        return desktop_portal;
+    }
+
+    public void open_default_handler () throws Error {
+        // Gtk.show_uri_on_window does not seem to fully work in a Flatpak environment
+        // so instead we directly call the freedesktop OpenURI DBus interface instead.
         var file = File.new_for_path (info.get_filename ());
+        InputStream ios = file.read ();
+        var stream = new UnixInputStream (((UnixInputStream)ios).get_fd (), true);
         try {
-            Gtk.show_uri (screen, file.get_uri (), Gtk.get_current_event_time ());
+            var portal = get_desktop_portal ();
+            if (portal != null) {
+                portal.open_file ("", stream, new GLib.HashTable<string, GLib.Variant> (null, null));
+            }
         } catch (Error e) {
+            stream.close ();
             throw e;
         }
+
+        stream.close ();
     }
 
     public bool get_only_local () {

@@ -31,7 +31,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.1.2" date="2021-12-12">
+    <release version="1.1.2" date="2021-12-18">
       <description>
         <p>This release makes AppEditor available on elementary OS 6.0.</p>
         <p>New translations:</p>

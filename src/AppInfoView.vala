@@ -362,6 +362,8 @@ public class AppEditor.AppInfoView : Gtk.Box {
                 }
             }
 #else
+            cmdline_entry.secondary_icon_name = "";
+            cmdline_entry.secondary_icon_tooltip_text = "";
             cmdline_valid = true;
 #endif
         }

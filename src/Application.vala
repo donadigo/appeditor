@@ -34,6 +34,11 @@ public class AppEditor.Application : Gtk.Application {
         application_id = "com.github.donadigo.appeditor";
         add_main_option_entries (OPTIONS);
 
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (GETTEXT_PACKAGE);
+
         AppDirectoryScanner.init ();
         var manager = DesktopAppManager.get_default ();
         manager.load ();

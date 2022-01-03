@@ -1,17 +1,22 @@
 project('com.github.donadigo.appeditor', ['vala', 'c'],
-        version: '1.1.1')
+        version: '1.1.3')
 
 i18n = import('i18n')
 gnome = import('gnome')
 
-conf = configuration_data()
-conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
-configure_file(output: 'config.h', configuration: conf)
-config_h_dir = include_directories('.')
+add_project_arguments(
+    '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
+    language: 'c'
+)
 
-c_args = [
-  '-include', 'config.h'
-]
+conf = configuration_data()
+conf.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
+conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+config_file = configure_file(
+    input: 'src' / 'Config.vala.in',
+    output: '@BASENAME@',
+    configuration: conf
+)
 
 vala = meson.get_compiler('vala')
 vala_flags = []
@@ -41,6 +46,7 @@ asresources = gnome.compile_resources(
 
 executable(
     meson.project_name(),
+    config_file,
     'src/Application.vala',
     'src/MainWindow.vala',
     'src/AppSourceList.vala',
@@ -62,7 +68,6 @@ executable(
     'src/IconRow.vala',
     'src/Constants.vala',
     asresources,
-    c_args: c_args,
     dependencies: [
         deps
     ],

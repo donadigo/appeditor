@@ -1,5 +1,5 @@
 project('com.github.donadigo.appeditor', ['vala', 'c'],
-        version: '1.1.3')
+        version: '1.1.4')
 
 i18n = import('i18n')
 gnome = import('gnome')

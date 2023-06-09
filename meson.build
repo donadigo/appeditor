@@ -22,7 +22,7 @@ vala = meson.get_compiler('vala')
 vala_flags = []
 
 deps = [
-  dependency('granite'),
+  dependency('granite', version: '>= 5.4.0'),
   dependency('gtk+-3.0'),
   dependency('gee-0.8'),
   vala.find_library('posix')

@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# Amerey.eu <info@amerey.eu>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.donadigo.appeditor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-15 22:50+0200\n"
+"PO-Revision-Date: 2023-02-11 22:14+0100\n"
+"Last-Translator: Amerey.eu <info@amerey.eu>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-KeywordsList: _\n"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:7
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+msgid "AppEditor"
+msgstr "AppEditor"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:8
+msgid "Edit application menu"
+msgstr "Upravit menu aplikací"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:10
+msgid ""
+"Edit application entries shown in application menu and their properties."
+msgstr "Upravit položky aplikací zobrazené v menu a jejich vlastnosti."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:13
+msgid "Features include:"
+msgstr "Mezi vlastnosti patří:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:15
+msgid "Hide and show applications from the application menu"
+msgstr "Skrýt a zobrazit aplikace z nabídky aplikací"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:16
+msgid "Create new application entries"
+msgstr "Vytvořit nové položky"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:17
+msgid "Change application's display name, icon and more"
+msgstr "Změňit zobrazovaný název aplikace, ikonu a další"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:23
+msgid "Adam Bieńkowski"
+msgstr "Adam Bieńkowski"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:36
+msgid ""
+"This release includes added support for elementary OS Juno, miscellaneous "
+"improvements and new translations:"
+msgstr ""
+"Tato verze obsahuje přidanou podporu pro OS Juno, různá vylepšení a nové "
+"překlady:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:38
+msgid "German translation (ChristianPauly)"
+msgstr "Německý překlad (ChristianPauly)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:39
+msgid "Japanese translation (Ryo Nakano)"
+msgstr "Japonský překlad (Ryo Nakano)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:40
+msgid "Brazilian Portuguese translation (Filipe de Almeida Garrett)"
+msgstr "Překlad do brazilské portugalštiny (Filipe de Almeida Garrett)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:42
+#: data/com.github.donadigo.appeditor.appdata.xml.in:65
+#: data/com.github.donadigo.appeditor.appdata.xml.in:86
+msgid "New features:"
+msgstr "Nové vlastnosti:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:44
+msgid ""
+"It is now possible to create a menu entry directly from the file manager: "
+"right click on an executable file and choose \"Create a Menu Entry\""
+msgstr ""
+"Nyní je možné vytvořit položku nabídky přímo ze správce souborů: klikněte "
+"pravým tlačítkem myši na spustitelný soubor a zvolte \"Vytvořit položku "
+"nabídky\""
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:45
+msgid "New shortcuts added:"
+msgstr "Přidány nové zkratky:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:46
+msgid "Ctrl+N: Create a new menu entry"
+msgstr "Ctrl+N: Vytvořit novou položku nabídky"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:47
+msgid "Ctrl+F: Focus the search entry"
+msgstr "Ctrl+F: Fokus na hledanou položku"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:48
+msgid "Ctrl+D: Duplicate selected entry"
+msgstr "Ctrl+D: Duplikovat vybranou položku"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:50
+#: data/com.github.donadigo.appeditor.appdata.xml.in:70
+msgid "Fixed:"
+msgstr "Opraveno:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:52
+msgid "Some strings are not displayed in translated languages (Ryo Nakano)"
+msgstr "Některé řetězce se nezobrazují v přeložených jazycích (Ryo Nakano)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:53
+msgid "Improper escaping of special characters in display name and description"
+msgstr "Nesprávné escapování speciálních znaků v zobrazovaném názvu a popisu"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:59
+msgid ""
+"This release contains many new features and bug fixes as well as added "
+"suport for translations:"
+msgstr ""
+"Toto vydání obsahuje mnoho nových funkcí a oprav chyb a také podporu pro "
+"překlady:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:61
+msgid "French translation (dabou)"
+msgstr "Francouzský překlad (dabou)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:62
+msgid "Russian translation (Cammelan)"
+msgstr "Ruský překlad (Cammelan)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:63
+msgid "Spanish translation (Juan Gómez Carrillo)"
+msgstr "Španělský překlad (Juan Gómez Carrillo)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:67
+msgid "Added a button to duplicate a specifc application entry"
+msgstr "Přidáno tlačítko pro duplikování konkrétní položky aplikace"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:68
+msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
+msgstr "Nová sekce „Pokročilé“: přidán nový klíč „Používá oznámení“"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:72
+msgid ""
+"Fixed crashes when saving an entry with an equal sign in its command line "
+"property"
+msgstr ""
+"Opravena chyba při ukládání položky se znaménkem \"rovná se\" v příkazovém "
+"řádku"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:73
+msgid ""
+"Sometimes deleting a local entry would cause it to stay in the sidebar until "
+"the next launch"
+msgstr ""
+"Někdy by odstranění místní položky způsobilo, že by zůstala v postranním "
+"panelu až do příštího spuštění"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:74
+msgid "Sometimes creating a new entry caused a crash"
+msgstr "Někdy vytvoření nového záznamu způsobilo selhání programu"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:75
+msgid "The page would not update after saving the entry"
+msgstr "Po uložení záznamu se stránka neaktualizuje"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:77
+#: data/com.github.donadigo.appeditor.appdata.xml.in:91
+msgid "Miscellaneous:"
+msgstr "Různé:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:79
+msgid "Save unsaved entries when quitting the application"
+msgstr "Uložte neuložené položky při ukončení aplikace"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:80
+msgid "Clear the search entry when creating a new application entry"
+msgstr "Při vytváření nové položky aplikace vymažte položku hledání"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:88
+msgid "Added a button to open the entry in a text editor"
+msgstr "Přidáno tlačítko pro otevření záznamu v textovém editoru"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:89
+msgid "Added a switch to show hidden entries (disabled by default)"
+msgstr ""
+"Přidán přepínač pro zobrazení skrytých položek (ve výchozím nastavení "
+"zakázáno)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:93
+msgid "Fixed some applications like Inkscape not saving their name properly"
+msgstr ""
+"Opraveno, že některé aplikace, jako je Inkscape, neukládají správně svůj "
+"název"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:94
+msgid "The main window can be now maximized"
+msgstr "Hlavní okno lze nyní maximalizovat"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:100
+msgid "Add meson dependency to debian packaging"
+msgstr "Přidán meson dependency do debianu"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:105
+msgid "Fix debian packaging"
+msgstr "Oprava pro debian"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:110
+msgid "Initial release"
+msgstr "První vydání"
+
+#: data/com.github.donadigo.appeditor.desktop.in:5
+msgid "Application Entry Editor"
+msgstr "Application Entry Editor"
+
+#: data/com.github.donadigo.appeditor.desktop.in:6
+msgid "Edit application entries"
+msgstr "Upravte záznamy aplikací"
+
+#: data/com.github.donadigo.appeditor.desktop.in:7
+msgid "com.github.donadigo.appeditor"
+msgstr "com.github.donadigo.appeditor"
+
+#: data/com.github.donadigo.appeditor.desktop.in:12
+msgid "application;edit;entry;"
+msgstr "application;edit;entry;"
+
+#: src/AppInfoView.vala:114
+msgid "Display name"
+msgstr "Jméno aplikace"
+
+#: src/AppInfoView.vala:121
+msgid "Comment"
+msgstr "Popis aplikace"
+
+#: src/AppInfoView.vala:137
+msgid "Show in Launcher"
+msgstr "Zobrazit ve spouštěči"
+
+#: src/AppInfoView.vala:138
+msgid "Category"
+msgstr "Kategorie"
+
+#: src/AppInfoView.vala:140
+msgid "Visibility"
+msgstr "Viditelnost"
+
+#: src/AppInfoView.vala:147
+msgid "Program to execute along with its arguments"
+msgstr "Program, který se má spustit spolu s jeho argumenty"
+
+#: src/AppInfoView.vala:153
+msgid "The working directory to run the program in"
+msgstr "Pracovní adresář, ve kterém se má program spustit"
+
+#: src/AppInfoView.vala:159
+msgid "Command Line"
+msgstr "Příkazový řádek"
+
+#: src/AppInfoView.vala:160
+msgid "Working Directory"
+msgstr "Pracovní adresář"
+
+#: src/AppInfoView.vala:161
+msgid "Launch in Terminal"
+msgstr "Spustit v Terminálu"
+
+#: src/AppInfoView.vala:163
+msgid "Launching"
+msgstr "Spouštění"
+
+#: src/AppInfoView.vala:171
+msgid "Uses Notifications"
+msgstr "Používá oznámení"
+
+#: src/AppInfoView.vala:180
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: src/AppInfoView.vala:207
+msgid "Save"
+msgstr "Uložit"
+
+#: src/AppInfoView.vala:212
+msgid "Open in Text Editor"
+msgstr "Otevřít v Textovém editoru"
+
+#: src/AppInfoView.vala:215
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+#: src/AppInfoView.vala:285
+msgid "Changes successfully saved"
+msgstr "Změny byly úspěšně uloženy"
+
+#: src/AppInfoView.vala:289
+#, c-format
+msgid "Something went wrong and the changes could not be saved: %s"
+msgstr "Něco se pokazilo a změny nebylo možné uložit: %s"
+
+#: src/AppInfoView.vala:326
+msgid "No visible title in the applications menu"
+msgstr "V nabídce aplikací není viditelný název"
+
+#: src/AppInfoView.vala:341
+msgid "No program will be launched"
+msgstr "Nebude spuštěn žádný program"
+
+#: src/AppInfoView.vala:345
+msgid "The executable name (first argument) cannot contain the equal sign"
+msgstr "Název spustitelného souboru (první argument) nemůže obsahovat rovnítko"
+
+#: src/AppInfoView.vala:351
+msgid "Entered file does not exist"
+msgstr "Zadaný soubor neexistuje"
+
+#: src/AppInfoView.vala:357
+msgid "Entered program was not found"
+msgstr "Zadaný program nebyl nalezen"
+
+#: src/AppInfoView.vala:379
+msgid "Do You Want to Delete This Entry?"
+msgstr "Chcete tento záznam smazat?"
+
+#: src/AppInfoView.vala:380
+msgid ""
+"Deleting this entry is permanent and cannot be undone. This does not delete "
+"the application itself, only the entry shown in the applications menu."
+msgstr ""
+"Smazání tohoto záznamu je trvalé a nelze jej vrátit zpět. Tím se neodstraní "
+"samotná aplikace, pouze položka zobrazená v nabídce aplikací."
+
+#: src/AppInfoView.vala:381
+msgid "Delete"
+msgstr "Smazat"
+
+#: src/AppInfoView.vala:383
+msgid "Do You Want to Restore The Defaults?"
+msgstr "Chcete obnovit výchozí nastavení?"
+
+#: src/AppInfoView.vala:384
+msgid "Restoring defaults will undo all the changes done to this entry."
+msgstr ""
+"Obnovení výchozích nastavení vrátí zpět všechny změny provedené u tohoto "
+"záznamu."
+
+#: src/AppInfoView.vala:385
+msgid "Restore defaults"
+msgstr "Obnovit výchozí nastavení"
+
+#: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/AppInfoView.vala:425
+msgid "Could Not Open This Entry"
+msgstr "Tento záznam nelze otevřít"
+
+#: src/AppInfoView.vala:453
+msgid "Delete entry…"
+msgstr "Smazat záznam…"
+
+#: src/AppInfoView.vala:455
+msgid "Restore defaults…"
+msgstr "Obnovit výchozí nastavení…"
+
+#: src/AppInfoViewSaver.vala:32
+msgid "New Application"
+msgstr "Nová aplikace"
+
+#: src/AppInfoViewSaver.vala:148
+msgid "Could not load the newly saved file."
+msgstr "Nově uložený soubor nelze načíst."
+
+#: src/AppInfoViewStack.vala:29
+msgid "No Item Selected"
+msgstr "Není vybrána žádná položka"
+
+#: src/AppInfoViewStack.vala:29
+msgid "Select an application or start typing to edit one"
+msgstr "Vyberte aplikaci nebo začněte psát a upravte ji"
+
+#: src/AppItem.vala:35
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: src/Application.vala:63
+#, c-format
+msgid "Could not Find \"%s\""
+msgstr "Nelze najít \"%s\""
+
+#: src/Application.vala:63
+msgid "Could not Find Requested File"
+msgstr "Nelze najít požadovaný soubor"
+
+#: src/Application.vala:64
+#, c-format
+msgid "File <b>\"%s\"</b> does not exist."
+msgstr "Soubor <b>\"%s\"</b> neexistuje."
+
+#: src/Application.vala:79
+#, c-format
+msgid "Could Not Create a New Application Entry from \"%s\""
+msgstr "Nelze vytvořit nový záznam aplikace z \"%s\""
+
+#: src/Application.vala:80
+msgid "Could Not Create a New Application From Requested File"
+msgstr "Nelze vytvořit novou aplikaci z požadovaného souboru"
+
+#: src/DesktopAppManager.vala:56
+msgid "Sound & Video"
+msgstr "Zvuk a video"
+
+#: src/DesktopAppManager.vala:57
+msgid "Sound"
+msgstr "Zvuk"
+
+#: src/DesktopAppManager.vala:58
+msgid "Video"
+msgstr "Video"
+
+#: src/DesktopAppManager.vala:59
+msgid "Programming"
+msgstr "Programování"
+
+#: src/DesktopAppManager.vala:60
+msgid "Education"
+msgstr "Vzdělávání"
+
+#: src/DesktopAppManager.vala:61
+msgid "Games"
+msgstr "Hry"
+
+#: src/DesktopAppManager.vala:62
+msgid "Graphics"
+msgstr "Grafika"
+
+#: src/DesktopAppManager.vala:63
+msgid "Internet"
+msgstr "Internet"
+
+#: src/DesktopAppManager.vala:64
+msgid "Office"
+msgstr "Kancelář"
+
+#: src/DesktopAppManager.vala:65
+msgid "Science"
+msgstr "Věda"
+
+#: src/DesktopAppManager.vala:66
+msgid "Settings"
+msgstr "Nastavení"
+
+#: src/DesktopAppManager.vala:67
+msgid "System Tools"
+msgstr "Systémové nástroje"
+
+#: src/DesktopAppManager.vala:68
+msgid "Accessories"
+msgstr "Příslušenství"
+
+#: src/DesktopAppManager.vala:69
+msgid "Other"
+msgstr "Jiné"
+
+#: src/IconButton.vala:82
+msgid "Icon name or path to an image"
+msgstr "Název ikony nebo cesta k obrázku"
+
+#: src/IconButton.vala:86
+msgid "Choose from file"
+msgstr "Vybrat ze souboru"
+
+#: src/IconButton.vala:90
+msgid "Choose from available icons"
+msgstr "Vybrat z dostupných ikon"
+
+#: src/IconButton.vala:103
+msgid "All Files"
+msgstr "Všechny soubory"
+
+#: src/IconButton.vala:107
+msgid "Images"
+msgstr "Obrázky"
+
+#: src/IconButton.vala:111
+msgid "Select an image"
+msgstr "Vybrat obrázek"
+
+#: src/IconChooserDialog.vala:31
+msgid "Choose"
+msgstr "Vybrat"
+
+#: src/IconChooserDialog.vala:45
+msgid "Search icons…"
+msgstr "Hledat ikony…"
+
+#: src/IconChooserDialog.vala:59
+msgid "Choose an icon from the list"
+msgstr "Vybrat ikonu ze seznamu"
+
+#: src/MainWindow.vala:86
+msgid "Show hidden entries"
+msgstr "Zobrazit skryté položky"
+
+#: src/MainWindow.vala:130
+msgid "No Applications Found"
+msgstr "Nebyly nalezeny žádné aplikace"
+
+#: src/MainWindow.vala:130
+msgid "Could not find any applications to edit on this system"
+msgstr "V tomto systému nebyly nalezeny žádné aplikace k úpravě"
+
+#: src/MainWindow.vala:131
+msgid "Retry"
+msgstr "Opakovat"
+
+#: src/MainWindow.vala:151
+msgid "Find…"
+msgstr "Najít…"
+
+#: src/MainWindow.vala:159
+msgid "New entry"
+msgstr "Nová položka"
+
+#: src/MainWindow.vala:333
+#, c-format
+msgid "Could Not Duplicate %s"
+msgstr "Nelze duplikovat %s"
+
+#: src/MainWindow.vala:358
+msgid "Could Not Create a New Application Entry"
+msgstr "Nepodařilo se vytvořit novou položku"

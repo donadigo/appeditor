@@ -26,7 +26,7 @@ public class AppEditor.Application : Gtk.Application {
         return Gtk.check_version (3, 22, 0) == null;
     }
 
-    private static string? create_exec_filename;
+    public static string? create_exec_filename;
 
     private MainWindow? window = null;
 

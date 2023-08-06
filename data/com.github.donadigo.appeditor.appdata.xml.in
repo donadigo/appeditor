@@ -31,6 +31,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.1.5" date="2023-08-06">
+      <description>
+        <p>This release makes AppEditor available on elementary OS 7. Many thanks to Ryo Nakano for his contributions to this release.</p>
+        <p>New translations:</p>
+        <ul>
+          <li>Czech (Amerey)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.4" date="2022-01-03">
       <description>
         <p>This release fixes payments not working in the AppCenter.</p>

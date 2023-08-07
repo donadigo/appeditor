@@ -58,6 +58,8 @@ public class AppEditor.Application : Gtk.Application {
             window.present ();
         }
 
+        force_elementary_style ();
+
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
 
@@ -98,6 +100,18 @@ public class AppEditor.Application : Gtk.Application {
                 message_dialog.run ();
                 message_dialog.destroy ();
             }
+        }
+    }
+
+    private void force_elementary_style () {
+        const string STYLESHEET_PREFIX = "io.elementary.stylesheet";
+        unowned var gtk_settings = Gtk.Settings.get_default ();
+
+        gtk_settings.gtk_cursor_theme_name = "elementary";
+        gtk_settings.gtk_icon_theme_name = "elementary";
+
+        if (!gtk_settings.gtk_theme_name.has_prefix (STYLESHEET_PREFIX)) {
+            gtk_settings.gtk_theme_name = string.join(".", STYLESHEET_PREFIX, "blueberry");
         }
     }
 }

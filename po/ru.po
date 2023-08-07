@@ -1,37 +1,42 @@
+# Russian translation for AppEditor.
+# Copyright (C) 2017-2023 THE com.github.donadigo.appeditor'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.donadigo.appeditor package.
+# Andrey Kultyapov <camellan@yandex.ru>, 2017-2018.
+# lenemter <lenemter@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Appeditor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-15 22:50+0200\n"
-"PO-Revision-Date: 2019-09-15 23:01+0200\n"
-"Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2023-08-07 19:36+0900\n"
+"PO-Revision-Date: 2023-08-07 18:39+0900\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Language-Team: none\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:7
-#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:21
+#: data/com.github.donadigo.appeditor.desktop.in:4 src/Constants.vala:19
 msgid "AppEditor"
 msgstr "AppEditor"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:8
 msgid "Edit application menu"
-msgstr "Изменяйте меню приложений"
+msgstr "Редактируйте меню приложений"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:10
 msgid ""
 "Edit application entries shown in application menu and their properties."
-msgstr "Редактирование описания и свойств программ в меню приложений."
+msgstr "Редактируйте описания и свойства программ в меню приложений."
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:13
 msgid "Features include:"
-msgstr "Доступные возможности:"
+msgstr "Возможности:"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:15
 msgid "Hide and show applications from the application menu"
@@ -43,7 +48,7 @@ msgstr "Создание новых записей о приложениях"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:17
 msgid "Change application's display name, icon and more"
-msgstr "Изменение отображаемого имени приложение, значка и многого другого"
+msgstr "Изменение имени приложения, иконки и многого другого"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:23
 msgid "Adam Bieńkowski"
@@ -51,499 +56,546 @@ msgstr "Adam Bieńkowski"
 
 #: data/com.github.donadigo.appeditor.appdata.xml.in:36
 msgid ""
+"This release makes AppEditor available on elementary OS 7. Many thanks to "
+"Ryo Nakano for his contributions to this release."
+msgstr ""
+"Этот релиз делает AppEditor доступным в elementary OS 7. Большое спасибо Рё "
+"Накано за его вклад в этот выпуск."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:37
+#: data/com.github.donadigo.appeditor.appdata.xml.in:46
+#: data/com.github.donadigo.appeditor.appdata.xml.in:60
+msgid "New translations:"
+msgstr "Новые переводы:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:39
+msgid "Czech (Amerey)"
+msgstr "Чешский (Amerey)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:45
+msgid "This release fixes payments not working in the AppCenter."
+msgstr "Этот релиз исправляет проблему с оплатой в AppCenter."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:48
+msgid "Swedish (Åke Engelbrektson)"
+msgstr "Шведский (Åke Engelbrektson)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:54
+msgid "This release updates AppEditor for elementary OS 6.1."
+msgstr "Этот релиз делает AppEditor доступным в elementary OS 6.1."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:59
+msgid "This release makes AppEditor available on elementary OS 6.0."
+msgstr "Этот релиз делает AppEditor доступным в elementary OS 6.0."
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:62
+msgid "Portuguese-Portugal (rottenpants466)"
+msgstr "Португальский (rottenpants466)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:68
+msgid "This release includes translation updates:"
+msgstr "Этот релиз включает в себя обновления переводов:"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:70
+msgid "Dutch translation (Heimen Stoffels)"
+msgstr "Голландский перевод (Heimen Stoffels)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:71
+msgid "Spanish, Catalan translation (Adolfo Jayme-Barrientos)"
+msgstr "Испанский и каталанский переводы (Adolfo Jayme-Barrientos)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:72
+#: data/com.github.donadigo.appeditor.appdata.xml.in:86
+msgid "Japanese translation (Ryo Nakano)"
+msgstr "Японский перевод (Ryo Nakano)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:73
+msgid "French translation (Nathan Bonnemains, dabou)"
+msgstr "Французский перевод (Nathan Bonnemains, dabou)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:74
+msgid "Turkish translation (Serdar Sağlam)"
+msgstr "Турецкий перевод (Serdar Sağlam)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:75
+msgid "Russian translation (Camellan)"
+msgstr "Русский перевод (Camellan)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:76
+msgid "Lithuanian translation (welaq)"
+msgstr "Литовский перевод (welaq)"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:77
+msgid "Italian translation"
+msgstr "Итальянский перевод"
+
+#: data/com.github.donadigo.appeditor.appdata.xml.in:83
+msgid ""
 "This release includes added support for elementary OS Juno, miscellaneous "
 "improvements and new translations:"
 msgstr ""
+"В этом выпуске добавлена поддержка elementary OS Juno, различные улучшения и "
+"новые переводы:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:38
+#: data/com.github.donadigo.appeditor.appdata.xml.in:85
 msgid "German translation (ChristianPauly)"
-msgstr ""
+msgstr "Немецкий перевод (ChristianPauly)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:39
-msgid "Japanese translation (Ryo Nakano)"
-msgstr ""
-
-#: data/com.github.donadigo.appeditor.appdata.xml.in:40
+#: data/com.github.donadigo.appeditor.appdata.xml.in:87
 msgid "Brazilian Portuguese translation (Filipe de Almeida Garrett)"
-msgstr ""
+msgstr "Бразильский португальский перевод (Filipe de Almeida Garrett)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:42
-#: data/com.github.donadigo.appeditor.appdata.xml.in:65
-#: data/com.github.donadigo.appeditor.appdata.xml.in:86
-#, fuzzy
-#| msgid "New entry"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:89
+#: data/com.github.donadigo.appeditor.appdata.xml.in:112
+#: data/com.github.donadigo.appeditor.appdata.xml.in:133
 msgid "New features:"
-msgstr "Новая запись"
+msgstr "Новые функции:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:44
+#: data/com.github.donadigo.appeditor.appdata.xml.in:91
 msgid ""
 "It is now possible to create a menu entry directly from the file manager: "
 "right click on an executable file and choose \"Create a Menu Entry\""
 msgstr ""
+"Теперь можно создать пункт меню непосредственно из файлового менеджера: "
+"щёлкните правой кнопкой мыши на исполняемый файл и выберите «Создать пункт "
+"меню»"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:45
+#: data/com.github.donadigo.appeditor.appdata.xml.in:92
 msgid "New shortcuts added:"
-msgstr ""
+msgstr "Добавлены новые сочетания клавиш:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:46
-#, fuzzy
-#| msgid "Could Not Create a New Application"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:93
 msgid "Ctrl+N: Create a new menu entry"
-msgstr "Невозможно создать новое приложение"
+msgstr "Ctrl+N: Добавить новое приложение"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:47
+#: data/com.github.donadigo.appeditor.appdata.xml.in:94
 msgid "Ctrl+F: Focus the search entry"
-msgstr ""
+msgstr "Ctrl+F: Переключиться на поиск"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:48
-#, fuzzy
-#| msgid "Could Not Create a New Application"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:95
 msgid "Ctrl+D: Duplicate selected entry"
-msgstr "Невозможно создать новое приложение"
+msgstr "Ctrl+D: Дублировать выбранное приложение"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:50
-#: data/com.github.donadigo.appeditor.appdata.xml.in:70
+#: data/com.github.donadigo.appeditor.appdata.xml.in:97
+#: data/com.github.donadigo.appeditor.appdata.xml.in:117
 msgid "Fixed:"
-msgstr ""
+msgstr "Исправления:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:52
+#: data/com.github.donadigo.appeditor.appdata.xml.in:99
 msgid "Some strings are not displayed in translated languages (Ryo Nakano)"
-msgstr ""
+msgstr "Некоторые строки не отображались на переведённых языках (Ryo Nakano)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:53
+#: data/com.github.donadigo.appeditor.appdata.xml.in:100
 msgid "Improper escaping of special characters in display name and description"
 msgstr ""
+"Неправильное экранирование специальных символов в имени и описании приложений"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:59
+#: data/com.github.donadigo.appeditor.appdata.xml.in:106
 msgid ""
 "This release contains many new features and bug fixes as well as added "
-"suport for translations:"
+"support for translations:"
 msgstr ""
+"Этот выпуск содержит много новых функций, исправлений ошибок и поддержку "
+"переводов:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:61
+#: data/com.github.donadigo.appeditor.appdata.xml.in:108
 msgid "French translation (dabou)"
-msgstr ""
+msgstr "Французский перевод (dabou)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:62
+#: data/com.github.donadigo.appeditor.appdata.xml.in:109
 msgid "Russian translation (Cammelan)"
-msgstr ""
+msgstr "Русский перевод (Cammelan)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:63
+#: data/com.github.donadigo.appeditor.appdata.xml.in:110
 msgid "Spanish translation (Juan Gómez Carrillo)"
-msgstr ""
+msgstr "Испанский перевод (Juan Gómez Carrillo)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:67
-msgid "Added a button to duplicate a specifc application entry"
-msgstr ""
+#: data/com.github.donadigo.appeditor.appdata.xml.in:114
+msgid "Added a button to duplicate a specific application entry"
+msgstr "Добавлена кнопка для дублирования приложения"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:68
-msgid "New \"Advanced\" section: add a new \"Uses Notitifications\" key"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:115
+msgid "New \"Advanced\" section: add a new \"Uses Notifications\" key"
 msgstr ""
+"Новый раздел «Дополнительно»: добавлен новый ключ «Использует уведомления»"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:72
+#: data/com.github.donadigo.appeditor.appdata.xml.in:119
 msgid ""
 "Fixed crashes when saving an entry with an equal sign in its command line "
 "property"
-msgstr ""
+msgstr "Исправлен сбой при сохранении записи со знаком равенства в свойстве командной строки"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:73
+#: data/com.github.donadigo.appeditor.appdata.xml.in:120
 msgid ""
 "Sometimes deleting a local entry would cause it to stay in the sidebar until "
 "the next launch"
-msgstr ""
+msgstr "Иногда удаление локальной записи приводило к тому, что она оставалась в боковой панели до перезапуска"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:74
+#: data/com.github.donadigo.appeditor.appdata.xml.in:121
 msgid "Sometimes creating a new entry caused a crash"
-msgstr ""
+msgstr "Иногда создание новой записи приводило к сбою"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:75
+#: data/com.github.donadigo.appeditor.appdata.xml.in:122
 msgid "The page would not update after saving the entry"
-msgstr ""
+msgstr "Страница не обновлялась после сохранения записи"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:77
-#: data/com.github.donadigo.appeditor.appdata.xml.in:91
+#: data/com.github.donadigo.appeditor.appdata.xml.in:124
+#: data/com.github.donadigo.appeditor.appdata.xml.in:138
 msgid "Miscellaneous:"
-msgstr ""
+msgstr "Прочее:"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:79
-#, fuzzy
-#| msgid "Create new application entries"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:126
 msgid "Save unsaved entries when quitting the application"
-msgstr "Создание новых записей о приложениях"
+msgstr "Сохранение несохранённых записей при выходе из приложения"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:80
-#, fuzzy
-#| msgid "Create new application entries"
+#: data/com.github.donadigo.appeditor.appdata.xml.in:127
 msgid "Clear the search entry when creating a new application entry"
-msgstr "Создание новых записей о приложениях"
+msgstr "Очистка строки поиска при создании новой записи приложения"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:88
+#: data/com.github.donadigo.appeditor.appdata.xml.in:135
 msgid "Added a button to open the entry in a text editor"
-msgstr ""
+msgstr "Добавлена кнопка для открытия записи в текстовом редакторе"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:89
+#: data/com.github.donadigo.appeditor.appdata.xml.in:136
 msgid "Added a switch to show hidden entries (disabled by default)"
-msgstr ""
+msgstr "Добавлен переключатель для отображения скрытых записей (по умолчанию отключён)"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:93
+#: data/com.github.donadigo.appeditor.appdata.xml.in:140
 msgid "Fixed some applications like Inkscape not saving their name properly"
-msgstr ""
+msgstr "Исправлена ошибка, из-за которой некоторые приложения, такие как Inkscape, не сохраняли своё имя должным образом"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:94
+#: data/com.github.donadigo.appeditor.appdata.xml.in:141
 msgid "The main window can be now maximized"
-msgstr ""
+msgstr "Основное окно теперь можно развернуть на весь экран"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:100
+#: data/com.github.donadigo.appeditor.appdata.xml.in:147
 msgid "Add meson dependency to debian packaging"
-msgstr ""
+msgstr "Добавлена зависимость от meson в упаковку debian"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:105
+#: data/com.github.donadigo.appeditor.appdata.xml.in:152
 msgid "Fix debian packaging"
-msgstr ""
+msgstr "Исправлена упаковка для debian"
 
-#: data/com.github.donadigo.appeditor.appdata.xml.in:110
+#: data/com.github.donadigo.appeditor.appdata.xml.in:157
 msgid "Initial release"
-msgstr ""
+msgstr "Начальный выпуск"
 
 #: data/com.github.donadigo.appeditor.desktop.in:5
 msgid "Application Entry Editor"
 msgstr "Редактор свойств приложений"
 
-#: data/com.github.donadigo.appeditor.desktop.in:6
-msgid "Edit application entries"
-msgstr "Редактирование свойств приложений"
-
 #: data/com.github.donadigo.appeditor.desktop.in:7
-msgid "com.github.donadigo.appeditor"
-msgstr "com.github.donadigo.appeditor"
+msgid "Edit application entries"
+msgstr "Редактируйте свойства приложений"
 
-#: data/com.github.donadigo.appeditor.desktop.in:12
+#: data/com.github.donadigo.appeditor.desktop.in:13
 msgid "application;edit;entry;"
-msgstr "application;edit;entry;"
+msgstr "application;edit;entry;приложение;редактор;редактировать;запись"
 
-#: src/AppInfoView.vala:114
+#: src/AppInfoView.vala:112
 msgid "Display name"
 msgstr "Отображаемое имя"
 
-#: src/AppInfoView.vala:121
+#: src/AppInfoView.vala:119
 msgid "Comment"
 msgstr "Комментарий"
 
-#: src/AppInfoView.vala:137
+#: src/AppInfoView.vala:135
 msgid "Show in Launcher"
 msgstr "Отображать в меню приложений"
 
-#: src/AppInfoView.vala:138
+#: src/AppInfoView.vala:136
 msgid "Category"
 msgstr "Категория"
 
-#: src/AppInfoView.vala:140
+#: src/AppInfoView.vala:138
 msgid "Visibility"
 msgstr "Отображение"
 
-#: src/AppInfoView.vala:147
+#: src/AppInfoView.vala:145
 msgid "Program to execute along with its arguments"
-msgstr "Путь к программе вместе с агументами запуска"
+msgstr "Путь к программе с аргументами запуска"
 
-#: src/AppInfoView.vala:153
+#: src/AppInfoView.vala:151
 msgid "The working directory to run the program in"
 msgstr "Рабочий каталог при запуске программы"
 
-#: src/AppInfoView.vala:159
+#: src/AppInfoView.vala:157
 msgid "Command Line"
 msgstr "Командная строка"
 
-#: src/AppInfoView.vala:160
+#: src/AppInfoView.vala:158
 msgid "Working Directory"
 msgstr "Рабочая папка"
 
-#: src/AppInfoView.vala:161
+#: src/AppInfoView.vala:159
 msgid "Launch in Terminal"
 msgstr "Запускать в терминале"
 
-#: src/AppInfoView.vala:163
+#: src/AppInfoView.vala:161
 msgid "Launching"
 msgstr "Параметры запуска"
 
-#: src/AppInfoView.vala:171
+#: src/AppInfoView.vala:169
 msgid "Uses Notifications"
-msgstr "Отображать уведомления"
+msgstr "Использует уведомления"
 
-#: src/AppInfoView.vala:180
+#: src/AppInfoView.vala:178
 msgid "Advanced"
 msgstr "Дополнительно"
 
-#: src/AppInfoView.vala:207
+#: src/AppInfoView.vala:205
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/AppInfoView.vala:212
+#: src/AppInfoView.vala:210
 msgid "Open in Text Editor"
 msgstr "Открыть в текстовом редакторе"
 
-#: src/AppInfoView.vala:215
+#: src/AppInfoView.vala:213
 msgid "Duplicate"
 msgstr "Дублировать"
 
-#: src/AppInfoView.vala:285
+#: src/AppInfoView.vala:283
 msgid "Changes successfully saved"
 msgstr "Изменения успешно сохранены"
 
-#: src/AppInfoView.vala:289
+#: src/AppInfoView.vala:287
 #, c-format
 msgid "Something went wrong and the changes could not be saved: %s"
 msgstr "Что-то пошло не так, и изменения не могут быть сохранены: %s"
 
-#: src/AppInfoView.vala:326
+#: src/AppInfoView.vala:324
 msgid "No visible title in the applications menu"
-msgstr "Не отображать название в меню приложений"
+msgstr "Нет отображаемого имени в меню приложений"
 
-#: src/AppInfoView.vala:341
+#: src/AppInfoView.vala:339
 msgid "No program will be launched"
 msgstr "Программа не будет запущена"
 
-#: src/AppInfoView.vala:345
+#: src/AppInfoView.vala:343
 msgid "The executable name (first argument) cannot contain the equal sign"
 msgstr ""
 "Имя исполняемого файла (первый аргумент) не может содержать знак равенства"
 
-#: src/AppInfoView.vala:351
+#: src/AppInfoView.vala:350
 msgid "Entered file does not exist"
 msgstr "Введённый файл не существует"
 
-#: src/AppInfoView.vala:357
+#: src/AppInfoView.vala:356
 msgid "Entered program was not found"
 msgstr "Введённая программа не найдена"
 
-#: src/AppInfoView.vala:379
+#: src/AppInfoView.vala:383
 msgid "Do You Want to Delete This Entry?"
 msgstr "Вы действительно хотите удалить эту запись?"
 
-#: src/AppInfoView.vala:380
+#: src/AppInfoView.vala:384
 msgid ""
 "Deleting this entry is permanent and cannot be undone. This does not delete "
 "the application itself, only the entry shown in the applications menu."
 msgstr ""
-"Удаление этой записи не может быть отменено. \n"
-"Будет удалено не само приложение, а только запись,\n"
-"отображаемая в меню приложений."
+"Удаление этой записи не может быть отменено. Будет удалено не само приложение, а только запись, отображаемая в меню приложений."
 
-#: src/AppInfoView.vala:381
+#: src/AppInfoView.vala:385
 msgid "Delete"
 msgstr "Удалить"
 
-#: src/AppInfoView.vala:383
+#: src/AppInfoView.vala:387
 msgid "Do You Want to Restore The Defaults?"
 msgstr "Вы хотите восстановить значения по умолчанию?"
 
-#: src/AppInfoView.vala:384
+#: src/AppInfoView.vala:388
 msgid "Restoring defaults will undo all the changes done to this entry."
 msgstr ""
 "Восстановление значений по умолчанию позволит отменить все изменения, "
 "сделанные в этой записи."
 
-#: src/AppInfoView.vala:385
+#: src/AppInfoView.vala:389
 msgid "Restore defaults"
 msgstr "Восстановить значения по умолчанию"
 
-#: src/AppInfoView.vala:392 src/IconChooserDialog.vala:29
+#: src/AppInfoView.vala:396 src/IconChooserDialog.vala:27
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "Отменить"
 
-#: src/AppInfoView.vala:425
+#: src/AppInfoView.vala:429
 msgid "Could Not Open This Entry"
 msgstr "Невозможно открыть эту запись"
 
-#: src/AppInfoView.vala:453
+#: src/AppInfoView.vala:457
 msgid "Delete entry…"
 msgstr "Удалить запись…"
 
-#: src/AppInfoView.vala:455
+#: src/AppInfoView.vala:459
 msgid "Restore defaults…"
 msgstr "Восстановить значения по умолчанию…"
 
-#: src/AppInfoViewSaver.vala:32
+#: src/AppInfoViewSaver.vala:30
 msgid "New Application"
 msgstr "Новое приложение"
 
-#: src/AppInfoViewSaver.vala:148
+#: src/AppInfoViewSaver.vala:146
 msgid "Could not load the newly saved file."
 msgstr "Не удалось загрузить только что сохраненный файл."
 
-#: src/AppInfoViewStack.vala:29
+#: src/AppInfoViewStack.vala:27
 msgid "No Item Selected"
 msgstr "Ничего не выбрано"
 
-#: src/AppInfoViewStack.vala:29
+#: src/AppInfoViewStack.vala:27
 msgid "Select an application or start typing to edit one"
 msgstr ""
-"Выберите приложение \n"
-"или начните вводить текст\n"
-"для поиска нужного элемента"
+"Выберите приложение или начните вводить текст для поиска"
 
-#: src/AppItem.vala:35
+#: src/AppItem.vala:33
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: src/Application.vala:63
-#, fuzzy, c-format
-#| msgid "Could Not Duplicate %s"
+#: src/Application.vala:75
+#, c-format
 msgid "Could not Find \"%s\""
-msgstr "Не удалось дублировать %s"
+msgstr "Не удалось найти «%s»"
 
-#: src/Application.vala:63
-#, fuzzy
-#| msgid "Could not load the newly saved file."
+#: src/Application.vala:75
 msgid "Could not Find Requested File"
-msgstr "Не удалось загрузить только что сохраненный файл."
+msgstr "Не удалось найти запрошенный файл"
 
-#: src/Application.vala:64
-#, fuzzy, c-format
-#| msgid "Entered file does not exist"
+#: src/Application.vala:76
+#, c-format
 msgid "File <b>\"%s\"</b> does not exist."
-msgstr "Введённый файл не существует"
+msgstr "Файл <b>«%s»</b> не существует/"
 
-#: src/Application.vala:79
-#, fuzzy, c-format
-#| msgid "Could Not Create a New Application"
+#: src/Application.vala:91
+#, c-format
 msgid "Could Not Create a New Application Entry from \"%s\""
-msgstr "Невозможно создать новое приложение"
+msgstr "Не удалось создать новую запись от «%s»"
 
-#: src/Application.vala:80
-#, fuzzy
-#| msgid "Could Not Create a New Application"
+#: src/Application.vala:92
 msgid "Could Not Create a New Application From Requested File"
-msgstr "Невозможно создать новое приложение"
+msgstr "Не удалось создать новую запись из запрошенного файла"
 
-#: src/DesktopAppManager.vala:56
+#: src/DesktopAppManager.vala:54
 msgid "Sound & Video"
 msgstr "Аудио и видео"
 
-#: src/DesktopAppManager.vala:57
+#: src/DesktopAppManager.vala:55
 msgid "Sound"
 msgstr "Аудио"
 
-#: src/DesktopAppManager.vala:58
+#: src/DesktopAppManager.vala:56
 msgid "Video"
 msgstr "Видео"
 
-#: src/DesktopAppManager.vala:59
+#: src/DesktopAppManager.vala:57
 msgid "Programming"
 msgstr "Программирование"
 
-#: src/DesktopAppManager.vala:60
+#: src/DesktopAppManager.vala:58
 msgid "Education"
 msgstr "Образование"
 
-#: src/DesktopAppManager.vala:61
+#: src/DesktopAppManager.vala:59
 msgid "Games"
 msgstr "Игры"
 
-#: src/DesktopAppManager.vala:62
+#: src/DesktopAppManager.vala:60
 msgid "Graphics"
 msgstr "Графика"
 
-#: src/DesktopAppManager.vala:63
+#: src/DesktopAppManager.vala:61
 msgid "Internet"
 msgstr "Интернет"
 
-#: src/DesktopAppManager.vala:64
+#: src/DesktopAppManager.vala:62
 msgid "Office"
 msgstr "Офис"
 
-#: src/DesktopAppManager.vala:65
+#: src/DesktopAppManager.vala:63
 msgid "Science"
 msgstr "Наука"
 
-#: src/DesktopAppManager.vala:66
+#: src/DesktopAppManager.vala:64
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/DesktopAppManager.vala:67
+#: src/DesktopAppManager.vala:65
 msgid "System Tools"
 msgstr "Системные утилиты"
 
-#: src/DesktopAppManager.vala:68
+#: src/DesktopAppManager.vala:66
 msgid "Accessories"
 msgstr "Утилиты"
 
-#: src/DesktopAppManager.vala:69
+#: src/DesktopAppManager.vala:67
 msgid "Other"
 msgstr "Другое"
 
-#: src/IconButton.vala:82
+#: src/IconButton.vala:80
 msgid "Icon name or path to an image"
-msgstr "Имя значка или путь к изображению"
+msgstr "Имя иконки или путь к изображению"
 
-#: src/IconButton.vala:86
+#: src/IconButton.vala:84
 msgid "Choose from file"
 msgstr "Выбрать из файла"
 
-#: src/IconButton.vala:90
+#: src/IconButton.vala:88
 msgid "Choose from available icons"
 msgstr "Выбрать из доступных значков"
 
-#: src/IconButton.vala:103
+#: src/IconButton.vala:101
 msgid "All Files"
 msgstr "Все файлы"
 
-#: src/IconButton.vala:107
+#: src/IconButton.vala:105
 msgid "Images"
 msgstr "Изображения"
 
-#: src/IconButton.vala:111
+#: src/IconButton.vala:109
 msgid "Select an image"
 msgstr "Выберите изображение"
 
-#: src/IconChooserDialog.vala:31
+#: src/IconChooserDialog.vala:29
 msgid "Choose"
 msgstr "Выбрать"
 
-#: src/IconChooserDialog.vala:45
+#: src/IconChooserDialog.vala:43
 msgid "Search icons…"
 msgstr "Поиск значка…"
 
-#: src/IconChooserDialog.vala:59
+#: src/IconChooserDialog.vala:57
 msgid "Choose an icon from the list"
 msgstr "Выбрать значок из списка"
 
-#: src/MainWindow.vala:86
+#: src/MainWindow.vala:84
 msgid "Show hidden entries"
 msgstr "Отображать скрытые записи"
 
-#: src/MainWindow.vala:130
+#: src/MainWindow.vala:128
 msgid "No Applications Found"
 msgstr "Приложения не найдены"
 
-#: src/MainWindow.vala:130
+#: src/MainWindow.vala:128
 msgid "Could not find any applications to edit on this system"
-msgstr "Не могу найти никаких приложений для редактирования в этой системе"
+msgstr "Не удалось найти никаких приложений для редактирования"
 
-#: src/MainWindow.vala:131
+#: src/MainWindow.vala:129
 msgid "Retry"
 msgstr "Повторить"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:149
 msgid "Find…"
 msgstr "Поиск…"
 
-#: src/MainWindow.vala:159
+#: src/MainWindow.vala:157
 msgid "New entry"
 msgstr "Новая запись"
 
-#: src/MainWindow.vala:333
+#: src/MainWindow.vala:331
 #, c-format
 msgid "Could Not Duplicate %s"
 msgstr "Не удалось дублировать %s"
 
-#: src/MainWindow.vala:358
-#, fuzzy
-#| msgid "Could Not Create a New Application"
+#: src/MainWindow.vala:356
 msgid "Could Not Create a New Application Entry"
-msgstr "Невозможно создать новое приложение"
-
-#~ msgid "translator-credits"
-#~ msgstr "translator-credits"
-
-#~ msgid "Close"
-#~ msgstr "Закрыть"
+msgstr "Невозможно создать новую запись"

@@ -36,7 +36,6 @@ window {
 
 .titlebar:backdrop {
     border: none;
-    background-image: none;
     background-color: @bg_color;
     box-shadow:
         inset 1px 0 0 0 alpha (@bg_highlight_color, 0.2),

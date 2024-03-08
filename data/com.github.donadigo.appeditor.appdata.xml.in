@@ -20,7 +20,7 @@
   <provides>
     <binary>com.github.donadigo.appeditor</binary>
   </provides>
-  <developer>
+  <developer id="com.donadigo">
     <name>Adam Bieńkowski</name>
   </developer>
   <url type="homepage">https://github.com/donadigo/appeditor</url>
